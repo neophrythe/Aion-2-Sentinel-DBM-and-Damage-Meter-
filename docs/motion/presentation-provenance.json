@@ -1,0 +1,17 @@
+{
+  "version": "0.6.6",
+  "file": "sentinel-0.6.6-illustrative-preview.mp4",
+  "format": "MP4 / H.264 / yuv420p",
+  "width": 1280,
+  "height": 720,
+  "fps": 15,
+  "seconds": 16.0,
+  "audio": false,
+  "provenance": "Code-drawn HTML/CSS illustration rendered in a local browser",
+  "simulated_readings": true,
+  "product_screenshot": false,
+  "product_executed": false,
+  "functional_tests_run": false,
+  "sequence_intervals_are_presentation_editing": true,
+  "maintained_by": "neophrythe"
+}

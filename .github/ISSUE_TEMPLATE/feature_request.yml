@@ -1,0 +1,17 @@
+name: Feature request
+description: Suggest an improvement to Sentinel or its documentation.
+title: "[Feature]: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: need
+    attributes:
+      label: What would this improve?
+      description: Explain the use case and desired behavior.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Relevant examples or evidence
+      description: For encounter warnings, include exact English labels and distinguish observations from estimates.

@@ -1,0 +1,115 @@
+{
+  "schema_version": 1,
+  "product": "AION Sentinel",
+  "version": "0.6.6",
+  "maintainer": "neophrythe",
+  "release_status": "untested_preview",
+  "visuals": "Illustrative SVG/HTML layouts and simulated data; no gameplay capture.",
+  "application_tests_executed": 0,
+  "files": {
+    "assets/control-illustration.png": {
+      "bytes": 85556,
+      "sha256": "49ad9fb9b5be3e9d3cdd9169a40082ad9be023af4000362fc7474410df0a8415"
+    },
+    "assets/control-illustration.svg": {
+      "bytes": 3732,
+      "sha256": "fefc80b2629080e60911b2a2ce0d8e0f7072cfcecae03caa8843c97c29e8c115"
+    },
+    "assets/damage-illustration.png": {
+      "bytes": 56790,
+      "sha256": "ec9a3cc3eee6c2761bb596a1a449d78f9e3f4c73dc8e80d053998ef075818c8e"
+    },
+    "assets/damage-illustration.svg": {
+      "bytes": 4373,
+      "sha256": "8d62890ef2a0bb9fccfb31cd1a6bb0216a80ede5c3cbfd60fca1dc2ac8af14f2"
+    },
+    "assets/sentinel-hero.png": {
+      "bytes": 116656,
+      "sha256": "4ff29e95072b440e7541630230d672f99ddea551688804d69d75ca2b47decb42"
+    },
+    "assets/sentinel-hero.svg": {
+      "bytes": 6517,
+      "sha256": "50caead731a98aaa9e168d76ac881dba3d3864475cd690355d7c05d380527854"
+    },
+    "assets/sentinel-icon.png": {
+      "bytes": 3185,
+      "sha256": "34c791d4b8da71f1185ec47efd195875ca3d3dba666359463e3c84089e85e7ce"
+    },
+    "assets/sentinel-icon.svg": {
+      "bytes": 362,
+      "sha256": "3fb09f7dc0a1408d2839a418ef237e6437b17d31d1f1914ce07ace3dd489abd8"
+    },
+    "assets/sentinel-itch-cover.png": {
+      "bytes": 64439,
+      "sha256": "96e9bf1bcd70f59a915932cc819a13e12f6f90b920ce2d6881d9c43a8b082a3b"
+    },
+    "assets/sentinel-itch-cover.svg": {
+      "bytes": 3702,
+      "sha256": "c1c4f8f71937c512e194bdb63a8b7a8bacfa3dcbcbe98e92d56e152c81d4f60e"
+    },
+    "assets/sentinel-social.png": {
+      "bytes": 113530,
+      "sha256": "3c29b39298adf74e48b410c30b8e130997dc06a60f14b77f781dde0fa608abf3"
+    },
+    "assets/sentinel-social.svg": {
+      "bytes": 6517,
+      "sha256": "50caead731a98aaa9e168d76ac881dba3d3864475cd690355d7c05d380527854"
+    },
+    "assets/styles.css": {
+      "bytes": 7737,
+      "sha256": "fb332021c897061e972c4e85074ddd210a7001b00f0feabb89d4d3defdb6ff65"
+    },
+    "assets/vector-provenance.json": {
+      "bytes": 1620,
+      "sha256": "50c6d594f66906ce8d6076c038850f3d2eda933d04781787fa37e340536950d6"
+    },
+    "copy/CLAIMS_AUDIT.md": {
+      "bytes": 5780,
+      "sha256": "632b506195c6d4883eec7261e296010b81da8b5b96a7ea04bd78a42e1c3abca5"
+    },
+    "copy/FAQ_EN.md": {
+      "bytes": 5199,
+      "sha256": "01dac818f17c520c99b4f3187cd00ebc94184f917e8c01197103fca50b2031cd"
+    },
+    "copy/GITHUB_RELEASE_EN.md": {
+      "bytes": 4989,
+      "sha256": "9cacd845a8c20ffb260d1e1f9069674905b295ede52ea06ee49b63d5b361668f"
+    },
+    "copy/NEXUS_DESCRIPTION_EN.md": {
+      "bytes": 3947,
+      "sha256": "efb7d6c0dea463f1644f6a03e151383b49abedec2e4bdd0340044ecf2594742b"
+    },
+    "copy/SHORT_LISTINGS_EN.md": {
+      "bytes": 2269,
+      "sha256": "eb6db270b7fe98582b4de148536b772e72e7c34778a2d02d3fe92bf15294ed5e"
+    },
+    "index.html": {
+      "bytes": 11966,
+      "sha256": "56282b372d258516c84d769d43a246da40d85c5530ddf15908e19607e8577c69"
+    },
+    "motion/illustrative-preview-poster.png": {
+      "bytes": 299092,
+      "sha256": "ff852a77f371fb99567a6434c3fc12399b55cd4c5231d11acecf6c34a3bc0f0e"
+    },
+    "motion/index.html": {
+      "bytes": 22413,
+      "sha256": "ee98b6e4beef7109a3d821134a1600e391de93ac7613de20f86bf3ba5f39b247"
+    },
+    "motion/presentation-provenance.json": {
+      "bytes": 507,
+      "sha256": "00fbb38d63063f4ed750df47794106157c60dfbf8d39356d669eee5551ea86c8"
+    },
+    "motion/sentinel-0.6.6-illustrative-preview.mp4": {
+      "bytes": 126012,
+      "sha256": "51f07756477bf8f96c1aff56f66986917a9437b0df1824e181aab6ea37485bb9"
+    },
+    "README.md": {
+      "bytes": 3293,
+      "sha256": "5426fa94303c2df5c3b78e148548314132319037fd5101e428597b828fcaba35"
+    },
+    "RELEASE.json": {
+      "bytes": 3632,
+      "sha256": "c04c7fbdc368e0e66b5dc5a614ad3972c42d7001874bca2e85017aa1a4cc3319"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "version": "0.6.6",
+  "archive": "AION-Sentinel-0.6.6-untested-windows-x64.7z",
+  "sha256": "948ade7b35e2d8b40f430150680ee337068262f1be63ab61eb6c0d99ebe11ba2",
+  "bytes": 95189963,
+  "functions_not_tested": true,
+  "functional_tests_executed": 0,
+  "unit_tests_executed": 0,
+  "integration_tests_executed": 0,
+  "live_tests_executed": 0,
+  "executable_launches": 0,
+  "inherited_test_reports_used": false,
+  "runtime_tests": {},
+  "runtime_tests_mode": "not_run",
+  "status": "packaged_untested",
+  "ready_for_live_use_verified": false
+}

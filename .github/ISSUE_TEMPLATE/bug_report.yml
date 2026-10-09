@@ -1,0 +1,41 @@
+name: Bug report
+description: Report a reproducible startup, observation, HUD or meter problem.
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: "0.6.6 is an untested preview. Please describe the visible behavior; do not include credentials or private capture files."
+  - type: input
+    id: version
+    attributes:
+      label: Sentinel version
+      placeholder: "0.6.6"
+    validations:
+      required: true
+  - type: input
+    id: windows
+    attributes:
+      label: Windows version
+      placeholder: "Windows 11 x64"
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Affected area
+      options: [Startup, Automatic observation, Boss warnings, Combat HUD, Damage meter, Documentation]
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: What happened?
+      description: Include the exact displayed message, expected behavior and repeatable steps.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Encounter or capture context
+      description: English boss/location/mode, relevant visible cue, Npcap status for meter reports and a sanitized screenshot if useful.

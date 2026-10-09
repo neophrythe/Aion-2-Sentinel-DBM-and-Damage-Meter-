@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "product": "AION Sentinel",
+  "version": "0.6.6",
+  "date": "2026-10-10",
+  "release_status": "untested_preview",
+  "maintainer": "neophrythe",
+  "language": "en",
+  "client_scope": "AION 2 EU / International English PC client",
+  "platform_target": "Windows 10/11 x64",
+  "repository_url": "https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-",
+  "release_url": "https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-/releases/tag/v0.6.6",
+  "support_url": "https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-/issues",
+  "download": {
+    "name": "AION-Sentinel-0.6.6-untested-windows-x64.7z",
+    "url": "https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-/releases/download/v0.6.6/AION-Sentinel-0.6.6-untested-windows-x64.7z",
+    "bytes": 95189963,
+    "decimal_mb": 95.19,
+    "binary_mib": 90.78,
+    "max_bytes": 100000000,
+    "extracted_file_count": 428,
+    "sha256": "948ade7b35e2d8b40f430150680ee337068262f1be63ab61eb6c0d99ebe11ba2",
+    "compression": "lossless_7z"
+  },
+  "default_controls": [
+    "Combat HUD",
+    "Start / Stop observation",
+    "Damage meter"
+  ],
+  "automatic_observation": {
+    "standard_hud_regions": true,
+    "target_name": true,
+    "target_level": true,
+    "location_heading": true,
+    "compatible_profile_selection": true,
+    "requires_readable_english_hud": true,
+    "unknown_mode_shared_owned_text_cues": true,
+    "unknown_mode_hp_hints": false,
+    "current_game_live_validation": false
+  },
+  "coverage": {
+    "scope": "reviewed_source_catalog_and_reference_rules",
+    "profiles": 1002,
+    "profiles_with_some_warning_support": 223,
+    "identity_only_profiles": 779,
+    "world_boss_entries": 54,
+    "world_boss_distinct_profiles": 51,
+    "world_group_entries": {
+      "Verteron": 24,
+      "Altgard": 24,
+      "Abyss": 6
+    },
+    "instance_map_variants_with_explicit_minimum_gs_1400": 83,
+    "combined_target_profiles": 137,
+    "target_profiles_with_some_warning_support": 72,
+    "target_identity_only_profiles": 65,
+    "full_mechanic_coverage": false,
+    "all_current_eu_bosses_verified": false
+  },
+  "damage_meter": {
+    "included": true,
+    "optional": true,
+    "capture_default": "off",
+    "adapter_selection": "automatic_from_decoded_game_evidence",
+    "separate_meter_application_required": false,
+    "npcap_required_for_live_capture": true,
+    "npcap_bundled": false,
+    "capture_permissions_required": true,
+    "names_require_identity_records": true,
+    "default_measurement": "aggregate_captured_actors_and_targets",
+    "ordinary_boss_death_resets_counter": false,
+    "current_game_damage_accuracy_verified": false
+  },
+  "validation": {
+    "status": "packaged_untested",
+    "functions_not_tested": true,
+    "functional_tests_executed": 0,
+    "unit_tests_executed": 0,
+    "integration_tests_executed": 0,
+    "live_tests_executed": 0,
+    "executable_launches": 0,
+    "inherited_test_reports_used": false,
+    "ready_for_live_use_verified": false,
+    "allowed_evidence": [
+      "structural_build_checks",
+      "source_and_package_manifest_integrity",
+      "archive_crc",
+      "extracted_file_sha256_roundtrip"
+    ]
+  },
+  "presentation": {
+    "preview_visuals": "simulated",
+    "live_gameplay_capture_claimed": false,
+    "full_boss_readiness_claimed": false,
+    "official_endorsement_claimed": false,
+    "legality_certification_claimed": false,
+    "anti_cheat_safety_claimed": false,
+    "account_safety_guarantee_claimed": false
+  }
+}
