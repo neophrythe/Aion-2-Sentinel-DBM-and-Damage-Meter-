@@ -1,0 +1,3 @@
+# Preserve published asset and release-metadata bytes for SHA-256 verification.
+docs/** -text
+releases/** -text
