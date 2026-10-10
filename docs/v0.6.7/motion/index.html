@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="An illustrative, interactive Sentinel 0.6.7 HUD presentation with simulated readings. This is not a running application or a game capture.">
+  <title>Sentinel 0.6.7 — Illustrative HUD presentation</title>
+  <link rel="icon" href="../assets/sentinel-icon.svg" type="image/svg+xml">
+  <style>
+    :root{color-scheme:dark;--gold:#e8c574;--teal:#7fdad5;--fg:#edf0f5;--muted:#a6b1c2}
+    *{box-sizing:border-box}body{margin:0;background:#080c13;color:var(--fg);font:16px/1.5 "Segoe UI",Arial,sans-serif}a{color:var(--teal);text-underline-offset:4px}button{font:inherit;color:inherit;cursor:pointer}button:focus-visible,a:focus-visible,.surface:focus-visible{outline:3px solid var(--gold);outline-offset:4px}button:disabled{opacity:.55;cursor:default}.wrap{max-width:1440px;margin:auto;padding:28px 36px 40px}.head{display:flex;justify-content:space-between;align-items:center;gap:20px}.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--fg);font-weight:650;letter-spacing:.07em}.brand img{width:40px;height:40px}.brand small{display:block;font-size:10px;color:var(--muted);letter-spacing:.1em}h1{font-size:clamp(26px,4vw,43px);margin:30px 0 10px;letter-spacing:-.025em}p{color:var(--muted);max-width:850px;margin:10px 0 22px}.label{display:inline-flex;align-items:center;gap:9px;background:#18252b;border:1px solid #355b60;border-radius:999px;padding:5px 12px;color:var(--teal);font-size:12px;font-weight:650}.label:before{content:"";width:6px;height:6px;border-radius:50%;background:var(--teal)}.controls{display:flex;gap:12px;flex-wrap:wrap;margin:24px 0 16px}.control{border:1px solid #34465d;background:#142031;border-radius:9px;padding:14px 17px;min-width:205px;text-align:left;display:flex;gap:20px;align-items:center;justify-content:space-between}.control b{font-size:15px;font-weight:600}.control span{font-size:11px;letter-spacing:.06em;color:var(--muted);white-space:nowrap}.control[aria-pressed=true]{border-color:#4e7979;background:#193238}.control[aria-pressed=true] span{color:var(--teal)}.control.start[aria-pressed=false]{background:var(--gold);color:#10151e;border-color:var(--gold)}.control.start[aria-pressed=false] span{color:#27303c}.stage-shell{border:1px solid #35465a;border-radius:13px;overflow:hidden;background:#0c141f}.stage{position:relative;aspect-ratio:16/9;width:100%;overflow:hidden;background:radial-gradient(ellipse at 55% 50%,#1a2b35 0,#12202b 32%,#0c141f 74%);container-type:inline-size;user-select:none;touch-action:auto}.stage:after{content:"";pointer-events:none;position:absolute;inset:0;box-shadow:inset 0 0 8cqw #070b1288}.arena{position:absolute;inset:0;pointer-events:none}.arena .ring{fill:none;stroke:#34505d;stroke-width:2;opacity:.62}.arena .line{stroke:#294552;stroke-width:1;opacity:.65}.arena .point{fill:#7fdad5;opacity:.5}.stage-note{position:absolute;left:2.3%;top:3%;z-index:3;font-size:.8cqw;letter-spacing:.14em;font-weight:650;color:var(--teal)}.stage-version{position:absolute;right:2.4%;top:3%;z-index:3;font-size:.85cqw;letter-spacing:.05em;color:var(--gold);font-weight:650}.target{position:absolute;left:35%;top:12.5%;width:30%;z-index:1;text-align:center}.target-name{font-size:1.32cqw;font-weight:650;letter-spacing:.08em}.target-name span{color:var(--muted);font-size:1.05cqw;margin-right:.7cqw}.hp{margin:.8cqw auto 0;width:85%;height:.4cqw;background:#223b46;border-radius:5px;overflow:hidden}.hp div{height:100%;width:83%;background:var(--teal);opacity:.8}.location{position:absolute;right:3%;top:13%;color:var(--muted);font-size:1cqw;text-align:right}.location small{display:block;font-size:.73cqw;color:var(--teal);letter-spacing:.08em}.surface{position:absolute;z-index:4;padding:1.2cqw 1.35cqw;background:#111c29ee;border:1px solid #34465d;border-radius:.65cqw;box-shadow:0 .6cqw 1.8cqw #0005;cursor:grab;touch-action:none}.surface:active{cursor:grabbing}.surface[hidden]{display:none}.surface h2{margin:0 0 .9cqw;font-size:.8cqw;letter-spacing:.12em;line-height:1.2;color:var(--teal);font-weight:650}.surface .quiet{color:var(--muted);font-size:.92cqw;line-height:1.45}.action{left:35%;top:33%;width:36%;min-height:16.5%;background:#242418ef;border-color:#a68a51}.action h2{color:var(--gold)}.action .call{font-size:2.08cqw;font-weight:650;letter-spacing:-.025em;line-height:1.12}.action .response{font-size:1.04cqw;line-height:1.4;color:#cfdae4;margin:.65cqw 0 0}.action .standby{font-size:1.55cqw;color:var(--muted)}.upcoming{left:79%;top:26%;width:17%;min-height:22%;border-color:#315d63;background:#101d27ee}.upcoming .reference{font-size:1.15cqw;font-weight:550;margin:.2cqw 0 .8cqw}.upcoming .sep{height:1px;background:#34535a;margin:1.2cqw 0 .8cqw}.imminent{left:42%;top:78%;width:25%;min-height:11%;border-color:#4b4e56}.imminent h2{color:var(--gold)}.imminent .quiet{font-size:1cqw}.damage{left:4%;top:61%;width:27%;min-height:26%;padding:1.15cqw 1.2cqw}.damage h2{margin-bottom:.8cqw}.damage header{display:flex;justify-content:space-between;gap:10px}.damage header span{font-size:.65cqw;color:var(--muted);letter-spacing:.06em}.damage .columns,.damage .row{display:grid;grid-template-columns:1fr .72fr .55fr .55fr;align-items:center;position:relative;gap:.5cqw}.damage .columns{font-size:.66cqw;color:var(--muted);letter-spacing:.03em;margin-bottom:.5cqw}.damage .row{font-size:.88cqw;margin:.32cqw 0;padding:.25cqw .3cqw;min-height:1.6cqw}.damage .row:before{content:"";position:absolute;inset:0 auto 0 0;width:var(--share);background:#1b383eee;border-radius:3px;z-index:-1}.damage .row b{font-weight:550}.damage .row span:nth-child(n+2),.damage .columns span:nth-child(n+2){text-align:right}.stage-bottom{position:absolute;left:2.3%;right:2.3%;bottom:3%;display:flex;justify-content:space-between;gap:10px;color:var(--muted);font-size:.76cqw;letter-spacing:.02em;z-index:4}.sample-badge{color:var(--teal)}.stage[data-active=false] .arena{opacity:.7}.stage[data-active=false] .target{opacity:.72}.stage.motion-playing .action.cue-confirmed{animation:callPulse 2s ease-in-out infinite}.stage.motion-playing .ring-wave{animation:wavePulse 5s ease-in-out infinite;transform-origin:center}.stage.motion-playing .point{animation:pointPulse 4s ease-in-out infinite}.demo-tools{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:16px 0 10px}.minor{background:#14202c;border:1px solid #34465d;border-radius:7px;padding:10px 14px;font-size:13px}.demo-label{font-size:12px;color:var(--muted);margin-right:auto}.caption{font-size:13px;margin:14px 0 0;max-width:1000px}.caption strong{color:var(--fg);font-weight:600}.notes{border:1px solid #2b384a;background:#111927;border-radius:11px;padding:18px 23px;margin-top:26px;display:grid;grid-template-columns:1fr 1fr;gap:12px 30px}.notes h3{font-size:16px;margin:0 0 7px}.notes p{font-size:13px;margin:0}.foot{font-size:12px;color:var(--muted);display:flex;justify-content:space-between;gap:20px;margin-top:26px;flex-wrap:wrap}.sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}body.capture{margin:0;padding:0;overflow:hidden;background:#0c141f}body.capture .wrap{width:1280px;max-width:none;padding:0;margin:0}body.capture .head,body.capture h1,body.capture .intro,body.capture .label,body.capture .controls,body.capture .demo-tools,body.capture .caption,body.capture .notes,body.capture .foot{display:none}body.capture .stage-shell{border:0;border-radius:0}body.capture .stage{width:1280px;height:720px;aspect-ratio:auto}
+    @keyframes callPulse{0%,100%{box-shadow:0 .6cqw 1.8cqw #0005,0 0 0 #e8c57400}50%{box-shadow:0 .6cqw 1.8cqw #0005,0 0 2cqw #e8c57423}}@keyframes wavePulse{0%,100%{opacity:.32}50%{opacity:.78}}@keyframes pointPulse{0%,100%{opacity:.28}50%{opacity:.76}}
+    @media(max-width:720px){.wrap{padding:20px 15px 30px}.head{align-items:flex-start}.head>a{font-size:13px}.brand{font-size:14px}.controls{gap:8px}.control{min-width:0;flex:1;padding:13px 11px;gap:9px}.control b{font-size:12px}.control span{font-size:9px}.notes{grid-template-columns:1fr;padding:17px}.stage-note{font-size:1cqw}.stage-version{font-size:1.1cqw}.caption{font-size:12px}.demo-label{flex-basis:100%}.surface:focus-visible{outline-width:2px;outline-offset:1px}}
+    @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}}@media print{.controls,.demo-tools{display:none}.wrap{padding:0}.stage-shell{break-inside:avoid}body{background:white;color:#111}.notes{color:#111;background:#f5f5f5}p,.foot{color:#333}}
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <header class="head"><a class="brand" href="../../index.html"><img src="../assets/sentinel-icon.svg" alt="Sentinel emblem"><div>SENTINEL<small>0.6.7 / ILLUSTRATIVE PRESENTATION</small></div></a><a href="../../index.html">Back to Sentinel 0.6.7</a></header>
+  <h1>Your fight view. Four separate surfaces.</h1>
+  <p class="intro">Explore a code-drawn layout for the three beginner controls. Drag a surface to reposition it, or focus it and use the arrow keys. The Upcoming panel starts well to the right of the main call.</p>
+  <div class="label">Illustrative layout / synthetic readings / Unfinished Beta</div>
+  <div class="controls" role="group" aria-label="Simulated beginner controls">
+    <button class="control" id="hudButton" type="button" aria-pressed="true"><b>Combat HUD</b><span id="hudState">ON</span></button>
+    <button class="control start" id="observationButton" type="button" aria-pressed="false"><b id="observationLabel">Start observation</b><span id="observationState">DEMO</span></button>
+    <button class="control" id="damageButton" type="button" aria-pressed="true"><b>Damage meter</b><span id="damageState">ON</span></button>
+  </div>
+  <div class="stage-shell">
+    <div class="stage" id="stage" data-active="false" aria-label="Illustrative Sentinel HUD layout, using synthetic readings">
+      <svg class="arena" viewBox="0 0 1280 720" preserveAspectRatio="none" aria-hidden="true"><defs><radialGradient id="floor"><stop stop-color="#28404a" stop-opacity=".3"/><stop offset="1" stop-color="#17232c" stop-opacity="0"/></radialGradient></defs><ellipse cx="678" cy="385" rx="300" ry="198" fill="url(#floor)"/><ellipse class="ring" cx="678" cy="385" rx="290" ry="178"/><ellipse class="ring ring-wave" cx="678" cy="385" rx="225" ry="133"/><ellipse class="ring" cx="678" cy="385" rx="157" ry="91"/><path class="line" d="M290 385h775M678 143v484M456 216l449 337M456 553l449-337"/><circle class="point" cx="657" cy="515" r="5"/><circle class="point" cx="705" cy="528" r="4"/><circle class="point" cx="617" cy="494" r="4"/><circle class="point" cx="754" cy="491" r="4"/></svg>
+      <div class="stage-note">ILLUSTRATIVE PREVIEW / SIMULATED VALUES</div><div class="stage-version">SENTINEL 0.6.7 / UNFINISHED BETA</div>
+      <div class="target"><div class="target-name"><span>54</span> VAKRON</div><div class="hp"><div></div></div></div>
+      <div class="location"><small>SIMULATED LOCATION LABEL</small>Vakron Sky Island</div>
+      <section class="surface action" id="action" tabindex="0" aria-label="Movable main warning surface; use arrow keys to reposition">
+        <h2 id="actionKind">OBSERVATION PAUSED / DEMO</h2><div class="call standby" id="call">Start the illustrative observation</div><div class="response" id="response">No game or application is connected.</div>
+      </section>
+      <section class="surface upcoming" id="upcoming" tabindex="0" aria-label="Movable Upcoming surface; use arrow keys to reposition">
+        <h2>UPCOMING</h2><div class="reference">Reference surface</div><div class="quiet">No interval inferred.</div><div class="sep"></div><div class="quiet">Independent position.<br>No fabricated countdown.</div>
+      </section>
+      <section class="surface imminent" id="imminent" tabindex="0" aria-label="Movable Imminent surface; use arrow keys to reposition">
+        <h2>IMMINENT / INDEPENDENT</h2><div class="quiet" id="imminentCue">Awaiting observed cue</div>
+      </section>
+      <section class="surface damage" id="damage" tabindex="0" aria-label="Movable damage meter with simulated data; use arrow keys to reposition">
+        <header><h2>DAMAGE METER</h2><span>SIMULATED</span></header>
+        <div class="columns"><span>PLAYER</span><span>DPS</span><span>DAMAGE</span><span>SHARE</span></div>
+        <div class="row" style="--share:100%"><b>Lumen</b><span>3,200</span><span>96,000</span><span>36.4%</span></div>
+        <div class="row" style="--share:87.5%"><b>Thorne</b><span>2,800</span><span>84,000</span><span>31.8%</span></div>
+        <div class="row" style="--share:53.1%"><b>Edda</b><span>1,700</span><span>51,000</span><span>19.3%</span></div>
+        <div class="row" style="--share:34.4%"><b>Nyx</b><span>1,100</span><span>33,000</span><span>12.5%</span></div>
+      </section>
+      <div class="stage-bottom"><span id="stageStatus">No running app / no game input / synthetic display</span><span class="sample-badge" id="sampleBadge">DEMO CONTROLS READY</span></div>
+    </div>
+  </div>
+  <div class="demo-tools"><span class="demo-label">Presentation tools only</span><button type="button" class="minor" id="playButton" aria-pressed="false">Play illustrative sequence</button><button type="button" class="minor" id="resetButton">Reset layout</button></div>
+  <p class="caption"><strong>This is an HTML/CSS presentation, not the Sentinel application.</strong> The sample sequence uses presentation editing intervals; they do not describe a boss timeline. The Surging Thorn response is a source reference, not live validation. Every DPS figure and player name shown here is simulated.</p>
+  <div class="notes"><div><h3>Automatic observation, bounded by evidence.</h3><p>The implementation observes English screen labels, discovers standard HUD regions and selects compatible profiles. Unknown mode evidence uses only shared compatible cues. Ordinary enemies do not receive boss guidance by default.</p></div><div><h3>Damage capture is separate.</h3><p>The real optional meter offers guided Npcap 1.89 setup when needed: consent to the official download, then complete the visible installer. Existing installations skip setup. Cancelling leaves capture off; a required reboot does not restart Windows automatically. Gameplay validation is pending, including current EU damage accuracy.</p></div></div>
+  <footer class="foot"><span>Created by Neophrythe &amp; Dr.Tatsu · 0.6.7 Unfinished Beta</span><span><a href="../assets/vector-provenance.json">Illustration provenance</a> · <a href="https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-/issues">Support</a></span></footer>
+  <div id="announcement" class="sr" aria-live="polite"></div>
+</div>
+<script>
+(() => {
+  'use strict';
+  const stage = document.getElementById('stage');
+  const surfaces = Object.fromEntries(['action', 'upcoming', 'imminent', 'damage'].map(name => [name, document.getElementById(name)]));
+  const buttons = {hud:document.getElementById('hudButton'), observation:document.getElementById('observationButton'), damage:document.getElementById('damageButton')};
+  const state = {hud:true, observing:false, damage:true, playing:false, seconds:0};
+  const initial = {action:[35,33], upcoming:[79,26], imminent:[42,78], damage:[4,61]};
+  const positions = Object.fromEntries(Object.entries(initial).map(([name,position]) => [name, [...position]]));
+  const call = document.getElementById('call');
+  const response = document.getElementById('response');
+  const announcement = document.getElementById('announcement');
+  let frame = 0;
+  let previous = 0;
+  let dragging = null;
+  function announce(message) { announcement.textContent = message; }
+  function position(name, x, y) {
+    const rect = stage.getBoundingClientRect();
+    const surface = surfaces[name];
+    const width = surface.offsetWidth / rect.width * 100;
+    const height = surface.offsetHeight / rect.height * 100;
+    positions[name] = [Math.max(1, Math.min(99-width, x)), Math.max(7, Math.min(95-height, y))];
+    surface.style.left = positions[name][0] + '%';
+    surface.style.top = positions[name][1] + '%';
+  }
+  function phase() {
+    const seconds = ((state.seconds % 16) + 16) % 16;
+    if (!state.observing) return 'paused';
+    return seconds < 3 || seconds >= 12 ? 'waiting' : 'cue';
+  }
+  function render() {
+    buttons.hud.setAttribute('aria-pressed', String(state.hud));
+    buttons.observation.setAttribute('aria-pressed', String(state.observing));
+    buttons.damage.setAttribute('aria-pressed', String(state.damage));
+    document.getElementById('hudState').textContent = state.hud ? 'ON' : 'OFF';
+    document.getElementById('damageState').textContent = state.damage ? 'ON' : 'OFF';
+    document.getElementById('observationLabel').textContent = state.observing ? 'Stop observation' : 'Start observation';
+    document.getElementById('observationState').textContent = state.observing ? 'DEMO RUNNING' : 'DEMO';
+    for (const name of ['action','upcoming','imminent']) surfaces[name].hidden = !state.hud;
+    surfaces.damage.hidden = !state.damage;
+    stage.dataset.active = String(state.observing);
+    stage.classList.toggle('motion-playing', state.playing);
+    const active = phase();
+    surfaces.action.classList.toggle('cue-confirmed', active === 'cue');
+    call.classList.toggle('standby', active !== 'cue');
+    document.getElementById('actionKind').textContent = active === 'paused' ? 'OBSERVATION PAUSED / DEMO' : active === 'cue' ? 'OBSERVED ENGLISH CUE / SIMULATED' : 'COMPATIBLE IDENTITY / SIMULATED';
+    call.textContent = active === 'cue' ? 'Surging Thorn' : active === 'paused' ? 'Start the illustrative observation' : 'Vakron / awaiting observed cue';
+    response.textContent = active === 'cue' ? 'Jump the rings; glide over the final blast.' : active === 'paused' ? 'No game or application is connected.' : 'English target + location / shared compatible cues.';
+    document.getElementById('imminentCue').textContent = active === 'cue' ? 'Observed cue / no inferred timer' : 'Awaiting observed cue';
+    document.getElementById('stageStatus').textContent = state.observing ? 'English target + location / shared cues while mode is unknown' : 'No running app / no game input / synthetic display';
+    document.getElementById('sampleBadge').textContent = active === 'cue' ? 'SYNTHETIC CUE CONFIRMED' : state.observing ? 'SYNTHETIC OBSERVATION' : 'DEMO CONTROLS READY';
+    document.getElementById('playButton').textContent = state.playing ? 'Pause illustrative sequence' : 'Play illustrative sequence';
+    document.getElementById('playButton').setAttribute('aria-pressed', String(state.playing));
+    const wave = document.querySelector('.ring-wave');
+    wave.style.opacity = String(.34 + .22 * (1 + Math.sin(state.seconds*1.5)) / 2);
+  }
+  function tick(now) {
+    if (!state.playing) return;
+    if (previous) state.seconds += Math.min((now-previous)/1000, .1);
+    previous = now;
+    render();
+    frame = requestAnimationFrame(tick);
+  }
+  function playing(value) {
+    cancelAnimationFrame(frame);
+    state.playing = value;
+    previous = 0;
+    if (value) { state.observing = true; frame = requestAnimationFrame(tick); }
+    render();
+  }
+  buttons.hud.addEventListener('click', () => { state.hud = !state.hud; render(); announce('Illustrative combat HUD '+(state.hud?'shown':'hidden')); });
+  buttons.damage.addEventListener('click', () => { state.damage = !state.damage; render(); announce('Illustrative damage meter '+(state.damage?'shown':'hidden')); });
+  buttons.observation.addEventListener('click', () => { state.observing = !state.observing; if (state.observing) state.seconds = 5; else playing(false); render(); announce('Illustrative observation '+(state.observing?'started':'stopped')); });
+  document.getElementById('playButton').addEventListener('click', () => { playing(!state.playing); announce(state.playing?'Illustrative sequence playing':'Illustrative sequence paused'); });
+  document.getElementById('resetButton').addEventListener('click', () => { for (const [name,xy] of Object.entries(initial)) position(name, ...xy); announce('Illustrative surface positions reset'); });
+  for (const [name, surface] of Object.entries(surfaces)) {
+    surface.addEventListener('pointerdown', event => {
+      if (event.button !== 0) return;
+      surface.focus();
+      dragging = {name, pointer:event.pointerId, startX:event.clientX, startY:event.clientY, position:[...positions[name]]};
+      surface.setPointerCapture(event.pointerId);
+      event.preventDefault();
+    });
+    surface.addEventListener('pointermove', event => {
+      if (!dragging || dragging.name !== name || dragging.pointer !== event.pointerId) return;
+      const rect = stage.getBoundingClientRect();
+      position(name, dragging.position[0]+(event.clientX-dragging.startX)/rect.width*100, dragging.position[1]+(event.clientY-dragging.startY)/rect.height*100);
+    });
+    function end(event) { if (dragging && dragging.pointer === event.pointerId) dragging = null; }
+    surface.addEventListener('pointerup', end);
+    surface.addEventListener('pointercancel', end);
+    surface.addEventListener('lostpointercapture', end);
+    surface.addEventListener('keydown', event => {
+      const directions = {ArrowLeft:[-1,0], ArrowRight:[1,0], ArrowUp:[0,-1], ArrowDown:[0,1]};
+      if (!directions[event.key]) return;
+      event.preventDefault();
+      const scale = event.shiftKey ? 3 : 1;
+      const xy = directions[event.key];
+      position(name, positions[name][0]+xy[0]*scale, positions[name][1]+xy[1]*scale);
+    });
+  }
+  window.addEventListener('resize', () => { for (const [name, xy] of Object.entries(positions)) if (!surfaces[name].hidden) position(name,...xy); });
+  window.addEventListener('pagehide', () => playing(false));
+  // Deterministic presentation-only capture. This never connects to Sentinel or a game.
+  window.sentinelPresentation = {
+    seek(seconds) { playing(false); state.observing = true; state.hud = true; state.damage = true; state.seconds = Number(seconds) || 0; render(); },
+    pause() { playing(false); },
+    reset() { state.seconds = 0; for (const [name, xy] of Object.entries(initial)) position(name,...xy); render(); }
+  };
+  if (new URLSearchParams(location.search).has('capture')) document.body.classList.add('capture');
+  render();
+})();
+</script>
+</body>
+</html>

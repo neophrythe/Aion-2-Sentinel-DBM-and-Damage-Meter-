@@ -6,7 +6,7 @@ Sentinel displays DBM-inspired boss warnings in a separate desktop overlay and i
 
 ## Is this release fully tested?
 
-No. **0.6.6 is an untested preview.** Compilation, package structure, file integrity and archive round-trip checks are separate from testing the application. No new functional, unit, integration, application or live-game tests were run. Older releases' results do not validate this build.
+No. **0.6.6 is an Unfinished Beta.** Compilation, package structure, file integrity and archive round-trip checks are separate from testing the application. No new functional, unit, integration, application or live-game tests were run. Older releases' results do not validate this build.
 
 ## Do I need to select profiles and draw OCR boxes?
 
@@ -60,4 +60,4 @@ The package uses native compilation and signed internal file manifests. That doe
 
 ## Where do I download it or report problems?
 
-Maintained by **neophrythe**. [Download 0.6.6](https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-/releases/download/v0.6.6/AION-Sentinel-0.6.6-untested-windows-x64.7z), visit the [project](https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-) or open an [issue](https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-/issues). The archive is **95,189,963 bytes**, with **428 extracted files**. Keep the complete folder together.
+Maintained by **neophrythe**. [Download 0.6.6](https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-/releases/download/v0.6.6/AION-Sentinel-0.6.6-beta-windows-x64.7z), visit the [project](https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-) or open an [issue](https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-/issues). The archive is **95,189,963 bytes**, with **428 extracted files**. Keep the complete folder together.

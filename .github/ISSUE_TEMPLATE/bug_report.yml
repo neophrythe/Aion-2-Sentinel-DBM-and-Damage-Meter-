@@ -5,7 +5,7 @@ labels: [bug]
 body:
   - type: markdown
     attributes:
-      value: "0.6.6 is an untested preview. Please describe the visible behavior; do not include credentials or private capture files."
+      value: "0.6.6 is an Unfinished Beta. Please describe the visible behavior; do not include credentials or private capture files."
   - type: input
     id: version
     attributes:

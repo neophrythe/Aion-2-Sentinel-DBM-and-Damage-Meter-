@@ -1,0 +1,20 @@
+{
+  "version": "0.6.7",
+  "format": "Interactive HTML/CSS illustration",
+  "public_status": "Unfinished Beta",
+  "creators": [
+    "Neophrythe",
+    "Dr.Tatsu"
+  ],
+  "display_credit": "Created by Neophrythe & Dr.Tatsu.",
+  "maintained_by": "neophrythe",
+  "simulated_readings": true,
+  "product_screenshot": false,
+  "product_executed": false,
+  "installer_executed": false,
+  "functional_tests_run": false,
+  "sequence_intervals_are_presentation_editing": true,
+  "gameplay_validation_pending": true,
+  "video_generated": false,
+  "origin": "Adapted from the historical 0.6.6 HTML/CSS illustration; no historical video copied or relabeled."
+}

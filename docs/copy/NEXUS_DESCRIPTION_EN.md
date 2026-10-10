@@ -4,7 +4,7 @@
 
 AION Sentinel brings DBM-inspired warnings and an optional damage meter to the **AION 2 EU / International English PC client**. It runs as a separate Windows desktop companion with a movable combat HUD.
 
-**Version 0.6.6 is an untested preview.** The package was built and checked for structural integrity; this version has not undergone new application or live-game testing.
+**Version 0.6.6 is an Unfinished Beta.** The package was built and checked for structural integrity; this version has not undergone new application or live-game testing.
 
 ## Three controls to begin
 
@@ -43,6 +43,6 @@ Target platform: **Windows 10/11 x64**. The preview has not been newly tested on
 
 ## Download and support
 
-[Download 0.6.6 — Untested Preview](https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-/releases/download/v0.6.6/AION-Sentinel-0.6.6-untested-windows-x64.7z) · [Project](https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-) · [Issues](https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-/issues)
+[Download 0.6.6 — Unfinished Beta](https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-/releases/download/v0.6.6/AION-Sentinel-0.6.6-beta-windows-x64.7z) · [Project](https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-) · [Issues](https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-/issues)
 
 Maintained by **neophrythe**. This is an independent project with no NCSOFT or Deadly Boss Mods affiliation. Official approval and account-safety guarantees have not been established.

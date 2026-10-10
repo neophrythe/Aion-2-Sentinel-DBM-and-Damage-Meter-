@@ -4,8 +4,8 @@ Prepared **10 October 2026**. Applies to the English copy in this folder and the
 
 ## Evidence
 
-- `dist/AION-Sentinel-0.6.6-untested-windows-x64.7z.manifest.json`: size, hash, 428-file inventory, archive structure and lossless extraction checks.
-- `dist/AION-Sentinel-0.6.6-untested-windows-x64.7z.status.json`: `packaged_untested`, zero new functional/unit/integration/live tests, zero executable launches, no inherited test reports used.
+- [0.6.6 package manifest](../../releases/v0.6.6/AION-Sentinel-0.6.6-beta-windows-x64.7z.manifest.json): size, hash, 428-file inventory, archive structure and lossless extraction checks.
+- [0.6.6 validation record](../../releases/v0.6.6/AION-Sentinel-0.6.6-beta-windows-x64.7z.status.json): `structural_checks_only`, zero new functional/unit/integration/live tests, zero executable launches, no inherited test reports used.
 - `aion_sentinel/ui.py` and `aion_sentinel/automatic_mode.py`: default three-control interface, automatic standard-HUD recognition, shared variant-text behavior and HP exclusions for unresolved modes.
 - `aion_sentinel/assets/boss_warning_reference.json` and the additional reference helpers: source-backed warning inventory, not live cue validation.
 - `aion_sentinel/assets/encounter_targets.json` and `docs/ENCOUNTER_TARGETS.md`: exact world-list joins, explicit GS requirements, source map variants and targeted coverage.
@@ -15,7 +15,7 @@ Prepared **10 October 2026**. Applies to the English copy in this folder and the
 
 | Topic | Supported wording | Required qualification |
 |---|---|---|
-| Release state | “0.6.6 untested preview.” | Compilation and archive checks do not establish working live fights. No old test totals may be presented as current validation. |
+| Release state | “0.6.6 Unfinished Beta.” | Compilation and archive checks do not establish working live fights. No old test totals may be presented as current validation. |
 | Client/platform | “For the AION 2 EU / International English PC client; targeting Windows 10/11 x64.” | Intended target, not newly tested compatibility. |
 | Default controls | “Combat HUD, Start / Stop observation, Damage meter.” | Expert configuration remains available for nonstandard layouts. |
 | Automatic recognition | “Finds standard visible name, level and location headings and selects compatible profiles when evidence is clear.” | Hidden/custom HUDs, unreadable text and ambiguous variants can prevent selection. |
@@ -46,4 +46,4 @@ Archive SHA-256: `948ade7b35e2d8b40f430150680ee337068262f1be63ab61eb6c0d99ebe11b
 - “Impossible to reverse engineer”, “Windows signed” or unqualified security guarantees.
 - Historical test counts reused as 0.6.6 validation or simulated images presented as current live-game captures.
 
-Keep preview illustrations and motion demonstrations labeled as simulated. Preserve readable limits near the download and feature copy, including the untested release state and Npcap prerequisite.
+Keep preview illustrations and motion demonstrations labeled as simulated. Preserve readable limits near the download and feature copy, including the Unfinished Beta status and Npcap prerequisite.

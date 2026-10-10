@@ -1,6 +1,19 @@
 # Release history
 
-## 0.6.6 — 10 October 2026 — Untested preview
+## 0.6.7 — 10 October 2026 — Unfinished Beta
+
+Created by **Neophrythe & Dr.Tatsu**.
+
+- Guided Npcap setup when the optional damage meter's capture components are absent; existing installations skip setup.
+- User-consented download of the fixed official Npcap 1.89 installer, pinned SHA-256 and publisher-signature checks, then the normal visible installer and Windows elevation prompt.
+- Manual publisher-license acceptance and installation options; no bundled capture driver or silent installation.
+- Cancellation, declined elevation and failure leave capture off. A required reboot does not restart Windows or enable the meter automatically. Otherwise, component recheck precedes worker retry.
+- The beginner observation and meter controls remain independent. Catalog coverage is unchanged: 1,002 profiles, 223 with some warning support and 779 identity-only.
+- Portable archive: 95,230,316 bytes (95.23 MB / 90.82 MiB), 428 extracted files.
+
+No new application, functional, unit, integration, executable, OCR, UI or live-game tests were run. Structural build and archive checks do not validate the setup flow or live fights. See [0.6.7 release notes](releases/v0.6.7/README.md).
+
+## 0.6.6 — 10 October 2026 — Unfinished Beta
 
 - A default beginner view with Combat HUD, observation Start/Stop and Damage meter.
 - Automatic names, level/location discovery, compatible profiles and standard HUD search regions.

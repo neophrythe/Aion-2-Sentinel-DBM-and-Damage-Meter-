@@ -1,0 +1,135 @@
+{
+  "version": "0.6.7",
+  "maintained_by": "neophrythe",
+  "creators": [
+    "Neophrythe",
+    "Dr.Tatsu"
+  ],
+  "authors": [
+    "Neophrythe",
+    "Dr.Tatsu"
+  ],
+  "display_credit": "Created by Neophrythe & Dr.Tatsu",
+  "public_status": "Unfinished Beta",
+  "validation_note": "Active development — gameplay validation pending.",
+  "provenance": "Original native SVG illustrations adapted from the 0.6.6 marketing kit",
+  "product_executed": false,
+  "installer_executed": false,
+  "functional_tests_run": false,
+  "product_screenshots": false,
+  "simulated_values": true,
+  "media": [
+    {
+      "file": "01-sentinel-cover.png",
+      "source": "01-sentinel-cover.svg",
+      "width": 1920,
+      "height": 1080,
+      "default_cover": true,
+      "caption": "AION Sentinel 0.6.7 Unfinished Beta: English boss cues and optional DPS. Illustrative layout with simulated values; gameplay validation pending.",
+      "bytes": 199130,
+      "sha256": "bd22ce4c120c02b179f4cf4d03b5536c0a1b1a509602cef97f5d687f18f60858"
+    },
+    {
+      "file": "02-movable-hud.png",
+      "source": "02-movable-hud.svg",
+      "width": 1920,
+      "height": 1080,
+      "default_cover": false,
+      "caption": "Four separate movable surfaces: main warning, Upcoming, Imminent and optional damage HUD. Code-drawn illustration; simulated readings.",
+      "bytes": 212261,
+      "sha256": "c89bcddf43fbbc4391628c8d62f47aadcf258b810f71f126383af9bdb35c57b4"
+    },
+    {
+      "file": "03-damage-meter.png",
+      "source": "03-damage-meter.svg",
+      "width": 1440,
+      "height": 850,
+      "default_cover": false,
+      "caption": "Optional damage meter showing example names, classes, DPS, damage and share. Simulated values; guided Npcap setup on first use.",
+      "bytes": 128366,
+      "sha256": "7294a055660796a61795610b9e09e5b35e0c9cdeeb4344af9583a02f8fba114a"
+    },
+    {
+      "file": "04-beginner-controls.png",
+      "source": "04-beginner-controls.svg",
+      "width": 1680,
+      "height": 900,
+      "default_cover": false,
+      "caption": "Three beginner controls, with guided setup for the optional meter. Illustrative 0.6.7 Unfinished Beta layout; gameplay validation pending.",
+      "bytes": 156897,
+      "sha256": "726ea6d9f9d82e2596526e3c0a17a6723e7ee5e60f47867eed53c99596eb40a8"
+    },
+    {
+      "file": "05-nexus-header.png",
+      "source": "05-nexus-header.svg",
+      "width": 1300,
+      "height": 372,
+      "default_cover": false,
+      "caption": "AION Sentinel 0.6.7 Unfinished Beta — English boss cues and an optional damage meter. Illustrative layout with simulated values.",
+      "bytes": 77720,
+      "sha256": "87a9459472583068aea5d86520f8ec020fb276db094a12ef5f7ac142b6a7d677"
+    }
+  ],
+  "web_assets": [
+    {
+      "file": "sentinel-hero.png",
+      "source": "sentinel-hero.svg",
+      "width": 1200,
+      "height": 675,
+      "default_cover": false,
+      "caption": "",
+      "bytes": 108197,
+      "sha256": "f96a76c8e590ec6557b2d706025cec89e74d2a78d7d6710cb8e933f46e80635c"
+    },
+    {
+      "file": "sentinel-social.png",
+      "source": "sentinel-social.svg",
+      "width": 1200,
+      "height": 630,
+      "default_cover": false,
+      "caption": "",
+      "bytes": 104330,
+      "sha256": "fc50ab1f866a82ed42d8ebbc9cc6a0dc47070e3fb1a8e939d467ccc98fd1c253"
+    },
+    {
+      "file": "sentinel-itch-cover.png",
+      "source": "sentinel-itch-cover.svg",
+      "width": 630,
+      "height": 500,
+      "default_cover": false,
+      "caption": "",
+      "bytes": 56124,
+      "sha256": "750b08c68c839efe9f24c2f61326f15ec80466423ff306f29d32aa70a6f18968"
+    },
+    {
+      "file": "control-illustration.png",
+      "source": "control-illustration.svg",
+      "width": 1120,
+      "height": 600,
+      "default_cover": false,
+      "caption": "",
+      "bytes": 93702,
+      "sha256": "a2f0a7df525c1be3e91ccd22f2b124c2d9623adc76fd8d3e21564930ead4e20a"
+    },
+    {
+      "file": "damage-illustration.png",
+      "source": "damage-illustration.svg",
+      "width": 720,
+      "height": 425,
+      "default_cover": false,
+      "caption": "",
+      "bytes": 54571,
+      "sha256": "62c9eb2fd094e4126f35e9e63114f61f56d1ceaac0e59cca37f686c7f2e15520"
+    },
+    {
+      "file": "sentinel-icon.png",
+      "source": "sentinel-icon.svg",
+      "width": 64,
+      "height": 64,
+      "default_cover": false,
+      "caption": "",
+      "bytes": 2955,
+      "sha256": "5e52fc3575c1ce2ba95b224fbd026b717db18307c9c5259656886bdb37077504"
+    }
+  ]
+}

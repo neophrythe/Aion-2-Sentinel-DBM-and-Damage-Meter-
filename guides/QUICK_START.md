@@ -1,6 +1,8 @@
-# Quick start — 0.6.6 preview
+# Quick start — 0.6.7 Unfinished Beta
 
-The current build is implemented and untested. Download it from the [release page](https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-/releases/tag/v0.6.6), then extract the complete folder into a writable location.
+Created by **Neophrythe & Dr.Tatsu**.
+
+This 0.6.7 Unfinished Beta has not undergone new application, functional, unit, integration, executable, OCR, UI or live-game tests. Download it from the [release page](https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-/releases/tag/v0.6.7), then extract the complete folder into a writable location.
 
 Open `AION-Sentinel.exe`. The default view has three controls:
 
@@ -12,7 +14,11 @@ Open `AION-Sentinel.exe`. The default view has three controls:
 
 Bring the English AION2 client to the foreground after starting observation. The standard name, level, location, HP and cast search areas follow the game window automatically. Normal targets receive no boss warnings. Profiles switch when compatible identity and location evidence is available.
 
-For damage capture, install Npcap separately. The worker selects the capture adapter automatically. If character names are pending, keep it enabled through login or an area change so fresh identity records can arrive.
+For live damage readings, enable **Damage meter**. If Npcap is already installed, Sentinel skips setup and starts its worker. Otherwise, choose **Set up Npcap** to consent to downloading the fixed **Npcap 1.89** installer from the official publisher. Sentinel checks its pinned SHA-256 and publisher signature before opening the normal visible installer with Windows elevation. Review the publisher's license and choose its installation options yourself. The installer is not bundled and installation is not silent.
+
+Choose **Cancel** if you do not want setup. Cancelling, declining elevation or installation failure leaves the meter off; screen OCR stays available. A required reboot does not restart Windows automatically. Reboot when convenient, then enable the meter again. Otherwise, Sentinel rechecks capture components and retries its worker. Capture permissions can still prevent readings; manual installation from [Npcap's official download page](https://npcap.com/#download) is also available.
+
+The worker selects the capture adapter automatically. If character names are pending, keep it enabled through login or an area change so fresh identity records can arrive. See [complete meter setup and measurement limits](../docs/DAMAGE_METER.md).
 
 F7 controls the HUD, F8 observation and F9 encounter reset. Use the window controls if a shortcut is already occupied.
 

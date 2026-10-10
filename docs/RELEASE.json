@@ -1,26 +1,27 @@
 {
   "schema_version": 1,
   "product": "AION Sentinel",
-  "version": "0.6.6",
+  "version": "0.6.7",
   "date": "2026-10-10",
-  "release_status": "untested_preview",
+  "release_status": "unfinished_beta",
   "maintainer": "neophrythe",
   "language": "en",
   "client_scope": "AION 2 EU / International English PC client",
   "platform_target": "Windows 10/11 x64",
   "repository_url": "https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-",
-  "release_url": "https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-/releases/tag/v0.6.6",
+  "release_url": "https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-/releases/tag/v0.6.7",
   "support_url": "https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-/issues",
   "download": {
-    "name": "AION-Sentinel-0.6.6-untested-windows-x64.7z",
-    "url": "https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-/releases/download/v0.6.6/AION-Sentinel-0.6.6-untested-windows-x64.7z",
-    "bytes": 95189963,
-    "decimal_mb": 95.19,
-    "binary_mib": 90.78,
+    "name": "AION-Sentinel-0.6.7-beta-windows-x64.7z",
+    "url": "https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-/releases/download/v0.6.7/AION-Sentinel-0.6.7-beta-windows-x64.7z",
+    "bytes": 95230316,
+    "decimal_mb": 95.23,
+    "binary_mib": 90.82,
     "max_bytes": 100000000,
     "extracted_file_count": 428,
-    "sha256": "948ade7b35e2d8b40f430150680ee337068262f1be63ab61eb6c0d99ebe11ba2",
-    "compression": "lossless_7z"
+    "sha256": "8bf3507d1a41e58e4323bd74187b0a9434ee6e504d176b0f0f6d6a0e97e5b9f1",
+    "compression": "lossless_7z",
+    "headroom_bytes": 4769684
   },
   "default_controls": [
     "Combat HUD",
@@ -69,10 +70,29 @@
     "names_require_identity_records": true,
     "default_measurement": "aggregate_captured_actors_and_targets",
     "ordinary_boss_death_resets_counter": false,
-    "current_game_damage_accuracy_verified": false
+    "current_game_damage_accuracy_verified": false,
+    "npcap_version": "1.89",
+    "npcap_guided_setup": true,
+    "npcap_installer_bundled": false,
+    "npcap_download_requires_consent": true,
+    "npcap_installer_origin": "Official publisher HTTPS download",
+    "npcap_installer_verification": [
+      "pinned_sha256",
+      "publisher_signature"
+    ],
+    "npcap_normal_visible_installer": true,
+    "npcap_silent_install": false,
+    "npcap_license_acceptance_automated": false,
+    "existing_npcap_skips_setup": true,
+    "cancel_or_failure_keeps_capture_off": true,
+    "ocr_available_during_setup": true,
+    "reboot_required_keeps_capture_off": true,
+    "automatic_windows_restart": false,
+    "successful_setup_rechecks_components_before_worker_retry": true,
+    "beginner_observation_and_capture_independent": true
   },
   "validation": {
-    "status": "packaged_untested",
+    "status": "structural_checks_only",
     "functions_not_tested": true,
     "functional_tests_executed": 0,
     "unit_tests_executed": 0,
@@ -86,7 +106,10 @@
       "source_and_package_manifest_integrity",
       "archive_crc",
       "extracted_file_sha256_roundtrip"
-    ]
+    ],
+    "gameplay_validation_pending": true,
+    "compilation_checked": true,
+    "package_integrity_checked": true
   },
   "presentation": {
     "preview_visuals": "simulated",
@@ -95,6 +118,21 @@
     "official_endorsement_claimed": false,
     "legality_certification_claimed": false,
     "anti_cheat_safety_claimed": false,
-    "account_safety_guarantee_claimed": false
-  }
+    "account_safety_guarantee_claimed": false,
+    "public_status": "Unfinished Beta",
+    "current_media_version": "0.6.7",
+    "motion_format": "Interactive synthetic HTML/CSS illustration",
+    "current_version_video_generated": false
+  },
+  "public_status": "Unfinished Beta",
+  "creators": [
+    "Neophrythe",
+    "Dr.Tatsu"
+  ],
+  "authors": [
+    "Neophrythe",
+    "Dr.Tatsu"
+  ],
+  "display_credit": "Created by Neophrythe & Dr.Tatsu.",
+  "validation_note": "Active development — gameplay validation pending."
 }

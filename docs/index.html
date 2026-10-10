@@ -3,30 +3,30 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="AION Sentinel 0.6.6: automatic English boss-cue observation, three simple controls and an integrated optional damage meter. Untested Windows preview maintained by neophrythe.">
-  <meta property="og:title" content="AION Sentinel 0.6.6 — Read the fight. Keep it simple.">
-  <meta property="og:description" content="English boss cues + integrated DPS. Three controls, automatic observation. Untested preview.">
-  <meta property="og:image" content="https://neophrythe.github.io/Aion-2-Sentinel-DBM-and-Damage-Meter-/assets/sentinel-social.png">
-  <title>AION Sentinel 0.6.6 — Read the fight. Keep it simple.</title>
-  <link rel="icon" href="assets/sentinel-icon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="assets/styles.css">
+  <meta name="description" content="AION Sentinel 0.6.7 Unfinished Beta: English boss cues, an optional damage meter and guided Npcap setup. Created by Neophrythe &amp; Dr.Tatsu. Gameplay validation pending.">
+  <meta property="og:title" content="AION Sentinel 0.6.7 — Read the fight. Keep it simple.">
+  <meta property="og:description" content="English boss cues + optional DPS with guided Npcap setup. Unfinished Beta: active development, gameplay validation pending.">
+  <meta property="og:image" content="https://neophrythe.github.io/Aion-2-Sentinel-DBM-and-Damage-Meter-/v0.6.7/assets/sentinel-social.png">
+  <title>AION Sentinel 0.6.7 — Read the fight. Keep it simple.</title>
+  <link rel="icon" href="v0.6.7/assets/sentinel-icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="v0.6.7/assets/styles.css">
 </head>
 <body>
 <div class="wrap">
   <header>
-    <a class="brand" href="#top"><img src="assets/sentinel-icon.svg" alt="Sentinel emblem" width="42" height="42"><div>SENTINEL<small>AION 2 · EU / INTERNATIONAL</small></div></a>
+    <a class="brand" href="#top"><img src="v0.6.7/assets/sentinel-icon.svg" alt="Sentinel emblem" width="42" height="42"><div>SENTINEL<small>AION 2 · EU / INTERNATIONAL</small></div></a>
     <nav aria-label="Page navigation"><a href="#simple">Controls</a><a href="#dps">DPS</a><a href="#coverage">Coverage</a><a href="#release">Download</a></nav>
   </header>
   <main id="top">
     <div class="intro">
-      <div class="eyebrow">English boss cues + integrated damage meter · 0.6.6</div>
+      <div class="eyebrow">English boss cues + integrated damage meter · 0.6.7</div>
       <h1>Read the fight.<br>Keep it simple.</h1>
       <p>Start observation. Sentinel follows visible English target names and location labels, selects compatible encounters, and brings observed boss cues into view. Keep the integrated damage meter one toggle away.</p>
-      <div class="pill-row"><span class="pill new">NEW / Automatic beginner mode</span><span class="pill">Three simple controls</span><span class="pill">Local screen OCR</span><span class="pill warning">Untested preview</span><span class="pill">Windows x64 · English</span></div>
-      <div class="actions"><a class="button" href="https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-/releases/tag/v0.6.6">View the v0.6.6 release</a><a class="button secondary" href="motion/index.html">Explore the illustrative HUD</a></div>
-      <p class="status-note">0.6.6 is implemented and packaged, but this build has not undergone functional or live-game tests. Treat it as a preview.</p>
+      <div class="pill-row"><span class="pill new">NEW / Guided Npcap setup</span><span class="pill">Three simple controls</span><span class="pill">Local screen OCR</span><span class="pill warning">Unfinished Beta</span><span class="pill">Windows x64 · English</span></div>
+      <div class="actions"><a class="button" href="https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-/releases/tag/v0.6.7">View the v0.6.7 release</a><a class="button secondary" href="v0.6.7/motion/index.html">Explore the illustrative HUD</a></div>
+      <p class="status-note">0.6.7 — Unfinished Beta. Active development with partial boss-mechanic coverage. Gameplay validation is pending; compilation and package integrity have been checked.</p>
     </div>
-    <figure class="hero-art"><img src="assets/sentinel-hero.png" alt="Code-drawn Sentinel illustration showing three controls, an observed boss cue and separate damage, Upcoming and Imminent surfaces" width="1200" height="675"></figure>
+    <figure class="hero-art"><img src="v0.6.7/assets/sentinel-hero.png" alt="Code-drawn Sentinel illustration showing three controls, an observed boss cue and separate damage, Upcoming and Imminent surfaces" width="1200" height="675"></figure>
     <p class="caption">Illustrative preview drawn in SVG. Simulated readings and layout; no current application screenshot or live encounter is shown.</p>
 
     <section id="simple">
@@ -34,9 +34,9 @@
       <div class="cards">
         <article class="card"><div class="number">01 / DISPLAY</div><div class="control-label"><h3>Combat HUD</h3><span class="switch" aria-hidden="true"></span></div><p>Show or hide the encounter overlays. Give action warnings, Upcoming and Imminent their own space on the screen.</p></article>
         <article class="card"><div class="number">02 / OBSERVE</div><div class="control-label"><h3>Start / Stop observation</h3><span class="play-icon" aria-hidden="true">▷</span></div><p>Read the foreground English game HUD. Match the visible target and location; keep ordinary enemies quiet.</p></article>
-        <article class="card"><div class="number">03 / MEASURE</div><div class="control-label"><h3>Damage meter</h3><span class="switch optional" aria-hidden="true"></span></div><p>Enable damage capture independently. Live capture requires Npcap installed separately; the meter remains optional.</p></article>
+        <article class="card"><div class="number">03 / MEASURE</div><div class="control-label"><h3>Damage meter</h3><span class="switch optional" aria-hidden="true"></span></div><p>Enable damage capture independently. If Npcap is absent, choose guided setup and complete its normal installer. The meter remains optional.</p></article>
       </div>
-      <figure class="shot" style="margin-top:24px"><img src="assets/control-illustration.png" alt="Illustrative 0.6.6 beginner control layout with Combat HUD, Start / Stop observation and Damage meter" width="1120" height="512" loading="lazy"><figcaption><strong>Conceptual control layout.</strong> Code-drawn illustration of the beginner flow. Advanced settings and manual tools remain available through the menu.</figcaption></figure>
+      <figure class="shot" style="margin-top:24px"><img src="v0.6.7/assets/control-illustration.png" alt="Illustrative 0.6.7 beginner control layout with Combat HUD, Start / Stop observation and Damage meter" width="1120" height="600" loading="lazy"><figcaption><strong>Conceptual control layout.</strong> Code-drawn illustration of the beginner flow. Advanced settings and manual tools remain available through the menu.</figcaption></figure>
       <div class="keys"><span><kbd>F7</kbd>Combat HUD</span><span><kbd>F8</kbd>Observation start / stop</span><span><kbd>F9</kbd>Encounter reset</span></div>
     </section>
 
@@ -44,17 +44,17 @@
       <div class="section-head"><div class="eyebrow">One application · Independent damage capture</div><h2>DPS belongs in the same view.</h2><p>The integrated damage meter has its own control and movable HUD. Keep the encounter call clear while damage sits where you want it.</p></div>
       <div class="two-col">
         <div><div class="meter-facts"><span>Player</span><span>Class</span><span>DPS</span><span>Damage</span><span>Share</span></div>
-          <ol class="steps"><li><strong>Switch Damage meter on.</strong> The bundled capture worker observes damage traffic; live capture needs Npcap.</li><li><strong>Arrange a separate damage HUD.</strong> Position it independently of the boss-warning surfaces.</li><li><strong>Open Advanced for analysis.</strong> Inspect the table, finish a run, reset the counter or export displayed rows as CSV.</li></ol>
-          <p>Names and classes depend on received metadata. Unknown actors retain numeric labels while names are pending. Captured actors can include non-party players; no party-only filter is claimed.</p>
+          <ol class="steps"><li><strong>Switch Damage meter on.</strong> If Npcap is absent, choose <b>Set up Npcap</b> and consent to its official download.</li><li><strong>Complete the visible Npcap installer.</strong> Sentinel checks the fixed 1.89 installer hash and publisher signature before opening its normal wizard with Windows elevation. Review the license and options yourself.</li><li><strong>Arrange the separate damage HUD.</strong> After the capture components are rechecked, Sentinel retries its worker. Advanced opens the table, run controls and CSV export.</li></ol>
+          <p>An existing Npcap installation skips setup. The installer is not bundled. Cancelling, declining elevation or a setup failure leaves capture off while screen OCR remains available. If Windows needs a restart, the meter stays off; restart Windows yourself, then enable the meter again.</p><p>Names and classes depend on received metadata. If you started capture after login, keep it enabled through a login or area change; unknown actors retain numeric labels. The meter aggregates captured actors and targets, including possible non-party players. An ordinary boss death does not reset every fight. Current EU damage accuracy remains unverified.</p>
         </div>
-        <figure class="shot"><img src="assets/damage-illustration.png" alt="Illustrative damage table with simulated players Lumen, Thorne, Edda and Nyx and example DPS, damage and share" width="720" height="425" loading="lazy"><figcaption><strong>Simulated values.</strong> This code-drawn table explains the meter fields. It is not a captured result or an accuracy validation.</figcaption></figure>
+        <figure class="shot"><img src="v0.6.7/assets/damage-illustration.png" alt="Illustrative damage table with simulated players Lumen, Thorne, Edda and Nyx and example DPS, damage and share" width="720" height="425" loading="lazy"><figcaption><strong>Simulated values.</strong> This code-drawn table explains the meter fields. It is not a captured result or an accuracy validation.</figcaption></figure>
       </div>
     </section>
 
     <section id="motion">
       <div class="section-head"><div class="eyebrow">Interactive illustration</div><h2>Give each surface room.</h2><p>Put the action near your focus, Upcoming well to the right, and damage in its own corner. Explore the movable HTML presentation and toggle the simulated meter.</p></div>
-      <figure class="shot"><a class="motion-poster" href="motion/index.html"><img src="assets/sentinel-hero.png" alt="Open the interactive illustrated HUD layout; Upcoming sits well right of the action and DPS panels" width="1200" height="675" loading="lazy"></a><figcaption>Animated HTML/CSS presentation with synthetic readings. It demonstrates layout and the three-control flow; it does not exercise Sentinel or validate encounter mechanics.</figcaption></figure>
-      <div class="actions"><a class="button" href="motion/index.html">Try the illustrated layout</a><a class="button secondary" href="motion/sentinel-0.6.6-illustrative-preview.mp4" download>Download the illustrative MP4</a><a class="button secondary" href="assets/sentinel-hero.svg">Open the editable SVG</a></div>
+      <figure class="shot"><a class="motion-poster" href="v0.6.7/motion/index.html"><img src="v0.6.7/assets/sentinel-hero.png" alt="Open the interactive illustrated HUD layout; Upcoming sits well right of the action and DPS panels" width="1200" height="675" loading="lazy"></a><figcaption>Animated HTML/CSS presentation with synthetic readings. It demonstrates layout and the three-control flow; it does not exercise Sentinel or validate encounter mechanics.</figcaption></figure>
+      <div class="actions"><a class="button" href="v0.6.7/motion/index.html">Try the illustrated layout</a><a class="button secondary" href="v0.6.7/assets/sentinel-hero.svg">Open the editable SVG</a></div>
     </section>
 
     <section id="coverage">
@@ -68,13 +68,13 @@
     </section>
 
     <section id="release">
-      <div class="section-head"><div class="eyebrow">Portable Windows x64 preview</div><h2>A clear starting point.</h2><p>Extract the complete archive, start Sentinel, switch on the overlays you want and begin observation with the English game in the foreground. Live DPS requires the separate capture driver.</p></div>
-      <div class="documents"><a class="doc" href="copy/GITHUB_RELEASE_EN.md">0.6.6 release notes <span>↗</span></a><a class="doc" href="copy/FAQ_EN.md">Setup and damage-meter FAQ <span>↗</span></a><a class="doc" href="copy/CLAIMS_AUDIT.md">Coverage and evidence <span>↗</span></a><a class="doc" href="README.md">Preview kit contents <span>↗</span></a><a class="doc" href="assets/sentinel-social.png">Social preview · 1200 × 630 <span>↗</span></a><a class="doc" href="assets/sentinel-itch-cover.png">Listing cover · 630 × 500 <span>↗</span></a></div>
-      <div class="release"><div class="package-row"><div><div class="eyebrow">0.6.6 / Untested build</div><div class="size">95.19 MB <small>/ 7z archive</small></div><p>95,189,963 bytes · 90.78 MiB · 428 files · English Windows x64 package</p><p>Archive: AION-Sentinel-0.6.6-untested-windows-x64.7z</p></div><div class="actions" style="margin-top:0"><a class="button" href="https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-/releases/download/v0.6.6/AION-Sentinel-0.6.6-untested-windows-x64.7z">Download the preview archive</a></div></div><code class="checksum">SHA-256: 948ade7b35e2d8b40f430150680ee337068262f1be63ab61eb6c0d99ebe11ba2</code><p>Version 0.6.6 is an untested Windows preview. Keep the complete extracted folder together.</p></div>
+      <div class="section-head"><div class="eyebrow">Portable Windows x64 · Unfinished Beta</div><h2>A clear starting point.</h2><p>Extract the complete archive, launch Start-AION-Sentinel.cmd and begin observation with the English game in the foreground. Switch Damage meter on if wanted; guided setup can install the separate Npcap capture driver with your consent.</p></div>
+      <div class="documents"><a class="doc" href="copy/0.6.7/GITHUB_RELEASE_EN.md">0.6.7 release notes <span>↗</span></a><a class="doc" href="copy/0.6.7/FAQ_EN.md">Setup and damage-meter FAQ <span>↗</span></a><a class="doc" href="copy/0.6.7/CLAIMS_AUDIT.md">Coverage and evidence <span>↗</span></a><a class="doc" href="README.md">Preview kit contents <span>↗</span></a><a class="doc" href="v0.6.7/assets/sentinel-social.png">Social preview · 1200 × 630 <span>↗</span></a><a class="doc" href="v0.6.7/assets/sentinel-itch-cover.png">Listing cover · 630 × 500 <span>↗</span></a></div>
+      <div class="release"><div class="package-row"><div><div class="eyebrow">0.6.7 / Unfinished Beta</div><div class="size">95.23 MB <small>/ 7z archive</small></div><p>95,230,316 bytes · 90.82 MiB · 428 files · English Windows x64 package</p><p>Archive: AION-Sentinel-0.6.7-beta-windows-x64.7z</p></div><div class="actions" style="margin-top:0"><a class="button" href="https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-/releases/download/v0.6.7/AION-Sentinel-0.6.7-beta-windows-x64.7z">Download the Unfinished Beta archive</a></div></div><code class="checksum">SHA-256: 8bf3507d1a41e58e4323bd74187b0a9434ee6e504d176b0f0f6d6a0e97e5b9f1</code><p>Version 0.6.7 is Unfinished Beta. Active development — gameplay validation pending. Keep the complete extracted folder together.</p></div>
       <div class="actions"><a class="button secondary" href="https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-">Project repository</a><a class="button secondary" href="https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-/issues">Support and issues</a><a class="button secondary" href="ASSET_MANIFEST.json">Asset manifest</a></div>
     </section>
   </main>
-  <footer><p>Maintained by <a href="https://github.com/neophrythe">neophrythe</a>. Independent project for AION 2, not affiliated with NCSOFT or Deadly Boss Mods. All new visuals are clearly labeled illustrations with simulated values.</p><span>0.6.6 untested preview · 10 Oct 2026</span></footer>
+  <footer><p>Created by Neophrythe &amp; Dr.Tatsu. <a href="https://github.com/neophrythe">GitHub maintainer: neophrythe</a>. Independent project for AION 2, not affiliated with NCSOFT or Deadly Boss Mods. Official approval and account-safety guarantees have not been established. Illustrations use simulated values; bundled third-party credits remain in the distribution.</p><span>0.6.7 Unfinished Beta · 10 Oct 2026</span></footer>
 </div>
 </body>
 </html>

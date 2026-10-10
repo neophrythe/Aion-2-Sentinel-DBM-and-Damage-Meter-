@@ -1,0 +1,71 @@
+{
+  "version": "0.6.7",
+  "maintained_by": "neophrythe",
+  "creators": [
+    "Neophrythe",
+    "Dr.Tatsu"
+  ],
+  "authors": [
+    "Neophrythe",
+    "Dr.Tatsu"
+  ],
+  "display_credit": "Created by Neophrythe & Dr.Tatsu",
+  "product_executed": false,
+  "functional_tests_run": false,
+  "assets": [
+    {
+      "svg": "sentinel-hero.svg",
+      "png": "sentinel-hero.png",
+      "width": 1200,
+      "height": 675,
+      "provenance": "Code-drawn illustration",
+      "product_screenshot": false,
+      "simulated_values": true
+    },
+    {
+      "svg": "sentinel-social.svg",
+      "png": "sentinel-social.png",
+      "width": 1200,
+      "height": 630,
+      "provenance": "Code-drawn illustration",
+      "product_screenshot": false,
+      "simulated_values": true
+    },
+    {
+      "svg": "sentinel-itch-cover.svg",
+      "png": "sentinel-itch-cover.png",
+      "width": 630,
+      "height": 500,
+      "provenance": "Code-drawn illustration",
+      "product_screenshot": false,
+      "simulated_values": true
+    },
+    {
+      "svg": "control-illustration.svg",
+      "png": "control-illustration.png",
+      "width": 1120,
+      "height": 600,
+      "provenance": "Code-drawn illustration",
+      "product_screenshot": false,
+      "simulated_values": true
+    },
+    {
+      "svg": "damage-illustration.svg",
+      "png": "damage-illustration.png",
+      "width": 720,
+      "height": 425,
+      "provenance": "Code-drawn illustration",
+      "product_screenshot": false,
+      "simulated_values": true
+    },
+    {
+      "svg": "sentinel-icon.svg",
+      "png": "sentinel-icon.png",
+      "width": 64,
+      "height": 64,
+      "provenance": "Code-drawn illustration",
+      "product_screenshot": false,
+      "simulated_values": false
+    }
+  ]
+}

@@ -1,38 +1,39 @@
-# AION Sentinel 0.6.6 — English release and marketing kit
+# AION Sentinel — English release documentation and copy
 
-Maintained by **neophrythe** for the [AION 2 Sentinel project](https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-).
+**Active development — gameplay validation pending.**
 
-This kit presents **0.6.6 as an untested preview**, with boss warnings and an optional integrated damage meter. The default interface uses **Combat HUD**, **Start / Stop observation** and **Damage meter**. Standard English target names, levels, location headings and compatible profiles are recognized automatically when the visible evidence is usable.
+Created by **Neophrythe & Dr.Tatsu** for the [AION 2 Sentinel project](https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-).
 
-## Copy
+The current release text presents **0.6.7 — Unfinished Beta**, with boss warnings, an optional damage meter and consent-based guided Npcap setup. The default interface remains **Combat HUD**, **Start / Stop observation** and **Damage meter**. Standard English target names, levels, location headings and compatible profiles are recognized automatically when visible evidence is usable.
 
-- [GitHub release notes](copy/GITHUB_RELEASE_EN.md)
-- [Mod-page / Nexus description](copy/NEXUS_DESCRIPTION_EN.md)
-- [Short listings and community announcement](copy/SHORT_LISTINGS_EN.md)
-- [FAQ](copy/FAQ_EN.md)
-- [Claims and evidence audit](copy/CLAIMS_AUDIT.md)
-- [Machine-readable release facts](RELEASE.json)
+## Current 0.6.7 copy and guides
 
-Presentation artwork and motion assets belong to the accompanying presentation files. Preview visuals must remain labeled as simulated; they are not live-game validation. No publication is performed by preparing this kit.
+- [Unfinished Beta presentation](index.html) and [interactive HUD illustration](v0.6.7/motion/index.html)
+- [Current release facts](RELEASE.json)
+- [GitHub release notes](copy/0.6.7/GITHUB_RELEASE_EN.md)
+- [Mod-page / Nexus description](copy/0.6.7/NEXUS_DESCRIPTION_EN.md)
+- [Short listings and community announcement](copy/0.6.7/SHORT_LISTINGS_EN.md)
+- [FAQ](copy/0.6.7/FAQ_EN.md)
+- [Public claims and limits](copy/0.6.7/CLAIMS_AUDIT.md)
+- [Beginner controls](BEGINNER_MODE.md)
+- [Damage-meter setup and measurements](DAMAGE_METER.md)
+- [Implemented changes and remaining gaps](RELEASE_0.6.7_BETA.md)
+- [Native distribution and dependency rights](protected/BINARY_DISTRIBUTION.md)
 
-## Presentation assets
+The archive is **95,230,316 bytes (95.23 MB / 90.82 MiB)** with **428 extracted files**. SHA-256: `8bf3507d1a41e58e4323bd74187b0a9434ee6e504d176b0f0f6d6a0e97e5b9f1`. [0.6.7 prerelease](https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-/releases/tag/v0.6.7) · [download](https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-/releases/download/v0.6.7/AION-Sentinel-0.6.7-beta-windows-x64.7z).
 
-- [Landing page](index.html)
+The catalog remains **1,002 profiles: 223 with some warning support and 779 identity-only**. Gameplay validation is pending; compilation and package integrity have been checked. Boss-mechanic coverage remains partial.
+
+## Historical 0.6.6 presentation material
+
+Existing 0.6.6 copy, media and release facts are retained. Illustrations contain simulated cues and damage; they are not gameplay captures or validation of 0.6.7.
+
+- [0.6.6 release notes](../releases/v0.6.6/README.md)
+- [0.6.6 GitHub copy](copy/GITHUB_RELEASE_EN.md) and [Nexus copy](copy/NEXUS_DESCRIPTION_EN.md)
 - [Hero PNG](assets/sentinel-hero.png) and [editable SVG](assets/sentinel-hero.svg)
 - [Social preview](assets/sentinel-social.png) and [mod-listing cover](assets/sentinel-itch-cover.png)
 - [Beginner controls](assets/control-illustration.png) and [damage-table illustration](assets/damage-illustration.png)
-- [Interactive movable HUD illustration](motion/index.html)
-- [Silent 16-second illustrative MP4](motion/sentinel-0.6.6-illustrative-preview.mp4)
+- [0.6.6 interactive HUD illustration](motion/index.html)
 - [Vector provenance](assets/vector-provenance.json) and [motion provenance](motion/presentation-provenance.json)
 
-The MP4 uses presentation editing intervals and synthetic damage values. It does not demonstrate a measured boss timeline. Renderer scripts and local page-review captures are excluded from the public press kit.
-
-## Release facts
-
-The downloadable archive is **95,189,963 bytes (95.19 MB / 90.78 MiB)** with **428 extracted files**. SHA-256: `948ade7b35e2d8b40f430150680ee337068262f1be63ab61eb6c0d99ebe11ba2`.
-
-The catalog has **1,002 profiles: 223 with some warning support and 779 identity-only**. The source-bounded target registry includes **54 world-boss entries / 51 profiles** and **83 instance map variants with explicit requirements >= 1400 GS**. It identifies **137 targeted profiles: 72 with some warning support, 65 identity-only**. Counts do not establish complete mechanics or current-game compatibility.
-
-No new functional, unit, integration, application or live-game tests were run for 0.6.6. Structural build and package-integrity checks are documented separately. The meter requires a separately installed Npcap driver; player names require corresponding records, and its default counter aggregates captured targets rather than isolating every boss.
-
-[Download the 0.6.6 preview](https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-/releases/download/v0.6.6/AION-Sentinel-0.6.6-untested-windows-x64.7z) · [Release page](https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-/releases/tag/v0.6.6) · [Support / issues](https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-/issues)
+The historical interactive illustration uses presentation editing intervals and synthetic damage values. It does not demonstrate a measured boss timeline. Public status labels have been updated to Unfinished Beta. Third-party credits and notices remain in the distribution. Official approval and account-safety guarantees have not been established.

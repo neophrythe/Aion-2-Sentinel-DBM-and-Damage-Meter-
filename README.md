@@ -1,12 +1,14 @@
 # AION 2 Sentinel — Boss Helper & Damage Meter
 
+**Active development — gameplay validation pending.**
+
 **Automatic encounter selection. Clear boss warnings. Optional damage analysis.**
 
-Maintained by [neophrythe](https://github.com/neophrythe). Windows x64 · AION 2 EU / International · English client.
+Created by **Neophrythe & Dr.Tatsu**. GitHub maintainer: [neophrythe](https://github.com/neophrythe). Windows x64 · AION 2 EU / International · English client.
 
-[Download 0.6.6](https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-/releases/tag/v0.6.6) · [Presentation](https://neophrythe.github.io/Aion-2-Sentinel-DBM-and-Damage-Meter-/) · [Quick start](guides/QUICK_START.md) · [Report a problem](https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-/issues/new/choose)
+[Download 0.6.7 — Unfinished Beta](https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-/releases/tag/v0.6.7) · [Presentation](https://neophrythe.github.io/Aion-2-Sentinel-DBM-and-Damage-Meter-/) · [Quick start](guides/QUICK_START.md) · [Report a problem](https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-/issues/new/choose)
 
-![Sentinel 0.6.6 promotional illustration](docs/assets/sentinel-hero.png)
+![Illustrative Unfinished Beta 0.6.7](docs/v0.6.7/assets/sentinel-hero.png)
 
 *Illustrative preview with simulated cues and damage. This is promotional artwork, not a gameplay capture.*
 
@@ -20,18 +22,22 @@ Normal enemies stay quiet. Advanced configuration, the boss library, recording t
 
 ## Install
 
-1. Download `AION-Sentinel-0.6.6-untested-windows-x64.7z` from the release page.
+1. Download `AION-Sentinel-0.6.7-beta-windows-x64.7z` from the release page.
 2. Extract the **complete archive** into a writable folder. Keep `_internal`, `meter` and the supplied notices beside the executable.
 3. Open `AION-Sentinel.exe` or `Start-AION-Sentinel.cmd` inside that folder.
 4. Start observation and bring the English AION2 window to the foreground. Turn on Damage meter if wanted.
 
-Python and an online service account are not required for the packaged OCR observer. Live damage capture requires [Npcap installed separately](https://npcap.com/#download) and sufficient capture permissions. The driver is not bundled.
+Python and an online service account are not required for the packaged OCR observer. Live damage capture requires a separate [Npcap installation](https://npcap.com/#download) and sufficient capture permissions. If Npcap is absent, enabling **Damage meter** offers guided setup for the fixed **Npcap 1.89** installer. With your consent, Sentinel downloads it from the official publisher, checks the pinned SHA-256 and publisher signature, then opens the normal visible installer and Windows elevation prompt. You review the license and choose installation options yourself. The driver and installer are not bundled; installation is not silent.
+
+An existing Npcap installation skips setup. Cancelling, declining elevation or installation failure leaves the meter off while screen OCR remains available. If a reboot is required, Sentinel leaves capture off and does not restart Windows. Otherwise, it rechecks capture components and retries the worker. See the [guided meter setup](docs/DAMAGE_METER.md).
 
 **F7** toggles the combat HUD · **F8** starts/stops observation · **F9** resets the encounter. F10 remains available to the game.
 
-## 0.6.6 status
+## 0.6.7 status
 
-**Untested implementation preview.** No new functional, unit, integration, executable, OCR, UI or live-game tests were run for this build. Compilation and signed-file/archive integrity checks do not establish gameplay behavior.
+**0.6.7 — Unfinished Beta.** Active development with partial boss-mechanic coverage. Gameplay validation is pending; compilation and package integrity have been checked.
+
+The 0.6.7 7z archive is **95,230,316 bytes (95.23 MB / 90.82 MiB)** with **428 extracted files**. SHA-256: `8bf3507d1a41e58e4323bd74187b0a9434ee6e504d176b0f0f6d6a0e97e5b9f1`. See the [0.6.7 release notes](releases/v0.6.7/README.md).
 
 | Reviewed source inventory | Coverage |
 | --- | --- |
@@ -57,10 +63,12 @@ Sentinel runs alongside the game. It does not inject into AION2, modify game fil
 ## Documentation and support
 
 - [Quick start](guides/QUICK_START.md)
+- [Detailed beginner controls](docs/BEGINNER_MODE.md)
+- [Damage-meter setup and measurements](docs/DAMAGE_METER.md)
 - [FAQ and troubleshooting](guides/FAQ.md)
 - [Coverage and validation status](guides/COVERAGE.md)
 - [Release history](CHANGELOG.md)
 - [Distribution and third-party notices](DISTRIBUTION.md)
 - [Security reporting](SECURITY.md)
 
-Use repository Issues for support and feature requests. This repository hosts release information, documentation and marketing material; Sentinel's implementation source and private build material are not published here. AION and AION2 belong to their respective owners; this is an independent project.
+Use repository Issues for support and feature requests. This repository hosts release information, documentation and marketing material; Sentinel's implementation source and private build material are not published here. AION and AION2 belong to their respective owners. Sentinel is independent of NCSOFT and Deadly Boss Mods; official approval and account-safety guarantees have not been established.

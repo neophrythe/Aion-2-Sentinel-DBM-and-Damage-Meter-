@@ -1,8 +1,10 @@
 # FAQ and troubleshooting
 
-## Is 0.6.6 fully verified?
+Created by **Neophrythe & Dr.Tatsu**.
 
-No. It is an untested implementation preview. Compilation, file signatures and archive integrity were checked; application behavior and live fights were not tested for this build.
+## Is 0.6.7 fully verified?
+
+No. It is an Unfinished Beta. No new application, functional, unit, integration, executable, OCR, UI or live-game tests were run. Compilation, file signatures and archive integrity checks do not validate application behavior, guided setup or live fights.
 
 ## Do all bosses have warnings?
 
@@ -18,7 +20,9 @@ The default mode selects compatible profiles and standard HUD regions automatica
 
 ## The meter does not start
 
-Check that Npcap is installed, Windows allows capture and the complete `meter` folder was extracted. Read the displayed error, correct the prerequisite and toggle Damage meter off/on. No separate meter application or service key is required.
+Enable **Damage meter**. If Npcap is absent, Sentinel offers **Set up Npcap**: with your consent, it downloads the fixed official Npcap 1.89 installer, checks the pinned SHA-256 and publisher signature, then opens its visible installer and the normal Windows elevation prompt. Review the license and options yourself. An existing installation skips this helper; the driver and installer are not bundled, and installation is not silent.
+
+Cancelling, declining elevation or installation failure leaves capture off and screen OCR available. If a reboot is required, restart Windows when convenient and enable the meter afterward; Sentinel does not restart the computer. Otherwise, it rechecks capture components and retries the worker. If the installed driver cannot capture, use **Advanced → Expert controls → Damage meter → Capture setup / help**, resolve the reported permission problem and enable the meter again. Keep the complete `meter` folder beside the application. No separate meter application or service key is required.
 
 ## Why are player names missing?
 
@@ -34,7 +38,7 @@ Extract every file and try the included `Start-AION-Sentinel.cmd`. It reports mi
 
 ## Does it control the game?
 
-No. The warning observer reads the screen; the optional meter observes captured combat records. This release does not inject into the game, change game files or automate gameplay. No detection or account-safety guarantee is made.
+No. The warning observer reads the screen; the optional meter observes captured combat records. This release does not inject into the game, change game files or automate gameplay. Sentinel is independent of NCSOFT and Deadly Boss Mods; official approval, detection guarantees and account-safety guarantees have not been established.
 
 ## Where do I get help?
 

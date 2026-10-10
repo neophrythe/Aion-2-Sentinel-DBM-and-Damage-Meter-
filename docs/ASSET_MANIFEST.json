@@ -1,115 +1,247 @@
 {
-  "schema_version": 1,
+  "schema": 1,
   "product": "AION Sentinel",
-  "version": "0.6.6",
+  "version": "0.6.7",
   "maintainer": "neophrythe",
-  "release_status": "untested_preview",
-  "visuals": "Illustrative SVG/HTML layouts and simulated data; no gameplay capture.",
-  "application_tests_executed": 0,
+  "creators": [
+    "Neophrythe",
+    "Dr.Tatsu"
+  ],
+  "display_credit": "Created by Neophrythe & Dr.Tatsu.",
+  "release_status": "unfinished_beta",
+  "public_status": "Unfinished Beta",
+  "validation_note": "Active development — gameplay validation pending.",
+  "visuals": "Original SVG and interactive HTML/CSS illustrations with simulated readings",
+  "live_gameplay_capture_claimed": false,
+  "application_tests": 0,
+  "installer_executed": false,
+  "current_version_video_generated": false,
   "files": {
     "assets/control-illustration.png": {
-      "bytes": 85556,
-      "sha256": "49ad9fb9b5be3e9d3cdd9169a40082ad9be023af4000362fc7474410df0a8415"
+      "bytes": 85655,
+      "sha256": "f27ba7e044c302144ca990c146595dad4ada2251370d21fb32387c0436206de3"
     },
     "assets/control-illustration.svg": {
-      "bytes": 3732,
-      "sha256": "fefc80b2629080e60911b2a2ce0d8e0f7072cfcecae03caa8843c97c29e8c115"
+      "bytes": 3730,
+      "sha256": "33f6c95513adc36753e56a259739f9ee7473f25e2b6bc68be0c75b9f2de9ff33"
     },
     "assets/damage-illustration.png": {
       "bytes": 56790,
       "sha256": "ec9a3cc3eee6c2761bb596a1a449d78f9e3f4c73dc8e80d053998ef075818c8e"
     },
     "assets/damage-illustration.svg": {
-      "bytes": 4373,
-      "sha256": "8d62890ef2a0bb9fccfb31cd1a6bb0216a80ede5c3cbfd60fca1dc2ac8af14f2"
+      "bytes": 4370,
+      "sha256": "28bddcb1642c7c8df6e726e31bda26d5839050bf12362331a124cfc5465c1cc9"
     },
     "assets/sentinel-hero.png": {
-      "bytes": 116656,
-      "sha256": "4ff29e95072b440e7541630230d672f99ddea551688804d69d75ca2b47decb42"
+      "bytes": 117050,
+      "sha256": "3e1ca147155f4df50748dc41a3b934c61ef928c311fde166c718b2b30d847f79"
     },
     "assets/sentinel-hero.svg": {
-      "bytes": 6517,
-      "sha256": "50caead731a98aaa9e168d76ac881dba3d3864475cd690355d7c05d380527854"
+      "bytes": 6521,
+      "sha256": "55b1349e049cd451ff343e907519a92dae3c8c3fc444888e3ebaf72709f2845d"
     },
     "assets/sentinel-icon.png": {
       "bytes": 3185,
       "sha256": "34c791d4b8da71f1185ec47efd195875ca3d3dba666359463e3c84089e85e7ce"
     },
     "assets/sentinel-icon.svg": {
-      "bytes": 362,
-      "sha256": "3fb09f7dc0a1408d2839a418ef237e6437b17d31d1f1914ce07ace3dd489abd8"
+      "bytes": 361,
+      "sha256": "e37e7e72a9f5afa4c7957470a866cf841be1bafae430cf39db26f133f4d90dc0"
     },
     "assets/sentinel-itch-cover.png": {
-      "bytes": 64439,
-      "sha256": "96e9bf1bcd70f59a915932cc819a13e12f6f90b920ce2d6881d9c43a8b082a3b"
+      "bytes": 64147,
+      "sha256": "c56d633ebd3f2aa4072e7f9f8268ba79295f06bc3c3c9ea0e02799fa763c4429"
     },
     "assets/sentinel-itch-cover.svg": {
-      "bytes": 3702,
-      "sha256": "c1c4f8f71937c512e194bdb63a8b7a8bacfa3dcbcbe98e92d56e152c81d4f60e"
+      "bytes": 3698,
+      "sha256": "7e61d75d748e9a1c9af3dcffa51930864f0b439f5bca10f771e833bbaf9ccf42"
     },
     "assets/sentinel-social.png": {
-      "bytes": 113530,
-      "sha256": "3c29b39298adf74e48b410c30b8e130997dc06a60f14b77f781dde0fa608abf3"
+      "bytes": 113917,
+      "sha256": "d868c48ba8b4c586a6a15ad57ec2aa2c66ef006e6211a9977cb0e11f5127f165"
     },
     "assets/sentinel-social.svg": {
-      "bytes": 6517,
-      "sha256": "50caead731a98aaa9e168d76ac881dba3d3864475cd690355d7c05d380527854"
+      "bytes": 6521,
+      "sha256": "55b1349e049cd451ff343e907519a92dae3c8c3fc444888e3ebaf72709f2845d"
     },
     "assets/styles.css": {
       "bytes": 7737,
       "sha256": "fb332021c897061e972c4e85074ddd210a7001b00f0feabb89d4d3defdb6ff65"
     },
     "assets/vector-provenance.json": {
-      "bytes": 1620,
-      "sha256": "50c6d594f66906ce8d6076c038850f3d2eda933d04781787fa37e340536950d6"
+      "bytes": 1559,
+      "sha256": "e5b1b64b3d5cdc532dd84f4f3d7daef95aff9f64f518e263e8b8c013aa95b3f1"
+    },
+    "copy/0.6.7/CLAIMS_AUDIT.md": {
+      "bytes": 2768,
+      "sha256": "8e19b467981155a3340f8c6ddfb7f8d3943b8272c1de61e1d5838fbe187525ca"
+    },
+    "copy/0.6.7/FAQ_EN.md": {
+      "bytes": 5590,
+      "sha256": "db7e96cc26d3942cabafcab29a46ce57d1399a03cc851369cdb4b6fd20238843"
+    },
+    "copy/0.6.7/GITHUB_RELEASE_EN.md": {
+      "bytes": 4856,
+      "sha256": "868372df912248827055ad959789e7be13b908d71f0df923e92f6734f82c1866"
+    },
+    "copy/0.6.7/NEXUS_DESCRIPTION_EN.md": {
+      "bytes": 4808,
+      "sha256": "ccd2fdf6e25a4c6367da8acfca2aec0399c4c9283798f31df4e5bc9293c320c5"
+    },
+    "copy/0.6.7/SHORT_LISTINGS_EN.md": {
+      "bytes": 2488,
+      "sha256": "daeaf56caeccf2c68567afb524fa7b7c85e3285fdb420614052c4494f0737fa0"
     },
     "copy/CLAIMS_AUDIT.md": {
-      "bytes": 5780,
-      "sha256": "632b506195c6d4883eec7261e296010b81da8b5b96a7ea04bd78a42e1c3abca5"
+      "bytes": 5810,
+      "sha256": "499bac80b1cafdba8b8b7f7f792055a30d96c37979526ee7a161f9228e734069"
     },
     "copy/FAQ_EN.md": {
-      "bytes": 5199,
-      "sha256": "01dac818f17c520c99b4f3187cd00ebc94184f917e8c01197103fca50b2031cd"
+      "bytes": 5131,
+      "sha256": "ebc9d4af1e20a32e0c4c9b8d0eff8c61fe0f755ea4c6dcf094dbce0a69b22e22"
     },
     "copy/GITHUB_RELEASE_EN.md": {
-      "bytes": 4989,
-      "sha256": "9cacd845a8c20ffb260d1e1f9069674905b295ede52ea06ee49b63d5b361668f"
+      "bytes": 4930,
+      "sha256": "3e0a43cc02ac7ca68d95bcf890d55e391b3b11512d1df0f1604eca0ab76a1141"
     },
     "copy/NEXUS_DESCRIPTION_EN.md": {
-      "bytes": 3947,
-      "sha256": "efb7d6c0dea463f1644f6a03e151383b49abedec2e4bdd0340044ecf2594742b"
+      "bytes": 3893,
+      "sha256": "aab7f6a0b139c1495db034bcf93ec6d026c93976348c63beb8822a8498ec0a88"
     },
     "copy/SHORT_LISTINGS_EN.md": {
-      "bytes": 2269,
-      "sha256": "eb6db270b7fe98582b4de148536b772e72e7c34778a2d02d3fe92bf15294ed5e"
+      "bytes": 2234,
+      "sha256": "35441c896c449cf447a3d06bee2b8246764f3ac01025b54947095a4c31f1c7c5"
     },
     "index.html": {
-      "bytes": 11966,
-      "sha256": "56282b372d258516c84d769d43a246da40d85c5530ddf15908e19607e8577c69"
-    },
-    "motion/illustrative-preview-poster.png": {
-      "bytes": 299092,
-      "sha256": "ff852a77f371fb99567a6434c3fc12399b55cd4c5231d11acecf6c34a3bc0f0e"
+      "bytes": 12918,
+      "sha256": "ade1b9692116f5a6f7f86988a633a580a8acfc5db5eb4bb6595ffc3c5a96f03a"
     },
     "motion/index.html": {
-      "bytes": 22413,
-      "sha256": "ee98b6e4beef7109a3d821134a1600e391de93ac7613de20f86bf3ba5f39b247"
+      "bytes": 22328,
+      "sha256": "0819b75c4f8813189dc18baeceaa428917fd70dc8942eb26e5fc59d20cbac2c2"
     },
     "motion/presentation-provenance.json": {
-      "bytes": 507,
-      "sha256": "00fbb38d63063f4ed750df47794106157c60dfbf8d39356d669eee5551ea86c8"
-    },
-    "motion/sentinel-0.6.6-illustrative-preview.mp4": {
-      "bytes": 126012,
-      "sha256": "51f07756477bf8f96c1aff56f66986917a9437b0df1824e181aab6ea37485bb9"
+      "bytes": 473,
+      "sha256": "cd871080f5c627e6fcaeb9c748e0b37e4353d1a763dddf9421968e0787811425"
     },
     "README.md": {
-      "bytes": 3293,
-      "sha256": "5426fa94303c2df5c3b78e148548314132319037fd5101e428597b828fcaba35"
+      "bytes": 3193,
+      "sha256": "b0d2e24da34f6c7c3e61129b69f57441652ade12601cb83eef458a08a2febb9e"
     },
     "RELEASE.json": {
-      "bytes": 3632,
-      "sha256": "c04c7fbdc368e0e66b5dc5a614ad3972c42d7001874bca2e85017aa1a4cc3319"
+      "bytes": 4921,
+      "sha256": "e97283d517b0b52251d2b24cc9f19eb5faa788b2d19d271c68fff54a5f0d5aa3"
+    },
+    "v0.6.7/assets/01-sentinel-cover.png": {
+      "bytes": 199130,
+      "sha256": "bd22ce4c120c02b179f4cf4d03b5536c0a1b1a509602cef97f5d687f18f60858"
+    },
+    "v0.6.7/assets/01-sentinel-cover.svg": {
+      "bytes": 6808,
+      "sha256": "0d9ca881faab1ac099277a121c6e498603c50f1c9f62adc78a891c39ed0b1b62"
+    },
+    "v0.6.7/assets/02-movable-hud.png": {
+      "bytes": 212261,
+      "sha256": "c89bcddf43fbbc4391628c8d62f47aadcf258b810f71f126383af9bdb35c57b4"
+    },
+    "v0.6.7/assets/02-movable-hud.svg": {
+      "bytes": 6186,
+      "sha256": "63c9a5bea07347991892e0fbdc9536ddd64ffb968a8d6f4a35feada4c05a66fa"
+    },
+    "v0.6.7/assets/03-damage-meter.png": {
+      "bytes": 128366,
+      "sha256": "7294a055660796a61795610b9e09e5b35e0c9cdeeb4344af9583a02f8fba114a"
+    },
+    "v0.6.7/assets/03-damage-meter.svg": {
+      "bytes": 4670,
+      "sha256": "26d521f493275ec54bb04ec778b84bfd2805a16ca91d769ecf075003f88f5b2d"
+    },
+    "v0.6.7/assets/04-beginner-controls.png": {
+      "bytes": 156897,
+      "sha256": "726ea6d9f9d82e2596526e3c0a17a6723e7ee5e60f47867eed53c99596eb40a8"
+    },
+    "v0.6.7/assets/04-beginner-controls.svg": {
+      "bytes": 4890,
+      "sha256": "3df7638c7630be6a4e6e252febeef570b7d90315894a7c4ce957a80069bfd890"
+    },
+    "v0.6.7/assets/05-nexus-header.png": {
+      "bytes": 77720,
+      "sha256": "87a9459472583068aea5d86520f8ec020fb276db094a12ef5f7ac142b6a7d677"
+    },
+    "v0.6.7/assets/05-nexus-header.svg": {
+      "bytes": 4085,
+      "sha256": "dc440b21a786306c8e018b22c5b265b383a5e7f589dc1636a1dbae7ea202a28f"
+    },
+    "v0.6.7/assets/control-illustration.png": {
+      "bytes": 93702,
+      "sha256": "a2f0a7df525c1be3e91ccd22f2b124c2d9623adc76fd8d3e21564930ead4e20a"
+    },
+    "v0.6.7/assets/control-illustration.svg": {
+      "bytes": 4890,
+      "sha256": "3df7638c7630be6a4e6e252febeef570b7d90315894a7c4ce957a80069bfd890"
+    },
+    "v0.6.7/assets/damage-illustration.png": {
+      "bytes": 54571,
+      "sha256": "62c9eb2fd094e4126f35e9e63114f61f56d1ceaac0e59cca37f686c7f2e15520"
+    },
+    "v0.6.7/assets/damage-illustration.svg": {
+      "bytes": 4670,
+      "sha256": "26d521f493275ec54bb04ec778b84bfd2805a16ca91d769ecf075003f88f5b2d"
+    },
+    "v0.6.7/assets/NEXUS_MEDIA.json": {
+      "bytes": 4478,
+      "sha256": "b6399a6671a5891dd5dd159a9c89e00d0708f1f482b67ddcbbaf90c0d92ad1f7"
+    },
+    "v0.6.7/assets/sentinel-hero.png": {
+      "bytes": 108197,
+      "sha256": "f96a76c8e590ec6557b2d706025cec89e74d2a78d7d6710cb8e933f46e80635c"
+    },
+    "v0.6.7/assets/sentinel-hero.svg": {
+      "bytes": 6808,
+      "sha256": "0d9ca881faab1ac099277a121c6e498603c50f1c9f62adc78a891c39ed0b1b62"
+    },
+    "v0.6.7/assets/sentinel-icon.png": {
+      "bytes": 2955,
+      "sha256": "5e52fc3575c1ce2ba95b224fbd026b717db18307c9c5259656886bdb37077504"
+    },
+    "v0.6.7/assets/sentinel-icon.svg": {
+      "bytes": 361,
+      "sha256": "e37e7e72a9f5afa4c7957470a866cf841be1bafae430cf39db26f133f4d90dc0"
+    },
+    "v0.6.7/assets/sentinel-itch-cover.png": {
+      "bytes": 56124,
+      "sha256": "750b08c68c839efe9f24c2f61326f15ec80466423ff306f29d32aa70a6f18968"
+    },
+    "v0.6.7/assets/sentinel-itch-cover.svg": {
+      "bytes": 3710,
+      "sha256": "9b9f41e271241ca5a18bd8c3532b4e48125c0f0b5b668881bc5b68838fa535a3"
+    },
+    "v0.6.7/assets/sentinel-social.png": {
+      "bytes": 104330,
+      "sha256": "fc50ab1f866a82ed42d8ebbc9cc6a0dc47070e3fb1a8e939d467ccc98fd1c253"
+    },
+    "v0.6.7/assets/sentinel-social.svg": {
+      "bytes": 6808,
+      "sha256": "0d9ca881faab1ac099277a121c6e498603c50f1c9f62adc78a891c39ed0b1b62"
+    },
+    "v0.6.7/assets/styles.css": {
+      "bytes": 7737,
+      "sha256": "fb332021c897061e972c4e85074ddd210a7001b00f0feabb89d4d3defdb6ff65"
+    },
+    "v0.6.7/assets/vector-provenance.json": {
+      "bytes": 1755,
+      "sha256": "fbd69374a3e580754a0f2f0410ecdbf85be45785ef9f004856ffee2380d6d852"
+    },
+    "v0.6.7/motion/index.html": {
+      "bytes": 22479,
+      "sha256": "9ed79944dee91ced4b94d0a2821d181d7d37eb5131d32f89e36f9c7cc4399b9d"
+    },
+    "v0.6.7/motion/presentation-provenance.json": {
+      "bytes": 645,
+      "sha256": "12d2d4aa6f39eb11ec3691188aa9ac001d6a0434fa7e8b5be5cf699b9a2f50ba"
     }
-  }
+  },
+  "historical_0_6_6_public_labels_updated": true,
+  "public_video_linked": false
 }

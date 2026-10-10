@@ -1,0 +1,18 @@
+{
+  "version": "0.6.7",
+  "archive": "AION-Sentinel-0.6.7-beta-windows-x64.7z",
+  "sha256": "8bf3507d1a41e58e4323bd74187b0a9434ee6e504d176b0f0f6d6a0e97e5b9f1",
+  "bytes": 95230316,
+  "functions_not_tested": true,
+  "functional_tests_executed": 0,
+  "unit_tests_executed": 0,
+  "integration_tests_executed": 0,
+  "live_tests_executed": 0,
+  "executable_launches": 0,
+  "inherited_test_reports_used": false,
+  "npcap_installer_bundled": false,
+  "runtime_tests": {},
+  "runtime_tests_mode": "not_run",
+  "status": "beta_pending_gameplay_validation",
+  "ready_for_live_use_verified": false
+}

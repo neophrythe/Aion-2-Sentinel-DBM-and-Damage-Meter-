@@ -1,10 +1,10 @@
-# AION Sentinel 0.6.6 — Untested Preview
+# AION Sentinel 0.6.6 — Unfinished Beta
 
 **Boss warnings and a damage meter, in one compact desktop overlay.**
 
 AION Sentinel is a DBM-inspired companion for the **AION 2 EU / International English PC client**, targeting **Windows 10/11 x64**. This preview simplifies the default window to three controls: **Combat HUD**, **Start / Stop observation** and **Damage meter**.
 
-**0.6.6 is an untested preview.** The build and archive received structural and integrity checks. No new application, functional, unit, integration or live-game tests were run. Earlier versions' test results are not evidence that this build works in a live fight.
+**0.6.6 is an Unfinished Beta.** The build and archive received structural and integrity checks. No new application, functional, unit, integration or live-game tests were run. Earlier versions' test results are not evidence that this build works in a live fight.
 
 ## What's new
 
@@ -26,9 +26,9 @@ Warnings depend on readable, matching English HUD text. Some source skill labels
 
 ## Download
 
-[Download the 0.6.6 untested Windows x64 archive](https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-/releases/download/v0.6.6/AION-Sentinel-0.6.6-untested-windows-x64.7z)
+[Download the 0.6.6 Unfinished Beta Windows x64 archive](https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-/releases/download/v0.6.6/AION-Sentinel-0.6.6-beta-windows-x64.7z)
 
-- Archive: `AION-Sentinel-0.6.6-untested-windows-x64.7z`
+- Archive: `AION-Sentinel-0.6.6-beta-windows-x64.7z`
 - Size: **95,189,963 bytes — 95.19 MB / 90.78 MiB**
 - Extracted files: **428**
 - SHA-256: `948ade7b35e2d8b40f430150680ee337068262f1be63ab61eb6c0d99ebe11ba2`
