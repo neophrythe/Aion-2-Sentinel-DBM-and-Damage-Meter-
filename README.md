@@ -6,11 +6,17 @@
 
 Created by **Neophrythe & Dr.Tatsu**. GitHub maintainer: [neophrythe](https://github.com/neophrythe). Windows x64 · AION 2 EU / International · English client.
 
-[Download 0.6.7 — Unfinished Beta](https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-/releases/tag/v0.6.7) · [Presentation](https://neophrythe.github.io/Aion-2-Sentinel-DBM-and-Damage-Meter-/) · [Quick start](guides/QUICK_START.md) · [Report a problem](https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-/issues/new/choose)
+[Download 0.6.8 — Unfinished Beta](https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-/releases/tag/v0.6.8) · [Presentation](https://neophrythe.github.io/Aion-2-Sentinel-DBM-and-Damage-Meter-/) · [Quick start](guides/QUICK_START.md) · [Report a problem](https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-/issues/new/choose)
 
 ![Illustrative Unfinished Beta 0.6.7](docs/v0.6.7/assets/sentinel-hero.png)
 
 *Illustrative preview with simulated cues and damage. This is promotional artwork, not a gameplay capture.*
+
+## New in 0.6.8
+
+Visible remaining seconds or a changing target-cast bar can supply a **cast (est.)** countdown and an estimated cast-ending heads-up. Sentinel requires fresh, consistent independent measurements; a skill name alone never starts a clock. Missing, hidden or ambiguous cast evidence can leave the countdown absent.
+
+Expert Cues, the boss library and GameData expose timing metadata for **550 accepted skill IDs across 209 profiles**. The expert **Cast-end heads-up (s)** setting defaults to 3 seconds and accepts 0–30 seconds. Raw casting/cooldown values remain reference data; they do not establish seconds, recurring fight schedules or individual wave impacts. No extra beginner control is required. See [cast timing and limits](docs/CAST_TIMING.md).
 
 ## Three controls
 
@@ -22,7 +28,7 @@ Normal enemies stay quiet. Advanced configuration, the boss library, recording t
 
 ## Install
 
-1. Download `AION-Sentinel-0.6.7-beta-windows-x64.7z` from the release page.
+1. Download `AION-Sentinel-0.6.8-beta-windows-x64.7z` from the release page.
 2. Extract the **complete archive** into a writable folder. Keep `_internal`, `meter` and the supplied notices beside the executable.
 3. Open `AION-Sentinel.exe` or `Start-AION-Sentinel.cmd` inside that folder.
 4. Start observation and bring the English AION2 window to the foreground. Turn on Damage meter if wanted.
@@ -33,11 +39,11 @@ An existing Npcap installation skips setup. Cancelling, declining elevation or i
 
 **F7** toggles the combat HUD · **F8** starts/stops observation · **F9** resets the encounter. F10 remains available to the game.
 
-## 0.6.7 status
+## 0.6.8 status
 
-**0.6.7 — Unfinished Beta.** Active development with partial boss-mechanic coverage. Gameplay validation is pending; compilation and package integrity have been checked.
+**0.6.8 — Unfinished Beta.** Active development with partial boss-mechanic coverage. Gameplay validation is pending; compilation and package integrity have been checked.
 
-The 0.6.7 7z archive is **95,229,372 bytes (95.23 MB / 90.82 MiB)** with **428 extracted files**. SHA-256: `5ca75e8ecebac0277c1f5b89bbb4af8a06a458913698952b06de95d8457e7fb0`. See the [0.6.7 release notes](releases/v0.6.7/README.md).
+The 0.6.8 7z archive is **95,352,628 bytes (95.35 MB / 90.94 MiB)** with **430 extracted files**, below the strict **100,000,000-byte** limit. SHA-256: `14eec381b0baec79440c56560f904a4f03cd05af0af2a20241a1c0343bdc9287`. See the [0.6.8 release notes](releases/v0.6.8/README.md).
 
 | Reviewed source inventory | Coverage |
 | --- | --- |
@@ -65,6 +71,8 @@ Sentinel runs alongside the game. It does not inject into AION2, modify game fil
 - [Quick start](guides/QUICK_START.md)
 - [Detailed beginner controls](docs/BEGINNER_MODE.md)
 - [Damage-meter setup and measurements](docs/DAMAGE_METER.md)
+- [Measured cast estimates and timing limits](docs/CAST_TIMING.md)
+- [Complete user guide](docs/USER_GUIDE.md)
 - [FAQ and troubleshooting](guides/FAQ.md)
 - [Coverage and validation status](guides/COVERAGE.md)
 - [Release history](CHANGELOG.md)

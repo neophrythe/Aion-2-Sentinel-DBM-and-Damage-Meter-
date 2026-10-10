@@ -2,9 +2,9 @@
 
 Created by **Neophrythe & Dr.Tatsu**.
 
-## Is 0.6.7 fully verified?
+## Is 0.6.8 fully verified?
 
-No. It is an Unfinished Beta. No new application, functional, unit, integration, executable, OCR, UI or live-game tests were run. Compilation, file signatures and archive integrity checks do not validate application behavior, guided setup or live fights.
+It is an Unfinished Beta with gameplay validation pending. Compilation, signed-file integrity and archive roundtrips have been checked; these do not validate application behavior, guided setup, cast-end accuracy or live fights.
 
 ## Do all bosses have warnings?
 
@@ -13,6 +13,14 @@ No. The reviewed identity catalog is broader than its mechanic coverage. There a
 ## Why is the HUD empty?
 
 Enable Combat HUD and observation, then bring AION2 forward. The observer needs visible English target and location labels. Normal enemies, missing labels, unresolved variants or absent skill text can keep it quiet. An identity-only boss has no generated mechanic warnings.
+
+## Why is there no cast countdown?
+
+A skill name alone does not start a clock. Automatic timing requires a uniquely associated owned skill under the confirmed target header and explicit remaining seconds or a supported changing cast bar. Fresh, consistent independent samples sustain the estimate; hidden, ambiguous or frozen cues do not. Automatic HUD discovery must be active; manual-region mode does not supply automatic target-cast timing. See [cast timing](../docs/CAST_TIMING.md).
+
+## Does the countdown show the next wave or jump moment?
+
+It estimates the currently observed cast's end. It does not time individual waves, player-relative jump moments or recurring fight sequences. Raw casting and cooldown values remain reference data. Expert **Cast-end heads-up (s)** defaults to 3 seconds and accepts 0–30 seconds; it is separate from configured range-warning metadata.
 
 ## Do I need to select a boss or screen region?
 

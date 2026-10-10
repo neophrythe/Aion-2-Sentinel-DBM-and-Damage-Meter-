@@ -38,11 +38,11 @@ covered MPL source remains available through the notice under meter/licenses/.
 The separate protected implementation does not restrict those source or
 library replacement rights.
 
-The 0.6.7 portable build is Unfinished Beta. Packaging checks its size
+The 0.6.7 portable archive is an Unfinished Beta. Packaging checks its size
 against 100,000,000 bytes, extraction CRC, payload SHA-256 values and own-file
 signatures. These structural checks do not establish functional readiness:
 no new application, functional, OCR, meter, unit, integration or live-game tests
 were run for this version.
 Compression is lossless and retains the bundled OCR models. See
-[release notes](../RELEASE_0.6.7_BETA.md) and the separate archive status and manifest for the
+RELEASE_0.6.7_BETA.md and the separate archive status and manifest for the
 measured packaging results and validation limits.

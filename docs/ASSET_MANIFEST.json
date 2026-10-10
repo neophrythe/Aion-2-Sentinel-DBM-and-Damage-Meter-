@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "product": "AION Sentinel",
-  "version": "0.6.7",
+  "version": "0.6.8",
   "maintainer": "neophrythe",
   "creators": [
     "Neophrythe",
@@ -17,6 +17,10 @@
   "installer_executed": false,
   "current_version_video_generated": false,
   "files": {
+    ".nojekyll": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
     "assets/control-illustration.png": {
       "bytes": 85655,
       "sha256": "f27ba7e044c302144ca990c146595dad4ada2251370d21fb32387c0436206de3"
@@ -73,6 +77,18 @@
       "bytes": 1559,
       "sha256": "e5b1b64b3d5cdc532dd84f4f3d7daef95aff9f64f518e263e8b8c013aa95b3f1"
     },
+    "BEGINNER_MODE.md": {
+      "bytes": 4553,
+      "sha256": "808b0c7c57bd5083dfd9ef8587de0e2c835ce8b0550a74df275c6f57e4e2a668"
+    },
+    "BOSS_WARNINGS.md": {
+      "bytes": 8889,
+      "sha256": "3ed1978c2362ea3ccc92952c42e6a23ff6c5744000b187df915e6924877a5a99"
+    },
+    "CAST_TIMING.md": {
+      "bytes": 6605,
+      "sha256": "65780eaebd2d5abc18b2fc52da20e4f92516783f76a8966d60d734de14b62e20"
+    },
     "copy/0.6.7/CLAIMS_AUDIT.md": {
       "bytes": 2768,
       "sha256": "03408c5d6a34abdaad51e060b955f091b82a7cd617a5cf3aa0a6084743c59a7a"
@@ -92,6 +108,30 @@
     "copy/0.6.7/SHORT_LISTINGS_EN.md": {
       "bytes": 2488,
       "sha256": "daeaf56caeccf2c68567afb524fa7b7c85e3285fdb420614052c4494f0737fa0"
+    },
+    "copy/0.6.8/CLAIMS_AUDIT.md": {
+      "bytes": 1455,
+      "sha256": "72a4cdb2fc7913e349fcc6e9bc0d2b95751783bb685951e37ab302857f953d5e"
+    },
+    "copy/0.6.8/FAQ_EN.md": {
+      "bytes": 2348,
+      "sha256": "a5642f43c2a30b9cf58c338dd726ac8d5a51fdb1cb273320770fe0250a788dab"
+    },
+    "copy/0.6.8/GITHUB_RELEASE_EN.md": {
+      "bytes": 4772,
+      "sha256": "3e1cf881fe528be20aa4c0f52f952702479b45b1d2c760969a33b0bb93ed0310"
+    },
+    "copy/0.6.8/NEXUS_DESCRIPTION_EN.bbcode.txt": {
+      "bytes": 5636,
+      "sha256": "6f301b8fffad8c0ac76a9a38e30dbd006723ed078a6d193fa6f31ae8177cd052"
+    },
+    "copy/0.6.8/NEXUS_DESCRIPTION_EN.md": {
+      "bytes": 5477,
+      "sha256": "1db5514d28ef544962632b9a2c955940288514e62966e49fe650d3c4c8d58e25"
+    },
+    "copy/0.6.8/SHORT_LISTINGS_EN.md": {
+      "bytes": 401,
+      "sha256": "311dbaeaf0bb345d1434b66de0dd34c7f24a5bc576ddd21cb1884522a653255c"
     },
     "copy/CLAIMS_AUDIT.md": {
       "bytes": 5810,
@@ -113,9 +153,25 @@
       "bytes": 2234,
       "sha256": "35441c896c449cf447a3d06bee2b8246764f3ac01025b54947095a4c31f1c7c5"
     },
+    "DAMAGE_METER.md": {
+      "bytes": 11929,
+      "sha256": "6def4a4e9e4cbc39a7315f1f02535fd390df8b427c0cdce2d43c2585475795b9"
+    },
+    "ENCOUNTER_GUIDES.md": {
+      "bytes": 5024,
+      "sha256": "7203818d31fc20b65212fe534fd90badcbe0b8712edf026fe2ced43b6dc9d1e0"
+    },
+    "ENCOUNTER_TARGETS.md": {
+      "bytes": 6379,
+      "sha256": "84e882bfcd2f4103bbb792bfdd8e138bbabf074560b538d02c091839fe9bc385"
+    },
     "index.html": {
-      "bytes": 12918,
-      "sha256": "502807d9573bbe9da00443da5d7cdd44aa89926bc3f0c7fc4339ecbbe7bf7a5e"
+      "bytes": 15446,
+      "sha256": "6b75828ebb30890147979cd1fdeb37ba37aec8909f0c0273b30c8ea96bea158a"
+    },
+    "motion/illustrative-preview-poster.png": {
+      "bytes": 299092,
+      "sha256": "ff852a77f371fb99567a6434c3fc12399b55cd4c5231d11acecf6c34a3bc0f0e"
     },
     "motion/index.html": {
       "bytes": 22328,
@@ -125,13 +181,33 @@
       "bytes": 473,
       "sha256": "cd871080f5c627e6fcaeb9c748e0b37e4353d1a763dddf9421968e0787811425"
     },
+    "protected/BINARY_DISTRIBUTION.md": {
+      "bytes": 2785,
+      "sha256": "e9f84a30417d3bb064bb662b7108c36dce30741f8e2a295ba47673845a22f4e1"
+    },
     "README.md": {
-      "bytes": 3193,
-      "sha256": "963bd88d57b8df93930099adcb4472ff52a7143f18fdcea8e7d841aecdafb422"
+      "bytes": 5146,
+      "sha256": "180d38b477edc4a36e51f1edcd4fbb2dcb0e1cdbfb3ea8c8be479fe06050b505"
     },
     "RELEASE.json": {
-      "bytes": 4921,
-      "sha256": "a39516a8fcd2736ad29c99bca4993a790cafc1c44ecd533165779842246501d3"
+      "bytes": 5706,
+      "sha256": "a4d736b1398de48ee5fb5b2894c731d59a2e3f14045676d9b0ae86534ef93aaf"
+    },
+    "RELEASE_0.6.7_BETA.md": {
+      "bytes": 4900,
+      "sha256": "277f6cbc149953cd1ecb33ece5d2d19f6dc9c16ca7f7150c9cb37d22bc42aaa1"
+    },
+    "RELEASE_0.6.8_BETA.md": {
+      "bytes": 4806,
+      "sha256": "ac4273bc4a2c2ca1117b3edfda500172e4983964313d4f045e1335b86b35b78d"
+    },
+    "STRUCTURED_OBSERVATIONS.md": {
+      "bytes": 9451,
+      "sha256": "a99d48014fdf997a4ed31491c7ec4f4da0d64f15306125ef1f0fcd14db7d39f6"
+    },
+    "USER_GUIDE.md": {
+      "bytes": 25859,
+      "sha256": "71730fe0b36c4dd1736854dc64b617c8993d19e89ae038888e95ad55e5182aed"
     },
     "v0.6.7/assets/01-sentinel-cover.png": {
       "bytes": 199130,
@@ -243,5 +319,7 @@
     }
   },
   "historical_0_6_6_public_labels_updated": true,
-  "public_video_linked": false
+  "public_video_linked": false,
+  "current_media_version": "0.6.7",
+  "media_note": "Existing 0.6.7 illustrations and animations are retained as simulated historical media; no actual 0.6.8 gameplay is claimed."
 }

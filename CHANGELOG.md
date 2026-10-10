@@ -1,5 +1,17 @@
 # Release history
 
+## 0.6.8 — 10 October 2026 — Unfinished Beta
+
+Created by **Neophrythe & Dr.Tatsu**.
+
+- Measured cast-end estimates from explicit visible remaining seconds or changing target-cast progress, with fresh independent evidence and stale-state clearing.
+- Timing reference for 550 accepted skill IDs across 209 profiles, inspectable in Expert Cues, the boss library and GameData.
+- An expert cast-end heads-up setting, default 3 seconds and adjustable 0–30 seconds; no new beginner controls.
+- Validated timing retained in journals and replay, with measured timing accepted in identified structured cast observations.
+- Portable archive: 95,352,628 bytes (95.35 MB / 90.94 MiB), 430 extracted files, below 100,000,000 bytes.
+
+Gameplay validation is pending; compilation and package integrity have been checked. Raw casting/cooldown values do not become clocks, individual wave impacts or recurring fight schedules. Boss-mechanic coverage remains partial: 1,002 profiles, 223 with some warning support and 779 identity-only. See [0.6.8 release notes](releases/v0.6.8/README.md).
+
 ## 0.6.7 — 10 October 2026 — Unfinished Beta
 
 Created by **Neophrythe & Dr.Tatsu**.

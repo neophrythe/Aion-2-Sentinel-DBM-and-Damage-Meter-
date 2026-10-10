@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "product": "AION Sentinel",
-  "version": "0.6.7",
+  "version": "0.6.8",
   "date": "2026-10-10",
   "release_status": "unfinished_beta",
   "maintainer": "neophrythe",
@@ -9,19 +9,19 @@
   "client_scope": "AION 2 EU / International English PC client",
   "platform_target": "Windows 10/11 x64",
   "repository_url": "https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-",
-  "release_url": "https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-/releases/tag/v0.6.7",
+  "release_url": "https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-/releases/tag/v0.6.8",
   "support_url": "https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-/issues",
   "download": {
-    "name": "AION-Sentinel-0.6.7-beta-windows-x64.7z",
-    "url": "https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-/releases/download/v0.6.7/AION-Sentinel-0.6.7-beta-windows-x64.7z",
-    "bytes": 95229372,
-    "decimal_mb": 95.23,
-    "binary_mib": 90.82,
+    "name": "AION-Sentinel-0.6.8-beta-windows-x64.7z",
+    "url": "https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-/releases/download/v0.6.8/AION-Sentinel-0.6.8-beta-windows-x64.7z",
+    "bytes": 95352628,
+    "decimal_mb": 95.35,
+    "binary_mib": 90.94,
     "max_bytes": 100000000,
-    "extracted_file_count": 428,
-    "sha256": "5ca75e8ecebac0277c1f5b89bbb4af8a06a458913698952b06de95d8457e7fb0",
+    "extracted_file_count": 430,
+    "sha256": "14eec381b0baec79440c56560f904a4f03cd05af0af2a20241a1c0343bdc9287",
     "compression": "lossless_7z",
-    "headroom_bytes": 4770628
+    "headroom_bytes": 4647372
   },
   "default_controls": [
     "Combat HUD",
@@ -37,7 +37,11 @@
     "requires_readable_english_hud": true,
     "unknown_mode_shared_owned_text_cues": true,
     "unknown_mode_hp_hints": false,
-    "current_game_live_validation": false
+    "current_game_live_validation": false,
+    "measured_cast_end_estimates": true,
+    "requires_fresh_independent_cast_evidence": true,
+    "individual_wave_impact_countdowns": false,
+    "static_cast_values_start_clocks": false
   },
   "coverage": {
     "scope": "reviewed_source_catalog_and_reference_rules",
@@ -122,7 +126,8 @@
     "public_status": "Unfinished Beta",
     "current_media_version": "0.6.7",
     "motion_format": "Interactive synthetic HTML/CSS illustration",
-    "current_version_video_generated": false
+    "current_version_video_generated": false,
+    "media_note": "Retained illustrative 0.6.7 media uses simulated readings and does not show actual 0.6.8 gameplay."
   },
   "public_status": "Unfinished Beta",
   "creators": [
@@ -134,5 +139,21 @@
     "Dr.Tatsu"
   ],
   "display_credit": "Created by Neophrythe & Dr.Tatsu.",
-  "validation_note": "Active development — gameplay validation pending."
+  "validation_note": "Active development — gameplay validation pending.",
+  "skill_timing": {
+    "scope": "reviewed_source_metadata",
+    "accepted_skill_ids": 550,
+    "profiles": 209,
+    "grouped_rule_associations": 859,
+    "raw_cast_cooldown_units_verified": false,
+    "cast_end_requires_visible_measurement": true,
+    "heads_up_default_seconds": 3.0,
+    "heads_up_range_seconds": [
+      0,
+      30
+    ],
+    "individual_wave_impacts_supplied": false,
+    "recurring_schedules_supplied": false,
+    "live_visibility_verified": false
+  }
 }

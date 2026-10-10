@@ -1,8 +1,8 @@
-# Sentinel 0.6.7 — automatic beginner mode
+# Sentinel 0.6.8 — automatic beginner mode
 
 Created by **Neophrythe & Dr.Tatsu**.
 
-Unfinished Beta. Active development — gameplay validation pending. No new application, executable, UI, OCR, functional, unit, integration or live tests were run.
+Unfinished Beta. Active development — gameplay validation pending. Compilation and package integrity have been checked; these do not validate gameplay behavior.
 
 Extract the complete package into a writable folder and open AION-Sentinel.exe. The default window has three controls:
 
@@ -12,13 +12,15 @@ Extract the complete package into a writable folder and open AION-Sentinel.exe. 
 
 ## First use of the damage meter
 
-Enable **Damage meter** when you want live readings. If Npcap is already installed, Sentinel skips guided setup and starts the capture worker. If it is absent, choose **Set up Npcap** in **Set up damage capture** to consent to downloading the fixed **Npcap 1.89** installer from [the official publisher](https://npcap.com/#download). Sentinel checks the downloaded installer against its pinned SHA-256 and publisher signature, then opens the visible installer and the normal Windows elevation prompt. Review and accept the publisher's license and choose installation options yourself; Sentinel does not silently install the driver or accept the license for you. The installer is not included in the archive.
+Enable **Damage meter** when you want live readings. If Npcap is already installed, Sentinel skips guided setup and starts the capture worker. If it is absent, choose **Set up Npcap** in **Set up damage capture** to consent to downloading the fixed **Npcap 1.89** installer from [the official publisher](https://npcap.com/#download). Sentinel opens the visible installer and the normal Windows elevation prompt. Review and accept the publisher's license and choose installation options yourself; Sentinel does not silently install the driver or accept the license for you. The installer is not included in the archive.
 
 Choose **Cancel** to decline setup, or cancel its progress dialog to stop the download. Cancelling setup, declining elevation or an installation failure leaves the meter off. You can continue using screen OCR. If a reboot is required, Sentinel leaves capture off and does not restart Windows; reboot when convenient, then enable the meter again. Otherwise, it rechecks the required capture components and retries the worker. An administrator-only Npcap installation can still require administrative capture rights.
 
-The 0.6.7 setup flow is implemented but has not undergone new application, functional, integration or live tests.
+The guided setup flow remains available in 0.6.8; its application behavior and live capture still require validation.
 
 ## Automatic observation
+
+Visible remaining seconds or a changing target-cast bar can supply a **cast (est.)** countdown and an estimated cast-ending heads-up. No new beginner control is required. A skill name alone does not start a clock; hidden or ambiguous cues can leave it absent. These estimates do not time individual waves or repeat sequences. See [cast timing](CAST_TIMING.md).
 
 Names, levels, locations, compatible profiles and standard target/HP/cast search regions are found automatically. Normal enemies remain excluded. Runtime automatic settings ignore stale manual rectangles without deleting the saved expert preferences. Profile rule edits and disabled choices remain respected. Warning sounds and available English speech use the stored defaults.
 
