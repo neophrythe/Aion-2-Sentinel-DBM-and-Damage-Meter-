@@ -9,7 +9,7 @@ Created by **Neophrythe & Dr.Tatsu**.
 - Manual publisher-license acceptance and installation options; no bundled capture driver or silent installation.
 - Cancellation, declined elevation and failure leave capture off. A required reboot does not restart Windows or enable the meter automatically. Otherwise, component recheck precedes worker retry.
 - The beginner observation and meter controls remain independent. Catalog coverage is unchanged: 1,002 profiles, 223 with some warning support and 779 identity-only.
-- Portable archive: 95,230,316 bytes (95.23 MB / 90.82 MiB), 428 extracted files.
+- Portable archive: 95,229,372 bytes (95.23 MB / 90.82 MiB), 428 extracted files.
 
 No new application, functional, unit, integration, executable, OCR, UI or live-game tests were run. Structural build and archive checks do not validate the setup flow or live fights. See [0.6.7 release notes](releases/v0.6.7/README.md).
 

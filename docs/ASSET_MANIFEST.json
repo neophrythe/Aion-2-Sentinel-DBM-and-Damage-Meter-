@@ -75,19 +75,19 @@
     },
     "copy/0.6.7/CLAIMS_AUDIT.md": {
       "bytes": 2768,
-      "sha256": "8e19b467981155a3340f8c6ddfb7f8d3943b8272c1de61e1d5838fbe187525ca"
+      "sha256": "03408c5d6a34abdaad51e060b955f091b82a7cd617a5cf3aa0a6084743c59a7a"
     },
     "copy/0.6.7/FAQ_EN.md": {
       "bytes": 5590,
-      "sha256": "db7e96cc26d3942cabafcab29a46ce57d1399a03cc851369cdb4b6fd20238843"
+      "sha256": "224e1fefdcf443cce51eac6eaab5cc634f3e4e0557a6f1d5b6bf8edf58d3948d"
     },
     "copy/0.6.7/GITHUB_RELEASE_EN.md": {
-      "bytes": 4856,
-      "sha256": "868372df912248827055ad959789e7be13b908d71f0df923e92f6734f82c1866"
+      "bytes": 5007,
+      "sha256": "05cddda63c6ab3d30f286bd4cd659be24805a7cfce5c9f85221105aab5ed3ee1"
     },
     "copy/0.6.7/NEXUS_DESCRIPTION_EN.md": {
       "bytes": 4808,
-      "sha256": "ccd2fdf6e25a4c6367da8acfca2aec0399c4c9283798f31df4e5bc9293c320c5"
+      "sha256": "b641b64573087f1633f00cba4f96386706bf6b6fd23b9c43550fe6b0f1d8ca13"
     },
     "copy/0.6.7/SHORT_LISTINGS_EN.md": {
       "bytes": 2488,
@@ -115,7 +115,7 @@
     },
     "index.html": {
       "bytes": 12918,
-      "sha256": "ade1b9692116f5a6f7f86988a633a580a8acfc5db5eb4bb6595ffc3c5a96f03a"
+      "sha256": "502807d9573bbe9da00443da5d7cdd44aa89926bc3f0c7fc4339ecbbe7bf7a5e"
     },
     "motion/index.html": {
       "bytes": 22328,
@@ -127,11 +127,11 @@
     },
     "README.md": {
       "bytes": 3193,
-      "sha256": "b0d2e24da34f6c7c3e61129b69f57441652ade12601cb83eef458a08a2febb9e"
+      "sha256": "963bd88d57b8df93930099adcb4472ff52a7143f18fdcea8e7d841aecdafb422"
     },
     "RELEASE.json": {
       "bytes": 4921,
-      "sha256": "e97283d517b0b52251d2b24cc9f19eb5faa788b2d19d271c68fff54a5f0d5aa3"
+      "sha256": "a39516a8fcd2736ad29c99bca4993a790cafc1c44ecd533165779842246501d3"
     },
     "v0.6.7/assets/01-sentinel-cover.png": {
       "bytes": 199130,

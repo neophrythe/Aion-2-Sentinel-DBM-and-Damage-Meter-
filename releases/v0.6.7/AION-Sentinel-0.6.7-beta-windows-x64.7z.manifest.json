@@ -5,12 +5,12 @@
   "date": "2026-10-10",
   "archive": "AION-Sentinel-0.6.7-beta-windows-x64.7z",
   "archive_prefix": "AION-Sentinel",
-  "bytes": 95230316,
-  "sha256": "8bf3507d1a41e58e4323bd74187b0a9434ee6e504d176b0f0f6d6a0e97e5b9f1",
+  "bytes": 95229372,
+  "sha256": "5ca75e8ecebac0277c1f5b89bbb4af8a06a458913698952b06de95d8457e7fb0",
   "max_archive_bytes": 100000000,
-  "budget_headroom_bytes": 4769684,
+  "budget_headroom_bytes": 4770628,
   "file_count": 428,
-  "uncompressed_bytes": 308947974,
+  "uncompressed_bytes": 308902494,
   "compression": {
     "format": "7z",
     "level": 9,
@@ -22,7 +22,7 @@
   "compression_attempts": [
     {
       "dictionary": "64m",
-      "bytes": 95230316,
+      "bytes": 95229372,
       "within_budget": true,
       "quality_loss": false
     }
@@ -51,7 +51,7 @@
     "integration_tests_executed": 0,
     "live_tests_executed": 0,
     "inherited_test_reports_used": false,
-    "reference_inventory_source": "sentinel-066-reference-coverage.json",
+    "reference_inventory_source": "sentinel-066-beta-reference-coverage.json",
     "reference_inventory_scope": "Historical static reference data, not release behavior validation.",
     "npcap_installer_bundled": false,
     "structural_checks_only": [
@@ -175,8 +175,8 @@
       "sha256": "c02be5cfd9272fa697f492ffae479a1c773348475b3309e0488522a1102c5dd8"
     },
     "_internal/aion_sentinel/assets/encounter_targets.json": {
-      "bytes": 1318241,
-      "sha256": "ffaa2bae49825cac44f1f21df8503ba184089c617b93e6e5e57520acc2a9f6d7"
+      "bytes": 1318243,
+      "sha256": "48013f99cce137946a6bf0fff7b453cc99a473f8b209c66e010e9240d032e409"
     },
     "_internal/aion_sentinel/assets/game_data_reference.json": {
       "bytes": 807515,
@@ -191,8 +191,8 @@
       "sha256": "fa07660f1ec91b9f84f239d1d8ed4a270c87646e29c516dbadf1a9ca41b3d7d9"
     },
     "_internal/aion_sentinel/assets/target_mechanic_reference.json": {
-      "bytes": 17615,
-      "sha256": "f5097d9075c6a980074ae4aa77d6e75e08dfd01f358bad6603b4f61bad0e6005"
+      "bytes": 17619,
+      "sha256": "a939c8f8de28eff59c122a76bcd0da2e6b4982cf2d6a7bd9cf58b02f8d3f6d58"
     },
     "_internal/aion_sentinel/assets/world_identity_reference.json": {
       "bytes": 2657937,
@@ -200,7 +200,7 @@
     },
     "_internal/aion_sentinel.cp311-win_amd64.pyd": {
       "bytes": 3540992,
-      "sha256": "d61bb40e022da8231b37dbfb6d02fd585adc8e6704e610f08690c5bd8e9531a9"
+      "sha256": "36087fe1c4bec88ba6869463e1b030b1964d76e064c25a7eda85575f9cafb72d"
     },
     "_internal/api-ms-win-core-console-l1-1-0.dll": {
       "bytes": 22072,
@@ -376,7 +376,7 @@
     },
     "_internal/base_library.zip": {
       "bytes": 1443565,
-      "sha256": "1330749f1074da89a7daaa95eb03a47d43251e53ec507fda9ce6da5c2ab681db"
+      "sha256": "cb0e8836b133a65b7133c9427e002cb03fa5ec01e01bbace6e843271ffd0f0b2"
     },
     "_internal/certifi/cacert.pem": {
       "bytes": 240216,
@@ -1180,39 +1180,43 @@
     },
     "AION-Sentinel.exe": {
       "bytes": 8577536,
-      "sha256": "8f12fce0dc70114a5de275aac945de53ccaa57bd2fe712e05e16db94add298f2"
+      "sha256": "0ea43a215a050cf82494c5864f901e3c57da8067a3ce4b11bbdb08dc2ba319fd"
     },
     "BEGINNER_MODE.md": {
-      "bytes": 4142,
-      "sha256": "e9962c166fb04cd117cfbf0591462bce40c2fc73e1f853b7efac95452f5579a4"
+      "bytes": 4149,
+      "sha256": "32cfcb9881fa85e0488efde3448feda800c479b5288902c50401eda78269cc5d"
+    },
+    "BETA_RELEASE.json": {
+      "bytes": 943,
+      "sha256": "acef0cf92ca421a55a360cd0e67aa596f556ecf9caa4f968651918cf2fb243a1"
     },
     "BINARY_DISTRIBUTION.md": {
-      "bytes": 2797,
-      "sha256": "0eee970e8a9adcb1acd5205c773cd24e6940fc87f94c0a37425c6916bea83340"
+      "bytes": 2746,
+      "sha256": "0a8fed0ace63ab57063270d5eae6fe8026bbc1aadd2cf332a451a6466cd9ef19"
     },
     "BOSS_WARNINGS.md": {
-      "bytes": 7353,
-      "sha256": "cd486ed4427a8b4366e7213d1288fa735a9f82eeb20f2265f6e5bf4f83ef6202"
+      "bytes": 7541,
+      "sha256": "50827597e91f8575a45956986a361af99b7703d71cbc5d8cca6aebda6e916714"
     },
     "BUILD_PROTECTION.json": {
       "bytes": 393,
-      "sha256": "ce164c146a6da24e95e226e8b602ee3a49c332c85d9adbe7990c652ed1e88f78"
+      "sha256": "c17897c10b1ddefdeded3472e9da8ddc364730a0a8459b5e8429ef424f9f1d5a"
     },
     "BUNDLE_OPTIMIZATION.json": {
       "bytes": 98866,
-      "sha256": "eb32f0576077eb4d850d8829541017bbd5a0662f217bfcc31a01912f0bef9243"
+      "sha256": "f3e41f01b36871cea88fb68020d2efde7284c3eb99c11191f622b893ac53cdfb"
     },
     "DAMAGE_METER.md": {
-      "bytes": 11976,
-      "sha256": "f2c781a8690e8887d8bfde2aa838eb856e44563763dc4d391809809ce1090e32"
+      "bytes": 11890,
+      "sha256": "856e5a243da779c6300adb249b31d9a332ab85b4ffb13f56fa16aa60da2da0cd"
     },
     "ENCOUNTER_GUIDES.md": {
       "bytes": 4985,
       "sha256": "0c99bf0fd976be8e17165d061b3b95d5655570870cfdc6e75275450160e9aa55"
     },
     "ENCOUNTER_TARGETS.md": {
-      "bytes": 6349,
-      "sha256": "c85b7ea7e324ea8be1eceeaa8b3d32c1117ffcf7c66e1a7d4245d99ca82d66bb"
+      "bytes": 6340,
+      "sha256": "1a3ac76be544b503d8018ea216efd7df5db8f034bf5bd740fcb2eee9d6d6a41f"
     },
     "licenses/ADDITIONAL-SOURCE-AVAILABILITY.md": {
       "bytes": 2531,
@@ -1775,24 +1779,24 @@
       "sha256": "c72c82520d0ad8e694c30343e775cde918a539544eb43cd2e22eaf5dabbf9d2a"
     },
     "protected/BINARY_DISTRIBUTION.md": {
-      "bytes": 2797,
-      "sha256": "0eee970e8a9adcb1acd5205c773cd24e6940fc87f94c0a37425c6916bea83340"
+      "bytes": 2746,
+      "sha256": "0a8fed0ace63ab57063270d5eae6fe8026bbc1aadd2cf332a451a6466cd9ef19"
     },
     "REFERENCE_COVERAGE.json": {
-      "bytes": 1624572,
-      "sha256": "cdfecc20408319884100ed661fc72184459b42167c25dc0f11dc760e22eeb8b5"
+      "bytes": 1578930,
+      "sha256": "c7aac3fea4e3dccfd495638cb2c6588731dec2c87f4f94ff61d74401a9f4782f"
     },
-    "RELEASE_0.6.7_UNTESTED.md": {
-      "bytes": 4688,
-      "sha256": "3747c706b1d8acfcc8e74a005e7ef61ff89d826b33102da22f2b161718f83b48"
+    "RELEASE_0.6.7_BETA.md": {
+      "bytes": 4962,
+      "sha256": "6deb688428bfc4c3b38ecdfd739618ef0392e25ea169b9406ac82e34cecba95e"
     },
     "RELEASE_INTEGRITY.json": {
       "bytes": 2670,
-      "sha256": "56672cdcc730c1c3897972ffa83c1b143a5908b75f6c30b66cbc891000da861c"
+      "sha256": "9edba16e9cdf3a8c0a2b5683bde706ed60203389bb6ecdc856879cd7a7cada69"
     },
     "RELEASE_VALIDATION.md": {
-      "bytes": 401,
-      "sha256": "15fcea08915c5b6523c649deefee7fc954e299773e28688195c5e52d038446ed"
+      "bytes": 409,
+      "sha256": "4398ab0f8726cc2ed473918084f92668227d2b6df2362052ab8e343743554ebe"
     },
     "scripts/diagnose_start.ps1": {
       "bytes": 2598,
@@ -1810,13 +1814,9 @@
       "bytes": 1392,
       "sha256": "768649463be8bad7b27965886750f305b4cacd8b32c469a7bf8623c5c6ff0903"
     },
-    "UNTESTED_RELEASE.json": {
-      "bytes": 914,
-      "sha256": "0039da75736f2533662502a86dff03d93d65682ca2d546f2201b5a9e79775fc6"
-    },
     "USER_GUIDE.md": {
-      "bytes": 23592,
-      "sha256": "9c52b747296f135f34d770f1aa0c71568b5df7e41bd7f9ea114f843d96e01122"
+      "bytes": 23439,
+      "sha256": "3fcb1ab0c26eb45a01054a27a87e319247cc881ad83949b40a9baea1943770ad"
     }
   }
 }

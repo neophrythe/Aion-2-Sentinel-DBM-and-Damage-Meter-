@@ -14,14 +14,14 @@
   "download": {
     "name": "AION-Sentinel-0.6.7-beta-windows-x64.7z",
     "url": "https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-/releases/download/v0.6.7/AION-Sentinel-0.6.7-beta-windows-x64.7z",
-    "bytes": 95230316,
+    "bytes": 95229372,
     "decimal_mb": 95.23,
     "binary_mib": 90.82,
     "max_bytes": 100000000,
     "extracted_file_count": 428,
-    "sha256": "8bf3507d1a41e58e4323bd74187b0a9434ee6e504d176b0f0f6d6a0e97e5b9f1",
+    "sha256": "5ca75e8ecebac0277c1f5b89bbb4af8a06a458913698952b06de95d8457e7fb0",
     "compression": "lossless_7z",
-    "headroom_bytes": 4769684
+    "headroom_bytes": 4770628
   },
   "default_controls": [
     "Combat HUD",

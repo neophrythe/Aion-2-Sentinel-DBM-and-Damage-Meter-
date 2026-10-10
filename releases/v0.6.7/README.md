@@ -10,6 +10,8 @@ AION Sentinel is a DBM-inspired companion for the **AION 2 EU / International En
 
 ## What's new
 
+Application labels, release documents and presentation material now consistently use **Unfinished Beta**, with credits for **Neophrythe & Dr.Tatsu**.
+
 Enabling the optional meter now offers guided setup when Npcap is absent. With your consent, Sentinel downloads the fixed **Npcap 1.89** installer from its official publisher, checks the pinned SHA-256 and publisher signature, and opens the visible installer with Windows elevation. You review the publisher's license and installation options yourself. There is no silent installation or automatic license acceptance, and the installer is not bundled in the archive.
 
 An existing Npcap installation skips setup. Cancellation, declined elevation or installation failure leaves capture off while screen OCR remains available. If a reboot is required, Sentinel leaves the meter off and does not restart Windows. Otherwise, it rechecks capture components and retries its bundled worker. Capture permissions and current-game decoding can still prevent readings.
@@ -27,9 +29,9 @@ The reviewed registry contains **54 known world-boss entries across 51 distinct 
 [Download the 0.6.7 Unfinished Beta for Windows x64 archive](https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-/releases/download/v0.6.7/AION-Sentinel-0.6.7-beta-windows-x64.7z)
 
 - Archive: `AION-Sentinel-0.6.7-beta-windows-x64.7z`
-- Size: **95,230,316 bytes — 95.23 MB / 90.82 MiB**
+- Size: **95,229,372 bytes — 95.23 MB / 90.82 MiB**
 - Extracted files: **428**
-- SHA-256: `8bf3507d1a41e58e4323bd74187b0a9434ee6e504d176b0f0f6d6a0e97e5b9f1`
+- SHA-256: `5ca75e8ecebac0277c1f5b89bbb4af8a06a458913698952b06de95d8457e7fb0`
 
 ## Get started
 

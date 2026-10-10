@@ -12,10 +12,10 @@ Prepared **10 October 2026** for the current English release copy. This is a sou
 | Inventory | 1,002 profiles: 223 with some warning support, 779 identity-only; partial rule support is separate from full mechanic and live-fight coverage. |
 | World / high-GS scope | 54 world entries / 51 profiles, 83 source instance-map variants with explicit entrance GS ≥1,400; 137 combined target profiles, 72 with some warning support and 65 identity-only. GS is not read from the player. |
 | Meter | Captured actor damage across targets, with evidence-dependent identities and run boundaries. Complete party coverage and automatic per-boss reset are not established. Current EU accuracy is unverified. |
-| Package | 95,230,316 bytes (95.23 MB / 90.82 MiB), 428 extracted files; below 100,000,000 bytes. Internal signatures are separate from Windows Authenticode signing. |
+| Package | 95,229,372 bytes (95.23 MB / 90.82 MiB), 428 extracted files; below 100,000,000 bytes. Internal signatures are separate from Windows Authenticode signing. |
 | Creators | Neophrythe & Dr.Tatsu; GitHub maintainer neophrythe; bundled third-party notices and covered-source rights remain in the distribution. |
 | Independence | No NCSOFT or Deadly Boss Mods affiliation, official approval or account-safety guarantee. |
 
-Archive SHA-256: `8bf3507d1a41e58e4323bd74187b0a9434ee6e504d176b0f0f6d6a0e97e5b9f1`. [0.6.7 release](https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-/releases/tag/v0.6.7) · [coverage](../../../guides/COVERAGE.md) · [meter guide](../../DAMAGE_METER.md).
+Archive SHA-256: `5ca75e8ecebac0277c1f5b89bbb4af8a06a458913698952b06de95d8457e7fb0`. [0.6.7 release](https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-/releases/tag/v0.6.7) · [coverage](../../../guides/COVERAGE.md) · [meter guide](../../DAMAGE_METER.md).
 
 Historical 0.6.6 artwork and motion remain illustrative, with simulated cues and damage. They do not establish 0.6.7 behavior or a measured boss timeline.

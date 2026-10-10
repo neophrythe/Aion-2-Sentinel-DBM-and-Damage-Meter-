@@ -41,12 +41,12 @@ Names may remain numeric when capture starts after login. Keep capture running t
 
 **F7:** Combat HUD · **F8:** Start / Stop observation · **F9:** Reset encounter
 
-Target platform: **Windows 10/11 x64**. The 7z archive is **95,230,316 bytes (95.23 MB / 90.82 MiB)** and contains **428 files**. Extract the complete archive.
+Target platform: **Windows 10/11 x64**. The 7z archive is **95,229,372 bytes (95.23 MB / 90.82 MiB)** and contains **428 files**. Extract the complete archive.
 
 ## Download and support
 
 [Downloads and release notes](https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-/releases) · [Project](https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-) · [Issues](https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-/issues)
 
-Archive: `AION-Sentinel-0.6.7-beta-windows-x64.7z` · SHA-256: `8bf3507d1a41e58e4323bd74187b0a9434ee6e504d176b0f0f6d6a0e97e5b9f1`
+Archive: `AION-Sentinel-0.6.7-beta-windows-x64.7z` · SHA-256: `5ca75e8ecebac0277c1f5b89bbb4af8a06a458913698952b06de95d8457e7fb0`
 
 Created by **Neophrythe & Dr.Tatsu**. This is an independent project with no NCSOFT or Deadly Boss Mods affiliation. Official approval and account-safety guarantees have not been established.

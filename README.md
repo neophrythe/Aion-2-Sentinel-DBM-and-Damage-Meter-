@@ -37,7 +37,7 @@ An existing Npcap installation skips setup. Cancelling, declining elevation or i
 
 **0.6.7 — Unfinished Beta.** Active development with partial boss-mechanic coverage. Gameplay validation is pending; compilation and package integrity have been checked.
 
-The 0.6.7 7z archive is **95,230,316 bytes (95.23 MB / 90.82 MiB)** with **428 extracted files**. SHA-256: `8bf3507d1a41e58e4323bd74187b0a9434ee6e504d176b0f0f6d6a0e97e5b9f1`. See the [0.6.7 release notes](releases/v0.6.7/README.md).
+The 0.6.7 7z archive is **95,229,372 bytes (95.23 MB / 90.82 MiB)** with **428 extracted files**. SHA-256: `5ca75e8ecebac0277c1f5b89bbb4af8a06a458913698952b06de95d8457e7fb0`. See the [0.6.7 release notes](releases/v0.6.7/README.md).
 
 | Reviewed source inventory | Coverage |
 | --- | --- |

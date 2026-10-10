@@ -62,4 +62,4 @@ The package uses native compilation and signed internal file manifests. That doe
 
 ## Where do I download it or report problems?
 
-Created by **Neophrythe & Dr.Tatsu**. [Download 0.6.7](https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-/releases/download/v0.6.7/AION-Sentinel-0.6.7-beta-windows-x64.7z), visit the [project](https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-) or open an [issue](https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-/issues). The archive is **95,230,316 bytes**, with **428 extracted files**. Keep the complete folder together.
+Created by **Neophrythe & Dr.Tatsu**. [Download 0.6.7](https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-/releases/download/v0.6.7/AION-Sentinel-0.6.7-beta-windows-x64.7z), visit the [project](https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-) or open an [issue](https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-/issues). The archive is **95,229,372 bytes**, with **428 extracted files**. Keep the complete folder together.
