@@ -6,15 +6,16 @@
 
 Created by **Neophrythe & Dr.Tatsu**. GitHub maintainer: [neophrythe](https://github.com/neophrythe). Windows x64 · AION 2 EU / International · English client.
 
-[Download 0.6.10 — Unfinished Beta](https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-/releases/tag/v0.6.10) · [Presentation](https://neophrythe.github.io/Aion-2-Sentinel-DBM-and-Damage-Meter-/) · [Quick start](guides/QUICK_START.md) · [Report a problem](https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-/issues/new/choose)
+[Download 0.6.13 — Unfinished Beta](https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-/releases/tag/v0.6.13) · [Presentation](https://neophrythe.github.io/Aion-2-Sentinel-DBM-and-Damage-Meter-/) · [Quick start](guides/QUICK_START.md) · [Report a problem](https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-/issues/new/choose)
 
 ![Illustrative Unfinished Beta 0.6.7](docs/v0.6.7/assets/sentinel-hero.png)
 
 *Illustrative preview with simulated cues and damage. This is promotional artwork, not a gameplay capture.*
 
-## New in 0.6.10
+## New in 0.6.13
 
-88 sourced mechanic references, 48 typed timing fields and 42 profile associations are now available in the Boss Library. Reactions attach only to compatible owned English skill cues; publisher timings never start repeat or wave clocks. Recording and replay retain automatic profile synchronization. Includes channel-specific warnings, independent damage HUD controls, captured target/confirmed-party filters and bounded local history. See [release notes](releases/v0.6.10/README.md) and [encounter references](docs/ENCOUNTER_RESEARCH.md).
+DPS now uses a shared first-to-last hit interval with a one-second minimum. Recognised unresolved summon damage is retained and can be merged later with generation-scoped ownership. Compact damage ticks, bounded nested packets and NPC self-heal filtering are improved. Boss-only and all-target scopes are labelled clearly. Deus recognition, capture continuity, automatic boss attempts and bounded history improvements are included. 182 Python checks and 88 native worker assertions passed on this build. Complete frozen-application gameplay and the reported live DPS difference still require a matching encounter comparison.
+
 
 ## Measured cast-end estimates
 
@@ -32,7 +33,7 @@ Normal enemies stay quiet. Advanced configuration, the boss library, recording t
 
 ## Install
 
-1. Download `AION-Sentinel-0.6.10-beta-windows-x64.7z` from the release page.
+1. Download `AION-Sentinel-0.6.13-beta-windows-x64.7z` from the release page.
 2. Extract the **complete archive** into a writable folder. Keep `_internal`, `meter` and the supplied notices beside the executable.
 3. Open `AION-Sentinel.exe` or `Start-AION-Sentinel.cmd` inside that folder.
 4. Start observation and bring the English AION2 window to the foreground. Turn on Damage meter if wanted.
@@ -43,11 +44,11 @@ An existing Npcap installation skips setup. Cancelling, declining elevation or i
 
 **F7** toggles the combat HUD · **F8** starts/stops observation · **F9** resets the encounter. F10 remains available to the game.
 
-## 0.6.10 status
+## 0.6.13 status
 
-**0.6.10 — Unfinished Beta.** Active development with partial boss-mechanic coverage. Gameplay validation is pending; compilation and package integrity have been checked.
+**0.6.13 — Unfinished Beta.** Active development with partial boss-mechanic coverage. Gameplay validation is pending; focused offline checks, compilation and package integrity have been checked.
 
-The 0.6.10 7z archive is **95,292,144 bytes (95.29 MB / 90.88 MiB)** with **433 extracted files**, below the strict **100,000,000-byte** limit. SHA-256: `8aa341143ef8ce79a0d585ca4acc409b6992c9c083f33b46de4db1fad1cc0743`. See the [0.6.10 release notes](releases/v0.6.10/README.md).
+The 0.6.13 7z archive is **95,533,011 bytes (95.53 MB / 91.11 MiB)** with **442 extracted files**, below the strict **100,000,000-byte** limit. SHA-256: `b90481196a5d8e6b045d80c8a33db459127f9c3d5082536e31c74d8e3a472961`. See the [0.6.13 release notes](releases/v0.6.13/README.md).
 
 | Reviewed source inventory | Coverage |
 | --- | --- |
@@ -66,7 +67,7 @@ Boss warnings use local screen OCR and reviewed encounter rules. Generated skill
 
 When difficulty is unknown, Sentinel can use identical enabled skill warnings shared by all compatible variants. Variant HP hints and timers wait for sufficient evidence. Hidden HUD labels, unresolved locations and ambiguous normal/summon variants can pause warnings. No boss timings are invented.
 
-The optional meter observes captured combat records through the bundled native worker. Player names appear when matching identity records arrive; keep capture enabled during login or an area change if names are pending. Readings can include non-party actors and aggregate several targets. Live EU accuracy is unverified.
+The optional meter observes captured combat records through the bundled native worker. Player names appear when matching identity records arrive; keep capture enabled during login or an area change if names are pending. Automatic boss attempts count that boss only; All targets retains the independent counter, including adds. Non-party actors can be present unless confirmed-party filtering is enabled. Live EU accuracy is unverified.
 
 Sentinel runs alongside the game. It does not inject into AION2, modify game files or automate gameplay. Internal package signatures are separate from Windows Authenticode publisher signing.
 

@@ -1,0 +1,1 @@
+0.6.13 Unfinished Beta. First-to-last DPS, improved summon attribution, compact ticks, nested packet decoding and self-heal filtering. Includes Deus recognition and capture-continuity fixes. Extract the complete archive. Live encounter agreement remains pending.

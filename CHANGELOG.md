@@ -1,5 +1,11 @@
 # Release history
 
+## 0.6.13 — 11 October 2026 — Unfinished Beta
+
+DPS now uses a shared first-to-last hit interval with a one-second minimum. Recognised unresolved summon damage is retained and can be merged later with generation-scoped ownership. Compact damage ticks, bounded nested packets and NPC self-heal filtering are improved. Boss-only and all-target scopes are labelled clearly. Deus recognition, capture continuity, automatic boss attempts and bounded history improvements are included. 182 Python checks and 88 native worker assertions passed on this build. Complete frozen-application gameplay and the reported live DPS difference still require a matching encounter comparison.
+
+Created by **Neophrythe & Dr.Tatsu**. [Release notes](releases/v0.6.13/README.md).
+
 ## 0.6.10 — 11 October 2026 — Unfinished Beta
 
 0.6.10: 88 mechanic references from 16 sources, 48 typed timing fields, 42 profile associations, aggregate identity evidence for 137 targeted profiles, and profile synchronization retained in replay. Includes 0.6.9 channel-specific warnings, safer ownership, meter filters, independent damage HUD controls and bounded history. Complete phase schedules remain unavailable. Unfinished Beta.

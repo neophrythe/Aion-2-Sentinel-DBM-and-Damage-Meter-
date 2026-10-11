@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "product": "AION Sentinel",
-  "version": "0.6.10",
+  "version": "0.6.13",
   "date": "2026-10-11",
   "release_status": "unfinished_beta",
   "maintainer": "neophrythe",
@@ -9,19 +9,19 @@
   "client_scope": "AION 2 EU / International English PC client",
   "platform_target": "Windows 10/11 x64",
   "repository_url": "https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-",
-  "release_url": "https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-/releases/tag/v0.6.10",
+  "release_url": "https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-/releases/tag/v0.6.13",
   "support_url": "https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-/issues",
   "download": {
-    "name": "AION-Sentinel-0.6.10-beta-windows-x64.7z",
-    "url": "https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-/releases/download/v0.6.10/AION-Sentinel-0.6.10-beta-windows-x64.7z",
-    "bytes": 95292144,
-    "decimal_mb": 95.29,
-    "binary_mib": 90.88,
+    "name": "AION-Sentinel-0.6.13-beta-windows-x64.7z",
+    "url": "https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-/releases/download/v0.6.13/AION-Sentinel-0.6.13-beta-windows-x64.7z",
+    "bytes": 95533011,
+    "decimal_mb": 95.53,
+    "binary_mib": 91.11,
     "max_bytes": 100000000,
-    "extracted_file_count": 433,
-    "sha256": "8aa341143ef8ce79a0d585ca4acc409b6992c9c083f33b46de4db1fad1cc0743",
+    "extracted_file_count": 442,
+    "sha256": "b90481196a5d8e6b045d80c8a33db459127f9c3d5082536e31c74d8e3a472961",
     "compression": "lossless_7z",
-    "headroom_bytes": 4707856
+    "headroom_bytes": 4466989
   },
   "default_controls": [
     "Combat HUD",
@@ -72,7 +72,7 @@
     "npcap_bundled": false,
     "capture_permissions_required": true,
     "names_require_identity_records": true,
-    "default_measurement": "aggregate_captured_actors_and_targets",
+    "default_measurement": "automatic_boss_attempt_boss_target_only",
     "ordinary_boss_death_resets_counter": false,
     "current_game_damage_accuracy_verified": false,
     "npcap_version": "1.89",
@@ -93,7 +93,12 @@
     "reboot_required_keeps_capture_off": true,
     "automatic_windows_restart": false,
     "successful_setup_rechecks_components_before_worker_retry": true,
-    "beginner_observation_and_capture_independent": true
+    "beginner_observation_and_capture_independent": true,
+    "dps_clock": "shared_first_to_last_selected_hit_minimum_one_second",
+    "unresolved_summon_damage_retained": true,
+    "generation_scoped_late_ownership": true,
+    "all_targets_counter_available": true,
+    "dot_ticks_separate_from_direct_hits": true
   },
   "validation": {
     "status": "structural_checks_only",
@@ -165,5 +170,10 @@
     "sources": 16,
     "timing_claim_fields": 48,
     "complete_measured_phase_schedules": 0
+  },
+  "offline_verification": {
+    "python_checks": 182,
+    "native_assertions": 88,
+    "gameplay_verified": false
   }
 }
