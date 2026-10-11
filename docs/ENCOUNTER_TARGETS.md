@@ -1,7 +1,5 @@
 # Encounter target registry — Sentinel 0.6.6, Unfinished Beta
 
-Created by **Neophrythe & Dr.Tatsu**.
-
 The registry identifies every world-boss entry in the reviewed public list and every named, source-classified boss candidate on verified instance maps whose explicit entrance gear requirement is at least 1400. It describes identity and scope. It does not fill missing mechanics, guarantee live recognition or claim that every listed map is available in the current EU client.
 
 No new unit, functional, integration or live tests were run for this implementation, as requested. Source integrity checks, JSON generation and Python syntax compilation are separate structural checks. The deferred tests are in `tests/test_target_registry.py`.

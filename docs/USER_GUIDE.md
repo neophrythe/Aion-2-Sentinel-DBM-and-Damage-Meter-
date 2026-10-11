@@ -1,8 +1,6 @@
 # AION Sentinel — user guide
 
-Created by **Neophrythe & Dr.Tatsu**.
-
-Version 0.6.8, Unfinished Beta. Windows 10/11, PC, AION 2 EU / International, English game client. Screen-OCR encounter warnings and an optional integrated damage meter. The 1,002-profile inventory now identifies 51 world-boss profiles and 86 profiles on qualifying >=1400-GS source instance maps. This preview has not undergone new application, functional, unit, integration, executable, OCR, UI or live tests. See [implemented scope and remaining gaps](RELEASE_0.6.8_BETA.md).
+Version 0.6.10, Unfinished Beta. Windows 10/11, PC, AION 2 EU / International, English game client. Screen-OCR encounter warnings and an optional integrated damage meter. The 1,002-profile inventory identifies 51 world-boss profiles and 86 profiles on qualifying >=1400-GS source instance maps. These are identity and source counts; they do not establish complete mechanic coverage. This preview has not undergone new application, functional, unit, integration, executable, OCR, UI or live tests. See [implemented scope and remaining gaps](RELEASE_0.6.10_BETA.md).
 
 In **Setup**, choose world bosses alone, world bosses plus >=1400-GS instance references, catalog bosses plus world bosses, or the existing elite scopes. In **Boss library**, category filters and GS reference columns expose the static target evidence. **Encounter guide** shows published responses, their sources and inactive guide facts. GS means a documented source entrance requirement; it does not measure your character's equipment.
 
@@ -14,6 +12,8 @@ The protected portable build contains native-compiled Sentinel code and checks i
 
 Extract the complete 7z or ZIP archive, then double-click `Start-AION-Sentinel.cmd` in the portable application folder. It checks that `_internal` is present and reports early startup errors. You can also start `AION-Sentinel.exe` directly from that folder. Python, capture drivers, and an internet connection are not required for the packaged OCR path. Settings and sessions are saved in the application's `data` folder, so keep the application in a writable location.
 
+From this source workspace, double-click `Start-AION-Sentinel.cmd`. It opens the packaged application and writes a startup report to `%TEMP%\AION-Sentinel-startup.txt` if the application exits early.
+
 Click **Run OCR demo** to exercise real local OCR, boss acquisition, four warning cues, the overlay, and recording with generated English panels. The demo is marked DEMO and does not calibrate your game. Click **Stop** before setting up live observation.
 
 Damage capture starts separately through the **Damage meter** checkbox in the control window header and is off each time Sentinel starts. **Stop observation** and F8 stop OCR while leaving capture running; the legacy **Stop** button in Expert controls stops both. If Npcap is absent, enabling the meter offers guided setup for its separate driver installation. **Run simulated meter demo**, in the **Damage meter** tab, previews the table and damage HUD without network capture or Npcap. Keep the bundled `meter` folder with the portable application.
@@ -24,7 +24,7 @@ The combat display uses three separate transparent frames: centered action warni
 
 Open **Setup → Combat HUD** to change HUD scale, timer opacity and the promotion threshold. **Preview HUD** shows simulated cues for 12 seconds. **Arrange HUD** temporarily unlocks all three frames so you can drag each one separately, then restores the previous lock setting. Dragging switches off automatic alignment; click **Save settings** to retain positions. **Reset HUD positions** restores game-window alignment. Keep **Lock overlay and let mouse clicks pass through** enabled during play. The top **Combat HUD** checkbox and F7 show/hide all three frames together.
 
-Automatic target-cast measurement needs no extra beginner control. When a uniquely identified owned skill appears beneath the target header with explicit remaining seconds or a conservatively recognized changing cast bar, Sentinel can add a **cast (est.)** countdown. It checks independent samples and never starts a clock from the first skill-name appearance. The countdown and cast-end heads-up remain estimates. Hidden or unsupported cast displays can leave them absent. See [cast timing](CAST_TIMING.md).
+Automatic target-cast measurement needs no extra beginner control. When an owned skill label associated with one eligible warning rule appears beneath the target header with explicit remaining seconds or a conservatively recognized changing cast bar, Sentinel can add a **cast (est.)** countdown. Safe same-name groups retain their candidate IDs; Sentinel does not guess one ID. It checks independent samples and never starts a clock from the first skill-name appearance. The countdown and cast-end heads-up remain estimates. Hidden or unsupported cast displays can leave them absent. See [cast timing](CAST_TIMING.md).
 
 Warnings fade after roughly three seconds. Stopping, resetting, changing encounters or losing confirmed identity clears old warnings and bars. Up to two recent warnings and eight nearest estimates are displayed. The warning text remains the configured English message; the visual redesign does not establish new boss mechanics or exact timings. Borderless/windowed mode is required for this separate desktop overlay.
 
@@ -34,18 +34,24 @@ Enable **Damage meter** in the control window header when you want live readings
 
 Cancelling setup, declining elevation or an installation failure leaves the meter off; screen OCR remains available. If setup requires a reboot, Sentinel leaves capture off and does not restart Windows. Reboot when convenient and enable the meter again. Otherwise, Sentinel rechecks the required capture components and retries the worker, which detects the game connection on an active adapter and waits for decoded combat records. If Npcap restricts capture to administrators, the meter reports a permissions error. **Start / Stop observation** controls screen OCR independently.
 
-The **Damage meter** tab shows **Player**, **Class**, **DPS**, **Damage** and **Share**. All rows use the same elapsed interval; the figures can include observed actors outside your party until names and roster identity are confirmed. The current UI displays the counter across captured targets and does not offer a party-only filter. Missing capture data is not a zero-damage result. Current-build EU protocol coverage and combat accuracy remain unverified.
+The **Damage meter** tab shows **Player**, **Class**, **DPS**, **Damage** and **Share**. The default view includes all captured actors and targets. Expert controls can select a target from captured runtime IDs or filter to a confirmed party. An uncertain roster leaves observed actors visible; static NPC catalog IDs cannot substitute for captured targets. Rows within a report use the same elapsed interval. Missing capture data is not a zero-damage result. Current-build EU protocol coverage and combat accuracy remain unverified.
 
 Names arrive separately from damage. Starting capture after login can miss the earlier character record, leaving numeric player labels while damage is counted. When the meter shows **Names pending**, keep it enabled during an area change or login so it can receive fresh identity records. Explicit name records update the matching player-ID rows without resetting damage. A new or reused ID does not justify assigning your newly observed name to older unidentified rows. If those earlier rows remain, **Reset damage counter** is optional for a fresh counter after names arrive. Your own character label depends on the explicit local-character record; combat rank or a guessed class does not confirm it.
 
-- **Show damage HUD** controls the separate damage overlay. It shows up to eight players ranked by DPS.
-- Clear **Lock damage HUD / click-through** to drag the overlay; re-enable it for play. Click **Save settings** in Setup to retain its position and display options.
+- **Show damage HUD** controls the separate damage overlay. It shows up to eight players ranked by DPS. Hiding it leaves capture running.
+- Clear **Lock damage HUD / click-through** to drag the overlay; re-enable it for play. Scale, opacity and recenter controls adjust this HUD independently of the boss-warning HUD. Save its position and display options to retain them across encounter profiles.
 - **Reset damage counter** clears the displayed counter and starts its interval from the next decoded hit.
 - **Finish current run** freezes the run while capture remains enabled. Export your result, then reset to begin a new run.
 - **Export displayed rows** saves the current rows as CSV. Export before disabling the meter: stopping clears the table and HUD.
 - **Run simulated meter demo** replaces live capture with generated data labeled **SIMULATED DEMO**.
 
 Disable the header's **Damage meter** switch to stop its worker. **Stop observation** and F8 stop only OCR; the legacy **Stop** button in Expert controls stops both OCR observation and damage capture. The meter hides stale or unavailable readings. F9 resets only the boss encounter, and F7 toggles the **Combat HUD**. Use the damage tab for damage-counter controls. See [Damage meter](DAMAGE_METER.md) for the complete setup and measurement details.
+
+Local **History** retains up to 100 native reports within a 32 MiB budget. Each report has an ID and an explicit/manual or heuristic ending reason. Run and boss-attempt entries overlap and must not be summed. Names come from supplied metadata; numeric actor IDs never merge across runs. Synthetic demo reports remain visibly tagged and are excluded by the default history filter.
+
+## Broadcast and player-debuff responses
+
+Published guides supply 3 broadcast mechanics and 9 player-debuff mechanics, with 14 exact English labels across 10 encounter identities. Each response requires the matching boss and instance and two independent fresh complete-line observations in its own channel. Broadcast text, player-debuff labels and target-cast labels are separate observations. A missing, stale, cropped or ambiguous label leaves the response absent. Custom game layouts can require expert region calibration; these definitions do not establish coverage of every message or debuff.
 
 ## Set up the game
 
@@ -90,13 +96,15 @@ The helper excludes its own windows from supported Windows screen capture to pre
 
 The **Boss library** tab contains the complete copied English reference: 119 boss/variant entries, 48 instance entries and 263 mechanics, plus the separately sourced Heladrir identity profile. Search by boss, dungeon, variant or mechanic. Select a row to inspect its NPC identifiers, phase/HP triggers and severity. **Export complete reference JSON** preserves all entries, including instance mechanics that have no named boss. The exported reference is separate from observation settings.
 
-The public source contains 54 HP triggers and 209 phase triggers. All 54 HP thresholds occur in 23 modules and load as reference hints. Three additional reactor thresholds (90/60/30%) require confirmed map and template evidence. An HP hint needs two above-threshold readings, followed by two nonincreasing readings at/below the threshold; joining already below it does not fire. Source phase entries without observable cues remain disabled. The public source supplies no fight-second repeat intervals or cast-start mapping. **Boss library → Export warning coverage** distinguishes skill-text rules, HP hints and unbound phases for all profiles. See [Boss warnings](BOSS_WARNINGS.md) for the complete evidence and limitations.
+The public source contains 54 HP triggers and 209 phase triggers. All 54 HP thresholds occur in 23 modules and load as reference hints. Three additional reactor thresholds (90/60/30%) require confirmed map and template evidence. An HP hint needs two above-threshold readings, followed by two nonincreasing readings at/below the threshold; joining already below it does not fire. Wipe and avoidable-wipe responses receive higher warning priorities while retaining the reference label. Source phase entries without observable cues remain disabled. The public source supplies no fight-second repeat intervals or cast-start mapping. **Boss library → Export warning coverage** distinguishes skill-text rules, HP hints and unbound phases for all profiles. See [Boss warnings](BOSS_WARNINGS.md) for the complete evidence and limitations.
 
 Some Bakarma variants share NPC identifiers. The current pinned mechanic correction assigns the three Draupnir source phase facts to Transcendent Bakarma; source phases without observable cues stay inactive. Prepared guide cues and owned English skill responses remain available. NPC identifiers are reference facts; the OCR app still requires confirmed English names and instance context.
 
 ## Timers and resets
 
-Repeat intervals and estimated enrage default to zero (off). Set measured values in Cues after observing several attempts. A confirmed text, visual or HP trigger starts its repeat countdown. Estimated enrage starts from boss acquisition, which can be later than the actual pull. The combat HUD displays up to eight nearest estimates across Upcoming and Imminent; reminders are labeled **Estimated**. A countdown expires and does not restart without a new matching cue.
+Manually configured repeat intervals and estimated enrage default to zero (off). Set measured values in Cues after observing several attempts. A confirmed text, visual or HP trigger starts its configured repeat countdown. Estimated enrage starts from boss acquisition, which can be later than the actual pull. The combat HUD displays up to eight nearest estimates across Upcoming and Imminent; reminders are labeled **Estimated**. A countdown expires and does not restart without a new matching cue.
+
+The separate local learner requires exact encounter, NPC/map, difficulty and explicitly confirmed phase identity. At least five intervals across three completed live attempts must remain within 15% variation before a recurrence estimate is eligible. Demos, replay, incomplete attempts and unknown phases do not qualify. Current screen observation leaves phase unknown, so these predictions wait for verified structured context. They estimate another observed onset and do not establish an attack sequence, wave impact or player-relative jump time.
 
 Measured cast-end estimates are separate from those repeat timers. Keep automatic HUD discovery enabled; the target header must match the selected encounter, and the skill must have an unambiguous exact source association. Explicit neighboring seconds must decrease consistently. Fraction-only cast progress needs several changing measurements with a stable slope. In Expert **Cues**, **Cast-end heads-up** defaults to 3 seconds before the estimated end; set it to zero to disable that heads-up. The configured 5-second Bakarma range-warning reference does not automatically become this threshold or a wave countdown.
 
@@ -126,7 +134,7 @@ If no text appears, check the region previews, English language, text size, and 
 
 If a cue repeats incorrectly, tighten the crop and use a more specific phrase. The observer waits for a phrase to disappear before allowing another warning. Disable a misleading cue while refining it.
 
-The last application error is saved as `data/last-error.txt`. The packaged model files are local. The Windows C++ runtime must be available. This 0.6.8 Unfinished Beta has not undergone new Windows application tests. A blank game capture is not evidence of an absent mechanic.
+The last application error is saved as `data/last-error.txt`. The packaged model files are local. The Windows C++ runtime must be available. This 0.6.10 Unfinished Beta has not undergone new Windows application tests. A blank game capture is not evidence of an absent mechanic.
 
 ## Development
 
@@ -153,3 +161,7 @@ To prepare a skill-name warning, select the appropriate encounter profile, stop 
 Raw cast/cooldown, berserk and groggy settings remain reference facts. The timing display also exposes reviewed configured range-warning and wide-casting alert values. Raw `CastingTime` and cooldown units are unproved and supply no clock or repeat interval. For `Wave of Death`, `18000` casting and `1000` cooldown are raw values; `5000 ms` is a reviewed static range-warning lead, not a synchronized future wave.
 
 All accepted generated skill IDs have a configured gauge/floater hiding flag, so names or bars may never appear on screen. Generated text rules need observed complete text; a separate cast countdown needs explicit remaining seconds or fresh changing cast progress under the confirmed target header. Hidden metadata creates no artificial bar. Missing measurements leave the countdown absent. Disable a misleading rule while refining the crop. Existing learned visual cues and manual warnings remain available. See [cast timing](CAST_TIMING.md).
+
+
+
+Published mechanic references, approximate HP ranges and typed duration claims are available in the expert Boss Library under Encounter guide. They do not supply automatic phase or wave clocks. See [reference scope](ENCOUNTER_RESEARCH.md).

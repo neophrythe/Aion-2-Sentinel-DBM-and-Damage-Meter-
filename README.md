@@ -6,13 +6,17 @@
 
 Created by **Neophrythe & Dr.Tatsu**. GitHub maintainer: [neophrythe](https://github.com/neophrythe). Windows x64 · AION 2 EU / International · English client.
 
-[Download 0.6.8 — Unfinished Beta](https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-/releases/tag/v0.6.8) · [Presentation](https://neophrythe.github.io/Aion-2-Sentinel-DBM-and-Damage-Meter-/) · [Quick start](guides/QUICK_START.md) · [Report a problem](https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-/issues/new/choose)
+[Download 0.6.10 — Unfinished Beta](https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-/releases/tag/v0.6.10) · [Presentation](https://neophrythe.github.io/Aion-2-Sentinel-DBM-and-Damage-Meter-/) · [Quick start](guides/QUICK_START.md) · [Report a problem](https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-/issues/new/choose)
 
 ![Illustrative Unfinished Beta 0.6.7](docs/v0.6.7/assets/sentinel-hero.png)
 
 *Illustrative preview with simulated cues and damage. This is promotional artwork, not a gameplay capture.*
 
-## New in 0.6.8
+## New in 0.6.10
+
+88 sourced mechanic references, 48 typed timing fields and 42 profile associations are now available in the Boss Library. Reactions attach only to compatible owned English skill cues; publisher timings never start repeat or wave clocks. Recording and replay retain automatic profile synchronization. Includes channel-specific warnings, independent damage HUD controls, captured target/confirmed-party filters and bounded local history. See [release notes](releases/v0.6.10/README.md) and [encounter references](docs/ENCOUNTER_RESEARCH.md).
+
+## Measured cast-end estimates
 
 Visible remaining seconds or a changing target-cast bar can supply a **cast (est.)** countdown and an estimated cast-ending heads-up. Sentinel requires fresh, consistent independent measurements; a skill name alone never starts a clock. Missing, hidden or ambiguous cast evidence can leave the countdown absent.
 
@@ -28,7 +32,7 @@ Normal enemies stay quiet. Advanced configuration, the boss library, recording t
 
 ## Install
 
-1. Download `AION-Sentinel-0.6.8-beta-windows-x64.7z` from the release page.
+1. Download `AION-Sentinel-0.6.10-beta-windows-x64.7z` from the release page.
 2. Extract the **complete archive** into a writable folder. Keep `_internal`, `meter` and the supplied notices beside the executable.
 3. Open `AION-Sentinel.exe` or `Start-AION-Sentinel.cmd` inside that folder.
 4. Start observation and bring the English AION2 window to the foreground. Turn on Damage meter if wanted.
@@ -39,17 +43,17 @@ An existing Npcap installation skips setup. Cancelling, declining elevation or i
 
 **F7** toggles the combat HUD · **F8** starts/stops observation · **F9** resets the encounter. F10 remains available to the game.
 
-## 0.6.8 status
+## 0.6.10 status
 
-**0.6.8 — Unfinished Beta.** Active development with partial boss-mechanic coverage. Gameplay validation is pending; compilation and package integrity have been checked.
+**0.6.10 — Unfinished Beta.** Active development with partial boss-mechanic coverage. Gameplay validation is pending; compilation and package integrity have been checked.
 
-The 0.6.8 7z archive is **95,352,628 bytes (95.35 MB / 90.94 MiB)** with **430 extracted files**, below the strict **100,000,000-byte** limit. SHA-256: `14eec381b0baec79440c56560f904a4f03cd05af0af2a20241a1c0343bdc9287`. See the [0.6.8 release notes](releases/v0.6.8/README.md).
+The 0.6.10 7z archive is **95,292,144 bytes (95.29 MB / 90.88 MiB)** with **433 extracted files**, below the strict **100,000,000-byte** limit. SHA-256: `8aa341143ef8ce79a0d585ca4acc409b6992c9c083f33b46de4db1fad1cc0743`. See the [0.6.10 release notes](releases/v0.6.10/README.md).
 
 | Reviewed source inventory | Coverage |
 | --- | --- |
 | Encounter identity profiles | 1,002 |
-| Profiles with some skill-text or HP warning support | 223 |
-| Profiles with identity metadata only | 779 |
+| New sourced mechanic references | 88 |
+| Profiles associated with new mechanic references | 42 |
 | World-boss list | 54 entries / 51 distinct profiles |
 | Source instance-map variants with explicit entrance GS ≥1,400 | 83 |
 | Combined world / high-GS target profiles | 137; 72 have some warning support, 65 remain identity-only |

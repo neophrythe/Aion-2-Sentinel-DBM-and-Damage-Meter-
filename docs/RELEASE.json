@@ -1,27 +1,27 @@
 {
   "schema_version": 1,
   "product": "AION Sentinel",
-  "version": "0.6.8",
-  "date": "2026-10-10",
+  "version": "0.6.10",
+  "date": "2026-10-11",
   "release_status": "unfinished_beta",
   "maintainer": "neophrythe",
   "language": "en",
   "client_scope": "AION 2 EU / International English PC client",
   "platform_target": "Windows 10/11 x64",
   "repository_url": "https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-",
-  "release_url": "https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-/releases/tag/v0.6.8",
+  "release_url": "https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-/releases/tag/v0.6.10",
   "support_url": "https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-/issues",
   "download": {
-    "name": "AION-Sentinel-0.6.8-beta-windows-x64.7z",
-    "url": "https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-/releases/download/v0.6.8/AION-Sentinel-0.6.8-beta-windows-x64.7z",
-    "bytes": 95352628,
-    "decimal_mb": 95.35,
-    "binary_mib": 90.94,
+    "name": "AION-Sentinel-0.6.10-beta-windows-x64.7z",
+    "url": "https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-/releases/download/v0.6.10/AION-Sentinel-0.6.10-beta-windows-x64.7z",
+    "bytes": 95292144,
+    "decimal_mb": 95.29,
+    "binary_mib": 90.88,
     "max_bytes": 100000000,
-    "extracted_file_count": 430,
-    "sha256": "14eec381b0baec79440c56560f904a4f03cd05af0af2a20241a1c0343bdc9287",
+    "extracted_file_count": 433,
+    "sha256": "8aa341143ef8ce79a0d585ca4acc409b6992c9c083f33b46de4db1fad1cc0743",
     "compression": "lossless_7z",
-    "headroom_bytes": 4647372
+    "headroom_bytes": 4707856
   },
   "default_controls": [
     "Combat HUD",
@@ -44,7 +44,7 @@
     "static_cast_values_start_clocks": false
   },
   "coverage": {
-    "scope": "reviewed_source_catalog_and_reference_rules",
+    "scope": "Historical catalog baseline; not recalculated active warning coverage",
     "profiles": 1002,
     "profiles_with_some_warning_support": 223,
     "identity_only_profiles": 779,
@@ -139,7 +139,7 @@
     "Dr.Tatsu"
   ],
   "display_credit": "Created by Neophrythe & Dr.Tatsu.",
-  "validation_note": "Active development — gameplay validation pending.",
+  "validation_note": "Active development \u00e2\u20ac\u201d gameplay validation pending.",
   "skill_timing": {
     "scope": "reviewed_source_metadata",
     "accepted_skill_ids": 550,
@@ -155,5 +155,15 @@
     "individual_wave_impacts_supplied": false,
     "recurring_schedules_supplied": false,
     "live_visibility_verified": false
+  },
+  "encounter_research": {
+    "path": "_internal/aion_sentinel/assets/encounter_research_reference.json",
+    "sha256": "06271adf4498d3545afb50cb6d7c4d0d6d232d1f869ed0fa1439fcd3044e924d",
+    "facts": 88,
+    "linked_profiles": 42,
+    "coverage_profiles": 137,
+    "sources": 16,
+    "timing_claim_fields": 48,
+    "complete_measured_phase_schedules": 0
   }
 }

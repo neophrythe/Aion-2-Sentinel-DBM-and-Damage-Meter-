@@ -1,5 +1,11 @@
 # Release history
 
+## 0.6.10 — 11 October 2026 — Unfinished Beta
+
+0.6.10: 88 mechanic references from 16 sources, 48 typed timing fields, 42 profile associations, aggregate identity evidence for 137 targeted profiles, and profile synchronization retained in replay. Includes 0.6.9 channel-specific warnings, safer ownership, meter filters, independent damage HUD controls and bounded history. Complete phase schedules remain unavailable. Unfinished Beta.
+
+Created by **Neophrythe & Dr.Tatsu**. [Release notes](releases/v0.6.10/README.md).
+
 ## 0.6.8 — 10 October 2026 — Unfinished Beta
 
 Created by **Neophrythe & Dr.Tatsu**.

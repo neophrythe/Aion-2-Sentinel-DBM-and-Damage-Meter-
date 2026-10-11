@@ -1,7 +1,5 @@
 # Boss warnings — Sentinel 0.6.8 Unfinished Beta
 
-Created by **Neophrythe & Dr.Tatsu**.
-
 The 0.6.8 integration connects static skill timing facts to measured visible target casts. No new application, functional, unit, integration or live tests were run. See [current release status](RELEASE_0.6.8_BETA.md) and [cast timing](CAST_TIMING.md). The baseline warning asset is retained from 0.6.5; its historical checks do not validate this preview.
 
 New in 0.6.6: world-boss classification and scopes; explicit >=1400-GS reference-map filters; published guide responses joined only to already owned exact English skill text; a Tetrata 50%-HP reinforcement-wave reference guarded by template 2340158 and eight exact maps. See [target registry](ENCOUNTER_TARGETS.md) and [guide evidence](ENCOUNTER_GUIDES.md). Approximate HP ranges, historical Ludra and unbound phases remain inactive.

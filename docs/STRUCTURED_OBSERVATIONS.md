@@ -1,6 +1,4 @@
-# Structured encounter observations — Sentinel 0.6.8 Unfinished Beta
-
-Created by **Neophrythe & Dr.Tatsu**.
+# Structured encounter observations — Sentinel 0.6.10 Unfinished Beta
 
 AION Sentinel can replay and follow normalized, read-only boss observations alongside its existing OCR mode. The design borrows only the useful *data categories* identified in the local Legion Commander / dxgi.dll static review: actor name and template ID, map ID, boss HP, casting skill ID, and telegraph kind/geometry. The implementation and interchange schema are original Sentinel code. No vendor binary, IPC protocol, license mechanism or packet capture is required by this feature.
 
@@ -59,7 +57,7 @@ Automatic screen observation records accepted timing in a separate top-level `ca
 
 A screen record has `source` (`screen_remaining` or `screen_progress`), `state` (`active` or `idle`), `confidence` (0–1), `captured_at` equal to the surrounding observation timestamp and the boolean `independent_sample`. An active record requires `skill_name` plus `remaining_seconds` for `screen_remaining`, or `progress` for `screen_progress`. The same measurement bounds apply. An idle record omits the skill and both measurement fields. When no accepted evidence exists, the object is omitted rather than emitted empty.
 
-The capture worker confirms independent, temporally consistent target-crop samples before recording timing. OCR-cache reuse, identical images and unchanged measurements cannot refresh it. The engine validates the stream again; malformed optional timing clears cast state while normal frame processing continues. Screen names must be uniquely associated with an owned skill, and hidden or unsupported HUD evidence can prevent a countdown. Static `CastingTime` and cooldown units remain unproved.
+The capture worker confirms independent, temporally consistent target-crop samples before recording timing. OCR-cache reuse, identical images and unchanged measurements cannot refresh it. The engine validates the stream again; malformed optional timing clears cast state while normal frame processing continues. Screen names must identify one owned skill or a complete owned candidate group belonging to a single warning rule; hidden or unsupported HUD evidence can prevent a countdown. Static `CastingTime` and cooldown units remain unproved.
 
 ## Measuring repeat intervals
 
@@ -73,6 +71,12 @@ These are measurements, not predictive warnings. Keep a repeat timer disabled un
 
 ## Evidence needed before gameplay claims
 
-No cast IDs, telegraph labels, actor/template-to-encounter mappings, wave lead times or phase timings in the static review were validated against the EU/International English AION 2 client. The numeric example above must not be used as a real boss rule. The file follower exists, but an external observer that produces verified EU structured game data is still required. Foreground OCR, conservatively measured visible target casts and manually taught visual cues remain the directly available screen inputs. The 0.6.8 integration has no new application or live-game validation.
+No cast IDs, telegraph labels, actor/template-to-encounter mappings, wave lead times or phase timings in the static review were validated against the EU/International English AION 2 client. The numeric example above must not be used as a real boss rule. The file follower exists, but an external observer that produces verified EU structured game data is still required. Foreground OCR, conservatively measured visible target casts and manually taught visual cues remain the directly available screen inputs. The 0.6.10 integration has no new application or live-game validation.
 
 For Bakarma specifically, a generic `pressure_wave` telegraph does not establish the instant when a player should jump. That requires measured player-relative wave position and action latency; Sentinel therefore keeps the immediate “Jump now” candidate disabled.
+
+## Phase context and recurrence preparation
+
+An active observation may include `phase_key`, a nonempty phase identifier of at most 160 characters with no control characters. The field must reflect independently established phase evidence; a warning label or HP partition alone is insufficient. This schema support does not verify a supplier or authorize its observations as live training evidence.
+
+The preparatory recurrence model remains inactive in the current UI. Screen observation lacks confirmed phase identity, while a generic local JSONL feed remains an unknown origin for training. A future verified provider must supply both fresh measured casts and confirmed phase context before learning can qualify completed attempts.

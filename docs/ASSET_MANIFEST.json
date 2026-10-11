@@ -1,21 +1,5 @@
 {
-  "schema": 1,
-  "product": "AION Sentinel",
-  "version": "0.6.8",
-  "maintainer": "neophrythe",
-  "creators": [
-    "Neophrythe",
-    "Dr.Tatsu"
-  ],
-  "display_credit": "Created by Neophrythe & Dr.Tatsu.",
-  "release_status": "unfinished_beta",
-  "public_status": "Unfinished Beta",
-  "validation_note": "Active development — gameplay validation pending.",
-  "visuals": "Original SVG and interactive HTML/CSS illustrations with simulated readings",
-  "live_gameplay_capture_claimed": false,
-  "application_tests": 0,
-  "installer_executed": false,
-  "current_version_video_generated": false,
+  "version": "0.6.10",
   "files": {
     ".nojekyll": {
       "bytes": 0,
@@ -78,16 +62,36 @@
       "sha256": "e5b1b64b3d5cdc532dd84f4f3d7daef95aff9f64f518e263e8b8c013aa95b3f1"
     },
     "BEGINNER_MODE.md": {
-      "bytes": 4553,
-      "sha256": "808b0c7c57bd5083dfd9ef8587de0e2c835ce8b0550a74df275c6f57e4e2a668"
+      "bytes": 5119,
+      "sha256": "1ebd5c4471a1105f6bd81b6c9018470ee2f5cfdd016447b748839ade5144ff25"
     },
     "BOSS_WARNINGS.md": {
-      "bytes": 8889,
-      "sha256": "3ed1978c2362ea3ccc92952c42e6a23ff6c5744000b187df915e6924877a5a99"
+      "bytes": 8898,
+      "sha256": "330b19fd17b3e6a1cb33a6030a423d1e24d1a55230d66526ebd976976397377b"
     },
     "CAST_TIMING.md": {
-      "bytes": 6605,
-      "sha256": "65780eaebd2d5abc18b2fc52da20e4f92516783f76a8966d60d734de14b62e20"
+      "bytes": 7712,
+      "sha256": "adbebcffcbf6d29cc345da588a3ab9ffdece23a8244a949d0302361322838fc4"
+    },
+    "copy/0.6.10/CLAIMS_AUDIT.md": {
+      "bytes": 1510,
+      "sha256": "f142589166381e6b2602beb51587098aee1a4e19c44799ad887b5be628f258d6"
+    },
+    "copy/0.6.10/FAQ_EN.md": {
+      "bytes": 2364,
+      "sha256": "31585ea7a4501e0337a6f46dddf6406efb0c9ae16a024c677f9e7ce005907d06"
+    },
+    "copy/0.6.10/GITHUB_RELEASE_EN.md": {
+      "bytes": 3776,
+      "sha256": "b9ef9bf78921985cf7ae3d27bb7fe44ad2d2044751cd639c9d672b8693856cb7"
+    },
+    "copy/0.6.10/NEXUS_DESCRIPTION_EN.md": {
+      "bytes": 6164,
+      "sha256": "79ca5b8782806220ff387721362a6e5bd6bacd93664237db2516f379867b6bd9"
+    },
+    "copy/0.6.10/SHORT_LISTINGS_EN.md": {
+      "bytes": 410,
+      "sha256": "5d0c2645312a44d386fa80dfbc9b9276db2245c30ce46c5dba69e96f4b317edf"
     },
     "copy/0.6.7/CLAIMS_AUDIT.md": {
       "bytes": 2768,
@@ -154,20 +158,24 @@
       "sha256": "35441c896c449cf447a3d06bee2b8246764f3ac01025b54947095a4c31f1c7c5"
     },
     "DAMAGE_METER.md": {
-      "bytes": 11929,
-      "sha256": "6def4a4e9e4cbc39a7315f1f02535fd390df8b427c0cdce2d43c2585475795b9"
+      "bytes": 11969,
+      "sha256": "8c094eea2f2f4c0f36728d88ac20ddf742442361892ad348b339f6b733b365fe"
     },
     "ENCOUNTER_GUIDES.md": {
-      "bytes": 5024,
-      "sha256": "7203818d31fc20b65212fe534fd90badcbe0b8712edf026fe2ced43b6dc9d1e0"
+      "bytes": 5075,
+      "sha256": "c896bcaa7421423bdcd141b14716dfa8141521d0f8f530c267b8353dc4127015"
+    },
+    "ENCOUNTER_RESEARCH.md": {
+      "bytes": 1854,
+      "sha256": "0a5889c0166ecc567f18e9e8fdbec39272a60199e8fd74b78708956f8a6a90fd"
     },
     "ENCOUNTER_TARGETS.md": {
-      "bytes": 6379,
-      "sha256": "84e882bfcd2f4103bbb792bfdd8e138bbabf074560b538d02c091839fe9bc385"
+      "bytes": 6397,
+      "sha256": "a1ea48508392aab8bcde9ffd28cb71760cb8661b7fcf15f767f221671c3fd5a9"
     },
     "index.html": {
-      "bytes": 15446,
-      "sha256": "6b75828ebb30890147979cd1fdeb37ba37aec8909f0c0273b30c8ea96bea158a"
+      "bytes": 15576,
+      "sha256": "6ef56dea3de6ca885a968a3b27bd20565fef9885869517b4c6d71a99c8b7bf0a"
     },
     "motion/illustrative-preview-poster.png": {
       "bytes": 299092,
@@ -190,8 +198,12 @@
       "sha256": "180d38b477edc4a36e51f1edcd4fbb2dcb0e1cdbfb3ea8c8be479fe06050b505"
     },
     "RELEASE.json": {
-      "bytes": 5706,
-      "sha256": "a4d736b1398de48ee5fb5b2894c731d59a2e3f14045676d9b0ae86534ef93aaf"
+      "bytes": 6281,
+      "sha256": "d27caf50a474e72a6ed5380adce93d0c4e70f5b3234cbd0a697a9d8de876cb10"
+    },
+    "RELEASE_0.6.10_BETA.md": {
+      "bytes": 3552,
+      "sha256": "9dd361a80c49a39a98465a0b29133387c991213737134670e36d01d060afdff7"
     },
     "RELEASE_0.6.7_BETA.md": {
       "bytes": 4900,
@@ -202,12 +214,12 @@
       "sha256": "ac4273bc4a2c2ca1117b3edfda500172e4983964313d4f045e1335b86b35b78d"
     },
     "STRUCTURED_OBSERVATIONS.md": {
-      "bytes": 9451,
-      "sha256": "a99d48014fdf997a4ed31491c7ec4f4da0d64f15306125ef1f0fcd14db7d39f6"
+      "bytes": 10279,
+      "sha256": "ed2ff1f99515e2174749563c39edfe6f97124313e10c70a6d30afc97506dc745"
     },
     "USER_GUIDE.md": {
-      "bytes": 25859,
-      "sha256": "71730fe0b36c4dd1736854dc64b617c8993d19e89ae038888e95ad55e5182aed"
+      "bytes": 28497,
+      "sha256": "646d03225709be8d880145f081d5cb5c03bad81877e8d4b90f22533911ed1a04"
     },
     "v0.6.7/assets/01-sentinel-cover.png": {
       "bytes": 199130,
@@ -317,9 +329,5 @@
       "bytes": 645,
       "sha256": "12d2d4aa6f39eb11ec3691188aa9ac001d6a0434fa7e8b5be5cf699b9a2f50ba"
     }
-  },
-  "historical_0_6_6_public_labels_updated": true,
-  "public_video_linked": false,
-  "current_media_version": "0.6.7",
-  "media_note": "Existing 0.6.7 illustrations and animations are retained as simulated historical media; no actual 0.6.8 gameplay is claimed."
+  }
 }

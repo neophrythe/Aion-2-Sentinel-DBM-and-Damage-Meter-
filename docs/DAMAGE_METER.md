@@ -1,7 +1,5 @@
 # AION Sentinel — integrated damage meter
 
-Created by **Neophrythe & Dr.Tatsu**.
-
 Version 0.6.7, Unfinished Beta. Windows x64, AION 2 EU / International, English interface.
 
 The protected portable release includes the compiled native meter worker and native-compiled Sentinel UI. Its own critical files are checked against an internal RSA release manifest; this is not Windows Authenticode signing and cannot prevent all reverse engineering. The archive omits Sentinel's implementation source, while retaining third-party notices and covered-source access. See [Native binary distribution](protected/BINARY_DISTRIBUTION.md), or `BINARY_DISTRIBUTION.md` in the portable folder.

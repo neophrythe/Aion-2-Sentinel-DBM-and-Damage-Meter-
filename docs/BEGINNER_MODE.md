@@ -1,8 +1,6 @@
-# Sentinel 0.6.8 — automatic beginner mode
+# Sentinel 0.6.10 — automatic beginner mode
 
-Created by **Neophrythe & Dr.Tatsu**.
-
-Unfinished Beta. Active development — gameplay validation pending. Compilation and package integrity have been checked; these do not validate gameplay behavior.
+Unfinished Beta. Active development — gameplay validation pending. No new application, executable, UI, OCR, functional, unit, integration or live tests were run.
 
 Extract the complete package into a writable folder and open AION-Sentinel.exe. The default window has three controls:
 
@@ -16,11 +14,9 @@ Enable **Damage meter** when you want live readings. If Npcap is already install
 
 Choose **Cancel** to decline setup, or cancel its progress dialog to stop the download. Cancelling setup, declining elevation or an installation failure leaves the meter off. You can continue using screen OCR. If a reboot is required, Sentinel leaves capture off and does not restart Windows; reboot when convenient, then enable the meter again. Otherwise, it rechecks the required capture components and retries the worker. An administrator-only Npcap installation can still require administrative capture rights.
 
-The guided setup flow remains available in 0.6.8; its application behavior and live capture still require validation.
+The 0.6.10 setup flow is implemented but has not undergone new application, functional, integration or live tests.
 
 ## Automatic observation
-
-Visible remaining seconds or a changing target-cast bar can supply a **cast (est.)** countdown and an estimated cast-ending heads-up. No new beginner control is required. A skill name alone does not start a clock; hidden or ambiguous cues can leave it absent. These estimates do not time individual waves or repeat sequences. See [cast timing](CAST_TIMING.md).
 
 Names, levels, locations, compatible profiles and standard target/HP/cast search regions are found automatically. Normal enemies remain excluded. Runtime automatic settings ignore stale manual rectangles without deleting the saved expert preferences. Profile rule edits and disabled choices remain respected. Warning sounds and available English speech use the stored defaults.
 
@@ -32,4 +28,8 @@ Unknown names, absent minimap labels, ambiguous normal/summon candidates and uns
 
 F7 toggles the combat HUD. F8 toggles observation independently of meter capture. F9 retains the encounter-reset shortcut. F10 remains available to the game. The main controls remain usable when a shortcut is occupied.
 
-The meter uses its existing aggregate-run measurement and decoded run-boundary resets. It does not promise an isolated DPS board for every ordinary boss. Player names appear when corresponding identity records arrive; keep capture running through login or an area change if names are pending.
+The meter starts with all captured actors and targets. Expert controls offer captured-target selection and a confirmed-party filter; pending roster identity leaves observed actors visible. Player names appear when corresponding identity records arrive; keep capture running through login or an area change if names are pending. It does not promise an isolated DPS board for every ordinary boss.
+
+The separate damage HUD can be hidden, locked, scaled, made more transparent or recentered without stopping capture. Local history distinguishes runs and boss attempts, including the reason they ended. These reports overlap and must not be added together. Synthetic demo reports are marked and hidden by the default history filter.
+
+Published broadcast and player-debuff responses need fresh text in their own channel and the correct encounter context. Cast estimates need a visible measured target cast. Learned recurrence estimates need several completed live attempts and an explicitly confirmed phase; current screen observation alone does not provide that phase. Missing evidence leaves the corresponding feature inactive. These conditions do not require extra beginner controls and do not establish complete fight coverage.

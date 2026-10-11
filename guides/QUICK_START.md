@@ -1,8 +1,8 @@
-# Quick start — 0.6.8 Unfinished Beta
+# Quick start — 0.6.10 Unfinished Beta
 
 Created by **Neophrythe & Dr.Tatsu**.
 
-This is the 0.6.8 Unfinished Beta. Active development — gameplay validation pending. Compilation and package integrity have been checked; these do not validate gameplay behavior. Download it from the [release page](https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-/releases/tag/v0.6.8), then extract the complete folder into a writable location.
+This is the 0.6.10 Unfinished Beta. Active development — gameplay validation pending. Compilation and package integrity have been checked; these do not validate gameplay behavior. Download it from the [release page](https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-/releases/tag/v0.6.10), then extract the complete folder into a writable location.
 
 Open `AION-Sentinel.exe`. The default view has three controls:
 

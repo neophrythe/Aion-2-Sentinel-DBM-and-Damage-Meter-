@@ -1,7 +1,5 @@
 # Published encounter responses
 
-Created by **Neophrythe & Dr.Tatsu**.
-
 Research date: 10 October 2026. This reference adds English instructions to
 an already observed skill cue. It does not establish a complete encounter
 timeline or claim that those instructions have been tested against the EU game.
