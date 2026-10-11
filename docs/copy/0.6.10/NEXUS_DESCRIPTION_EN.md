@@ -1,8 +1,8 @@
-# AION Sentinel â€” Boss Warnings + Damage Meter
+# AION Sentinel — Boss Warnings + Damage Meter
 
 Created by **Neophrythe & Dr.Tatsu**.
 
-**0.6.10 â€” Unfinished Beta. Active development â€” gameplay validation pending.**
+**0.6.10 — Unfinished Beta. Active development — gameplay validation pending.**
 
 AION Sentinel brings DBM-inspired boss warnings and an optional damage meter to the **AION 2 EU / International English PC client**. It runs alongside the game as a separate **Windows 10/11 x64** desktop companion with a movable combat HUD.
 
@@ -46,7 +46,7 @@ The catalog contains **1,002 profile identities**; mechanic coverage remains par
 
 Extract the complete archive into its own writable folder and launch **Start-AION-Sentinel.cmd**. Keep all runtime folders, models and notices together. Run the English game in windowed or borderless mode, keep target/minimap headings visible, enable **Combat HUD**, choose **Start observation** and bring the game to the foreground. Enable the meter separately if wanted.
 
-**F7:** Combat HUD Â· **F8:** Start / Stop observation Â· **F9:** Reset encounter
+**F7:** Combat HUD · **F8:** Start / Stop observation · **F9:** Reset encounter
 
 Archive: `AION-Sentinel-0.6.10-beta-windows-x64.7z` · **95,292,144 bytes** (95.29 MB / 90.88 MiB), 433 files. Strict limit: 100,000,000 bytes.
 
@@ -54,6 +54,6 @@ SHA-256: `8aa341143ef8ce79a0d585ca4acc409b6992c9c083f33b46de4db1fad1cc0743`
 
 ## Downloads and support
 
-[0.6.10 release and documentation](https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-/releases/tag/v0.6.10) Â· [Project](https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-) Â· [Issues](https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-/issues)
+[0.6.10 release and documentation](https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-/releases/tag/v0.6.10) · [Project](https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-) · [Issues](https://github.com/neophrythe/Aion-2-Sentinel-DBM-and-Damage-Meter-/issues)
 
 The package's internal integrity signatures are separate from Windows Authenticode signing. AION Sentinel is independent of NCSOFT and Deadly Boss Mods; official approval and account-safety guarantees have not been established.
