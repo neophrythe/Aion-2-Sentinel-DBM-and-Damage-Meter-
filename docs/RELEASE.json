@@ -101,24 +101,29 @@
     "dot_ticks_separate_from_direct_hits": true
   },
   "validation": {
-    "status": "structural_checks_only",
+    "status": "focused_offline_checks_passed_gameplay_pending",
     "functions_not_tested": true,
     "functional_tests_executed": 0,
-    "unit_tests_executed": 0,
-    "integration_tests_executed": 0,
+    "unit_tests_executed": 181,
+    "integration_tests_executed": 2,
     "live_tests_executed": 0,
-    "executable_launches": 0,
     "inherited_test_reports_used": false,
     "ready_for_live_use_verified": false,
     "allowed_evidence": [
       "structural_build_checks",
       "source_and_package_manifest_integrity",
       "archive_crc",
-      "extracted_file_sha256_roundtrip"
+      "extracted_file_sha256_roundtrip",
+      "focused_python_checks",
+      "current_native_worker_self_test"
     ],
     "gameplay_validation_pending": true,
     "compilation_checked": true,
-    "package_integrity_checked": true
+    "package_integrity_checked": true,
+    "native_assertions": 88,
+    "application_executable_launched": false,
+    "native_worker_checks_executed": true,
+    "runtime_tests_scope": "Focused offline worker and module checks; no live game."
   },
   "presentation": {
     "preview_visuals": "simulated",
@@ -132,7 +137,7 @@
     "current_media_version": "0.6.7",
     "motion_format": "Interactive synthetic HTML/CSS illustration",
     "current_version_video_generated": false,
-    "media_note": "Retained illustrative 0.6.7 media uses simulated readings and does not show actual 0.6.8 gameplay."
+    "media_note": "Retained 0.6.7 illustrative media uses simulated readings and supplies no current-version gameplay evidence."
   },
   "public_status": "Unfinished Beta",
   "creators": [
@@ -144,7 +149,7 @@
     "Dr.Tatsu"
   ],
   "display_credit": "Created by Neophrythe & Dr.Tatsu.",
-  "validation_note": "Active development \u00e2\u20ac\u201d gameplay validation pending.",
+  "validation_note": "Unfinished Beta. Focused offline checks passed; gameplay validation remains pending.",
   "skill_timing": {
     "scope": "reviewed_source_metadata",
     "accepted_skill_ids": 550,
